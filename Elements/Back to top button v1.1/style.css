@@ -1,0 +1,21 @@
+body {
+    height: 3000px;
+    background: linear-gradient(#833692, #09aad3);
+}
+
+.backToTopBtn {
+    position: fixed;
+    right: 3rem;
+    bottom: 3rem;
+    
+    width: 30px;
+}
+
+.backToTopBtn path:hover { 
+    fill: #00B2FF;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
