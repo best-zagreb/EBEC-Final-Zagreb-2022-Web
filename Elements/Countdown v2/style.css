@@ -1,0 +1,26 @@
+body {
+	background-color: #202020;
+}
+
+.countdown {
+	text-align: center;
+
+	text-transform: uppercase;
+	font-family: fantasy, Trebuchet MS, sans-serif;
+	font-size: 2rem;
+	color: white;
+}
+
+.countdown__days,
+.countdown__hours,
+.countdown__minutes,
+.countdown__seconds {
+	margin-left: 1rem;
+
+	font-size: 3em;
+	text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.8);
+}
+
+.hidden {
+	display: none;
+}
