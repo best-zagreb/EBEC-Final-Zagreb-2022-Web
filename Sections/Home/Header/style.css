@@ -1,0 +1,151 @@
+* {
+	margin: 0;
+}
+
+.hidden {
+	display: none;
+}
+
+header {
+	position: relative;
+	overflow: hidden;
+
+	background-color: black;
+	z-index: -1000;
+}
+
+/* header div {
+	border: solid 2px black;
+	box-sizing: border-box;
+} */
+
+.header__bgr-image-container {
+	display: flex;
+	justify-content: center;
+}
+
+.header__bgr-image {
+	position: absolute;
+	top: -15rem;
+
+	width: 100%;
+
+	opacity: 0.1;
+	z-index: -100;
+}
+
+@media only screen and (max-width: 1285px) {
+	.header__bgr-image {
+		top: 0;
+		height: 100%;
+		width: auto;
+	}
+}
+
+.header__content {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 4rem;
+
+	align-items: center;
+	align-content: center;
+	margin: 2rem 5rem;
+
+	color: white;
+}
+
+.header__logo {
+	flex: 1 1 65%;
+}
+
+.header__logo-image {
+	display: block;
+	margin: auto;
+	width: 100%;
+	max-width: 1000px;
+
+	animation-name: float;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+}
+
+.header__quote {
+	flex: 1 2 30%;
+	min-width: 360px;
+}
+
+.header__quote #quote {
+	text-align: center;
+	padding-bottom: 1em;
+
+	font-family: "Brush Script MT", cursive, sans-serif;
+	font-size: 5em;
+}
+
+.header__quote #author {
+	display: block;
+	text-align: right;
+
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-size: 2em;
+}
+
+.countdown {
+	width: 100%;
+	text-align: center;
+
+	text-transform: uppercase;
+	font-family: fantasy, Trebuchet MS, sans-serif;
+	font-size: 3em;
+	color: white;
+}
+
+.countdown__days,
+.countdown__hours,
+.countdown__minutes,
+.countdown__seconds {
+	margin-left: 1rem;
+
+	font-size: 3em;
+	text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.8);
+}
+
+@media only screen and (max-width: 768px) {
+	.header__content {
+		gap: 1.5rem;
+	}
+
+	.header__content {
+		font-size: 0.6rem;
+	}
+	/* 
+	.countdown {
+		font-size: 2em;
+	} */
+}
+
+@media only screen and (max-width: 505px) {
+	.header__content {
+		font-size: 0.5rem;
+	}
+
+	.header__quote {
+		min-width: 150px;
+	}
+
+	.countdown {
+		font-size: 2em;
+	}
+}
+
+@keyframes float {
+	0% {
+		transform: translateY(0px);
+	}
+	50% {
+		transform: translateY(30px);
+	}
+	100% {
+		transform: translateY(0px);
+	}
+}
