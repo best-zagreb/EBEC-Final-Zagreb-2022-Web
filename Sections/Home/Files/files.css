@@ -10,7 +10,7 @@
 .icons-section {
 	min-width: 20rem;
 
-	background-color: var(--bg-clr-dark);
+	/* background-color: var(--bg-clr-dark); */
 
 	font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
 		"Lucida Sans", Arial, sans-serif;
@@ -57,9 +57,9 @@
 	transform: translate(-50%, -50%);
 }
 
-.card__bg-circle svg path {
+/* .card__bg-circle svg path {
 	fill: var(--bg-clr-dark);
-}
+} */
 
 .sg-icon {
 	width: 70%;
