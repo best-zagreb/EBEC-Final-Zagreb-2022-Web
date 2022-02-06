@@ -10,4 +10,4 @@ Useful links:
 [EBEC local web](https://best.hr/ebec/) | 
 [EBEC Final Turin 2019 web](https://www.bestorino.com/ebecfinal/) |
 [Schedule](https://docs.google.com/spreadsheets/d/1GtH79MJElWUphnlKzePiw0892swHtk_0IiimOFVZ_Kg) |
-[Survival guide]()
+[Survival guide](#)
