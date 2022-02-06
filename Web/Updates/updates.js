@@ -4,56 +4,50 @@
 
 const postsArray = document.querySelectorAll(".post");
 const textsArray = document.querySelectorAll(".post__text");
-const expandBtnsArray = document.querySelectorAll(".post__expand-button");
-const shrinkBtnsArray = document.querySelectorAll(".post__shrink-button");
+const btnsArray = document.querySelectorAll(".post__button");
 
 for (let index = 0; index < postsArray.length; index++) {
 	// console.log(textsArray[index].scrollHeight);
 	// console.log(textsArray[index].clientHeight);
 
 	if (textsArray[index].scrollHeight > textsArray[index].clientHeight) {
-		expandBtnsArray[index].classList.remove("hidden");
+		btnsArray[index].classList.remove("hidden");
 
-		expandBtnsArray[index].addEventListener("click", () => {
-			expandPost(index);
+		btnsArray[index].addEventListener("click", () => {
+			togglePostView(index);
 		});
 
 		textsArray[index].addEventListener("click", () => {
-			expandPost(index);
+			togglePostView(index);
 		});
 	}
 }
 
-function expandPost(index) {
-	// shrink all other posts
-	for (let i = 0; i < postsArray.length; i++) {
-		// console.log(textsArray[i].scrollHeight);
+function togglePostView(index) {
+	const maxHeight = "7rem";
 
-		if (textsArray[i].clientHeight > textsArray[index].clientHeight) {
-			shrinkPost(i);
-		}
+	if (!textsArray[index].classList.contains("expanded")) {
+		// shrink all posts
+		for (let i = 0; i < textsArray.length; i++)
+			if (textsArray[i].classList.contains("expanded")) {
+				textsArray[i].classList.remove("expanded");
+				textsArray[i].style.maxHeight = maxHeight;
+				btnsArray[i].style.transform = "rotate(0deg)";
+			}
+
+		// expand desired post
+		textsArray[index].classList.add("expanded");
+		textsArray[index].style.maxHeight =
+			textsArray[index].scrollHeight + "px";
+		btnsArray[index].style.transform = "rotate(180deg)";
+	} else {
+		// shrink desired post
+		textsArray[index].classList.remove("expanded");
+		textsArray[index].style.maxHeight = maxHeight;
+		btnsArray[index].style.transform = "rotate(0deg)";
+
+		// scroll to top of post
+		if (postsArray[index].getBoundingClientRect().top < 0)
+			postsArray[index].scrollIntoView(true); // allign to top = true
 	}
-
-	// expand desired post
-	textsArray[index].classList.add("expanded");
-
-	expandBtnsArray[index].classList.add("hidden");
-	expandBtnsArray[index].removeEventListener("click", () => {});
-
-	shrinkBtnsArray[index].addEventListener("click", () => {
-		shrinkPost(index);
-
-		postsArray[index].scrollIntoView(true); // allign to top = true
-	});
-	shrinkBtnsArray[index].classList.remove("hidden");
-}
-
-function shrinkPost(index) {
-	// shrink desired post
-	textsArray[index].classList.remove("expanded");
-
-	shrinkBtnsArray[index].classList.add("hidden");
-	shrinkBtnsArray[index].removeEventListener("click", () => {});
-
-	expandBtnsArray[index].classList.remove("hidden");
 }
