@@ -12,3 +12,6 @@ Useful links:
 [EBEC Final Turin 2019 web](https://www.bestorino.com/ebecfinal/) |
 [Schedule](https://docs.google.com/spreadsheets/d/1GtH79MJElWUphnlKzePiw0892swHtk_0IiimOFVZ_Kg) |
 [Survival guide](#)
+
+In default.css you'll find basic styles for page content that MUST be included on every page. Try not to overwrite them within your css files if not neccessary.
+Also, default.html is the basic page from which you can build.
