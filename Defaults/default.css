@@ -1,58 +1,68 @@
 * {
-  box-sizing: border-box;
-  margin: 0;
+	box-sizing: border-box;
+	margin: 0;
 }
 
 :root {
-  /* colors depend on project */
-  --primary-clr: #3c6f9b;
-  --secondary-clr: #294f66;
-  --accent-clr: #5cb0e5;
-  --text-clr: #666666;
+	/* colors depend on project */
+	--primary-clr: #3c6f9b;
+	--secondary-clr: #294f66;
+	--accent-clr: #5cb0e5;
+	--text-clr: #666666;
 
-  --dark-bg-clr: #252525;
+	--dark-bg-clr: #252525;
 
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
+	font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+		"Lucida Sans", Arial, sans-serif;
 }
 
 html {
-  scroll-behavior: smooth;
+	scroll-behavior: smooth;
 }
 
-/* name of pages */
+/* names of pages */
 h1 {
-  text-align: center;
-  text-transform: uppercase;
+	margin: 2rem;
 
-  font-size: 8rem;
+	text-align: center;
+	text-transform: uppercase;
 
-  color: var(--primary-clr);
+	font-size: 8rem;
+
+	color: var(--primary-clr);
 }
 
-/* name of sections */
+/* names of sections */
 h2 {
-  text-transform: uppercase;
+	margin: 1.5rem;
 
-  font-size: 6rem;
+	text-align: center;
+	text-transform: uppercase;
 
-  color: var(--secondary-clr);
+	font-size: 6rem;
+
+	color: var(--primary-clr);
 }
 
+/* names of subsections */
 h3 {
-  font-size: 1.5rem;
+	margin: 1rem;
 
-  color: var(--accent-clr);
+	text-align: center;
+	font-size: 4rem;
+
+	color: var(--secondary-clr);
 }
 
+/* other titles (posts etc) */
 h4 {
-  font-size: 1.375rem;
+	font-size: 1.5rem;
 
-  color: var(--accent-clr);
+	color: var(--accent-clr);
 }
 
 p {
-  font-size: 1.25rem;
+	font-size: 1.25rem;
 
-  color: var(--text-clr);
+	color: var(--text-clr);
 }
