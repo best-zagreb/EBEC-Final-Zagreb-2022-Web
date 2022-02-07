@@ -1,68 +1,39 @@
-* {
-	margin: 0;
-}
-
-.hidden {
-	display: none;
-}
-
 header {
+	min-width: 35rem;
+
 	position: relative;
 	overflow: hidden;
 
-	background-color: black;
+	background-color: #252525; /* in case no image */
 	z-index: -1000;
 }
 
-/* header div {
-	border: solid 2px black;
-	box-sizing: border-box;
-} */
-
-.header__bgr-image-container {
-	display: flex;
-	justify-content: center;
-}
-
-.header__bgr-image {
+.header__bg-image {
 	position: absolute;
-	top: -15rem;
 
 	width: 100%;
+	height: 100%;
+	object-fit: cover;
 
-	opacity: 0.1;
-	z-index: -100;
+	filter: brightness(30%) blur(3px);
+	z-index: -1;
 }
 
-@media only screen and (max-width: 1285px) {
-	.header__bgr-image {
-		top: 0;
-		height: 100%;
-		width: auto;
-	}
-}
+.header__content-container {
+	margin: 2rem 5rem;
 
-.header__content {
+	font-size: 2rem;
+
 	display: flex;
 	flex-wrap: wrap;
 	gap: 4rem;
-
-	align-items: center;
 	align-content: center;
-	margin: 2rem 5rem;
-
-	color: white;
+	align-items: center;
 }
 
 .header__logo {
-	flex: 1 1 65%;
-}
-
-.header__logo-image {
-	display: block;
-	margin: auto;
-	width: 100%;
-	max-width: 1000px;
+	flex: 1 1 60%;
+	max-width: 100rem;
 
 	animation-name: float;
 	animation-duration: 10s;
@@ -70,33 +41,34 @@ header {
 }
 
 .header__quote {
-	flex: 1 2 30%;
-	min-width: 360px;
+	flex: 1 1 35%;
+
+	color: white;
+	text-shadow: 2px 2px 10px black;
 }
 
 .header__quote #quote {
-	text-align: center;
-	padding-bottom: 1em;
+	margin-bottom: 0.75rem;
 
+	font-size: 1.75em;
+
+	text-align: center;
 	font-family: "Brush Script MT", cursive, sans-serif;
-	font-size: 5em;
 }
 
 .header__quote #author {
 	display: block;
-	text-align: right;
 
+	text-align: right;
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
-	font-size: 2em;
 }
 
 .countdown {
-	width: 100%;
-	text-align: center;
+	flex: 1 1 100%;
 
-	text-transform: uppercase;
+	text-align: center;
 	font-family: fantasy, Trebuchet MS, sans-serif;
-	font-size: 3em;
+	text-transform: uppercase;
 	color: white;
 }
 
@@ -107,34 +79,14 @@ header {
 	margin-left: 1rem;
 
 	font-size: 3em;
-	text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.8);
+
+	text-shadow: 1px 1px 2px white;
 }
 
-@media only screen and (max-width: 768px) {
-	.header__content {
-		gap: 1.5rem;
-	}
-
-	.header__content {
-		font-size: 0.6rem;
-	}
-	/* 
-	.countdown {
-		font-size: 2em;
-	} */
-}
-
-@media only screen and (max-width: 505px) {
-	.header__content {
-		font-size: 0.5rem;
-	}
-
-	.header__quote {
-		min-width: 150px;
-	}
-
-	.countdown {
-		font-size: 2em;
+@media only screen and (max-width: 1200px) {
+	.header__content-container {
+		font-size: 1.75rem;
+		margin: 2rem;
 	}
 }
 
