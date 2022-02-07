@@ -66,3 +66,7 @@ p {
 
 	color: var(--text-clr);
 }
+
+.hidden {
+	display: none;
+}
