@@ -1,6 +1,8 @@
-h1 {
+body {
 	min-width: 36rem;
+}
 
+h1 {
 	margin: 2rem 1rem;
 }
 
@@ -9,13 +11,11 @@ h1 {
 
 	display: grid;
 	grid-template-columns: minmax(20rem, 90rem);
-	justify-content: space-around;
+	justify-content: center;
 	gap: 1.5rem;
 }
 
 .post {
-	min-width: 33rem;
-
 	border: solid 1px lightgrey;
 	border-radius: 1rem;
 
@@ -83,8 +83,6 @@ h1 {
 	text-transform: uppercase;
 	text-decoration: none;
 	font-weight: 600;
-
-	color: var(--accent-clr);
 }
 
 .post__text {
@@ -97,10 +95,6 @@ h1 {
 
 	text-align: justify;
 	white-space: pre-wrap;
-
-	font-size: 1.25rem;
-
-	color: var(--text-clr);
 
 	/* animations for expanding the text */
 	-webkit-transition: max-height 0.7s ease-in-out;

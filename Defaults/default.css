@@ -61,10 +61,15 @@ h4 {
 	color: var(--accent-clr);
 }
 
-p {
+p,
+pre {
 	font-size: 1.25rem;
 
 	color: var(--text-clr);
+}
+
+a {
+	color: var(--accent-clr);
 }
 
 .hidden {
