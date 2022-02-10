@@ -33,9 +33,6 @@ h1 {
 	/* wrap text around image */
 	float: left;
 
-	/* indicator that there is a lightbox */
-	cursor: pointer;
-
 	filter: brightness(50%);
 
 	/* animations for changing brightness for image */
