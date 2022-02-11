@@ -1,8 +1,5 @@
-* {
-	margin: 0;
-}
-
 img:not(#lightbox) {
+	/* indicator that there is a lightbox */
 	cursor: pointer;
 }
 
@@ -33,9 +30,9 @@ img:not(#lightbox) {
 	aspect-ratio: 1;
 	max-width: 90%;
 
-	padding: 4px;
-	background-color: black;
-	border: 2px solid white;
+	padding: 2px;
+	background-color: white;
+	border: 3px solid var(--accent-clr);
 	border-radius: 1rem;
 
 	cursor: default;

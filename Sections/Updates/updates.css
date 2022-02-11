@@ -1,143 +1,145 @@
-h1 {
-  min-width: 36rem;
+body {
+	min-width: 36rem;
+}
 
-  margin: 2rem 1rem;
+h1 {
+	margin: 2rem 1rem;
 }
 
 .posts {
-  margin: 2rem;
+	margin: 2rem;
 
-  display: grid;
-  grid-template-columns: minmax(20rem, 90rem);
-  justify-content: space-around;
-  gap: 1.5rem;
+	display: grid;
+	grid-template-columns: minmax(20rem, 90rem);
+	justify-content: center;
+	gap: 1.5rem;
 }
 
 .post {
-  min-width: 33rem;
+	border: solid 1px lightgrey;
+	border-radius: 1rem;
 
-  border: solid 1px lightgrey;
-  border-radius: 1rem;
+	box-shadow: 0.5rem 0.375rem 0.75rem gray;
 
-  box-shadow: 0.5rem 0.375rem 0.75rem gray;
-
-  overflow: hidden;
+	overflow: hidden;
 }
 
 .post_image {
-  max-height: 15rem;
-  aspect-ratio: 1;
+	max-height: 15rem;
+	aspect-ratio: 1;
 
-  margin-right: 1rem;
+	margin-right: 1rem;
 
-  /* wrap text around image */
-  float: left;
+	/* wrap text around image */
+	float: left;
 
-  /* indicator that there is a lightbox */
-  cursor: pointer;
+	filter: brightness(50%);
 
-  filter: brightness(50%);
-
-  /* animations for changing brightness for image */
-  -webkit-transition: filter 0.3s ease-in-out;
-  -moz-transition: filter 0.3s ease-in-out;
-  -ms-transition: filter 0.3s ease-in-out;
-  -o-transition: filter 0.3s ease-in-out;
-  transition: filter 0.3s ease-in-out;
+	/* animations for changing brightness for image */
+	-webkit-transition: filter 0.3s ease-in-out;
+	-moz-transition: filter 0.3s ease-in-out;
+	-ms-transition: filter 0.3s ease-in-out;
+	-o-transition: filter 0.3s ease-in-out;
+	transition: filter 0.3s ease-in-out;
 }
 
-.post_image:hover {
-  filter: brightness(100%);
+.post_image:hover,
+.post_image:focus {
+	filter: brightness(100%);
 }
 
 .post__data-wrapper {
-  margin: 2rem 1rem 0.25rem 1rem;
+	margin: 2rem 1rem 0.25rem 1rem;
 
-  font-size: 1rem;
+	font-size: 1rem;
 }
 
 .post__row {
-  display: flex;
-  gap: 1rem;
-  justify-content: space-between;
-  align-items: center;
+	display: flex;
+	gap: 1rem;
+	justify-content: space-between;
+	align-items: center;
 }
 
 .post__title {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.white-space {
+	/* show whole title when post expanded */
+	white-space: normal;
 }
 
 .post__tag {
-  white-space: nowrap;
+	white-space: nowrap;
 }
 
 .post__tag > a {
-  text-transform: uppercase;
-  text-decoration: none;
-  font-weight: 600;
-
-  color: var(--accent-clr);
+	text-transform: uppercase;
+	text-decoration: none;
+	font-weight: 600;
 }
 
 .post__text {
-  min-height: 7rem;
-  max-height: 7rem;
+	min-height: 7rem;
+	max-height: 7rem;
 
-  margin: 1rem 0;
+	margin: 1rem 0;
 
-  overflow: hidden;
+	overflow: hidden;
 
-  text-align: justify;
+	text-align: justify;
+	white-space: pre-wrap;
 
-  /* animations for expanding the text */
-  -webkit-transition: max-height 0.7s ease-in-out;
-  -moz-transition: max-height 0.7s ease-in-out;
-  -ms-transition: max-height 0.7s ease-in-out;
-  -o-transition: max-height 0.7s ease-in-out;
-  transition: max-height 0.7s ease-in-out;
+	/* animations for expanding the text */
+	-webkit-transition: max-height 0.7s ease-in-out;
+	-moz-transition: max-height 0.7s ease-in-out;
+	-ms-transition: max-height 0.7s ease-in-out;
+	-o-transition: max-height 0.7s ease-in-out;
+	transition: max-height 0.7s ease-in-out;
 }
 
-.expanded {
-  overflow: visible;
-  white-space: normal;
+.overflow {
+	/* required for wrapping the text around image */
+	overflow: visible;
 }
 
 .post__date {
-  color: var(--accent-clr);
+	color: var(--accent-clr);
 }
 
 .post__button {
-  max-height: 1.5em;
-  /* aspect-ratio: 1; */
-  cursor: pointer;
-  color: var(--accent-clr);
+	max-height: 1.5em;
+	/* aspect-ratio: 1; */
+	cursor: pointer;
+	color: var(--accent-clr);
 
-  /* animations for rotation of button */
-  -webkit-transition: transform 0.5s ease-in-out;
-  -moz-transition: transform 0.5s ease-in-out;
-  -ms-transition: transform 0.5s ease-in-out;
-  -o-transition: transform 0.5s ease-in-out;
-  transition: transform 0.5s ease-in-out;
+	/* animations for rotation of button */
+	-webkit-transition: transform 0.5s ease-in-out;
+	-moz-transition: transform 0.5s ease-in-out;
+	-ms-transition: transform 0.5s ease-in-out;
+	-o-transition: transform 0.5s ease-in-out;
+	transition: transform 0.5s ease-in-out;
 }
 
 /* don't display button if post__text doesn't overflow (js) */
 .hidden {
-  display: none;
+	display: none;
 }
 
 @media only screen and (max-width: 600px) {
-  .post_image {
-    object-fit: cover; /* image will be cut instead of streached */
-    width: 100%;
-    max-height: 10rem;
-    margin-right: 0;
-    float: none;
-  }
+	.post_image {
+		object-fit: cover; /* image will be cut instead of streached */
+		width: 100%;
+		max-height: 10rem;
+		margin-right: 0;
+		float: none;
+	}
 
-  .post__text {
-    max-height: 15rem;
-    font-size: 1.1rem;
-  }
+	.post__text {
+		max-height: 15rem;
+		font-size: 1.1rem;
+	}
 }
