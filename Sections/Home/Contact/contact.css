@@ -1,6 +1,6 @@
 .contact-section {
 	/* background-image: url("img/+\ pattern.png"); */
-	min-width: 32rem;
+	min-width: 40rem;
 
 	overflow: hidden;
 }
@@ -10,6 +10,7 @@
 	flex-wrap: wrap;
 	gap: 4rem;
 	justify-content: center;
+	/* justify-content: left;  */
 
 	margin: 4rem;
 }
@@ -20,7 +21,8 @@
 	gap: 1rem;
 }
 
-.people-cards > div:first-child {
+.people-cards > div:first-child,
+.people-cards > div:last-child {
 	flex: 1 1 100%;
 }
 
@@ -86,7 +88,7 @@
 	}
 
 	.rhombus-svg {
-		height: 10rem;
+		height: 12rem;
 	}
 
 	.person-info {
