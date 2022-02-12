@@ -1,5 +1,5 @@
 body {
-	background-color: #202020;
+	/* background-color: #202020; */
 }
 
 .countdown {
@@ -9,6 +9,7 @@ body {
 	font-family: fantasy, Trebuchet MS, sans-serif;
 	font-size: 2rem;
 	color: white;
+	
 }
 
 .countdown__days,
