@@ -6,19 +6,40 @@
 
 		<title>Contact section</title>
 
+		<link href="../../../Defaults/default.css" rel="stylesheet" />
 		<link href="contact.css" rel="stylesheet" />
+
+		<script src="delayAnimation.js" defer></script>
 	</head>
 	<body>
 		<section class="contact-section">
-			<h1>Contact</h1>
+			<h2>Contact</h2>
 
 			<div class="people-cards">
 				<div class="person-card">
-					<div class="animation-container">
-						<div class="rhombus">
-							<img src="./img/placeholder.jpeg" />
-						</div>
-					</div>
+					<svg
+						class="rhombus-svg"
+						xmlns="http://www.w3.org/2000/svg"
+						viewBox="120 130 370 530"
+					>
+						<path
+							d="M223.14,190.34c-18.11,35.28-34.67,71.13-53.43,106.14-15.18,28.32-31.94,56.58-39.17,87.35s3.32,54.29,20.55,83.4c18.87,31.87,38.29,63.64,60.76,94.23,18.53,25.23,33.94,57.44,60.7,78.61,17.11,13.53,43,16.82,64.87,13.62,26.92-4,32.88-13.37,42.73-31,25.94-46.39,54.68-91.77,80.36-138.35,11.57-21,23.35-42.73,23.25-66.23-.15-35.77-18.95-65.08-35.18-97.78-17.18-34.61-32-69.4-51.86-103.36-17.57-30.06-35.11-75.37-84.3-79.43C264.39,133.61,238.64,160.13,223.14,190.34Z"
+						/>
+
+						<clipPath id="shape">
+							<path
+								d="M223.14,190.34c-18.11,35.28-34.67,71.13-53.43,106.14-15.18,28.32-31.94,56.58-39.17,87.35s3.32,54.29,20.55,83.4c18.87,31.87,38.29,63.64,60.76,94.23,18.53,25.23,33.94,57.44,60.7,78.61,17.11,13.53,43,16.82,64.87,13.62,26.92-4,32.88-13.37,42.73-31,25.94-46.39,54.68-91.77,80.36-138.35,11.57-21,23.35-42.73,23.25-66.23-.15-35.77-18.95-65.08-35.18-97.78-17.18-34.61-32-69.4-51.86-103.36-17.57-30.06-35.11-75.37-84.3-79.43C264.39,133.61,238.64,160.13,223.14,190.34Z"
+							/>
+						</clipPath>
+
+						<image
+							href="img/Leo.png"
+							clip-path="url(#shape)"
+							height="100%"
+							x="45"
+							y="130"
+						></image>
+					</svg>
 
 					<div>
 						<div class="person-info">
@@ -53,7 +74,7 @@
 									></path>
 								</svg>
 								<div class="person-info__text">
-									Main organiser
+									Final round main organiser
 								</div>
 							</div>
 							<div>
@@ -71,9 +92,29 @@
 								</svg>
 								<a
 									class="person-info__text"
-									href="mailto:leo.boljesic@BEST-eu.org"
+									href="mailto:ebec-finalmo@best-eu.org"
 								>
-									leo.boljesic@BEST-eu.org
+									ebec-finalmo@BEST-eu.org
+								</a>
+							</div>
+							<div>
+								<svg
+									aria-hidden="true"
+									focusable="false"
+									xmlns="http://www.w3.org/2000/svg"
+									viewBox="0 0 512 512"
+									class="person-info__icon"
+								>
+									<path
+										fill="royalblue"
+										d="M493.4 24.6l-104-24c-11.3-2.6-22.9 3.3-27.5 13.9l-48 112c-4.2 9.8-1.4 21.3 6.9 28l60.6 49.6c-36 76.7-98.9 140.5-177.2 177.2l-49.6-60.6c-6.8-8.3-18.2-11.1-28-6.9l-112 48C3.9 366.5-2 378.1.6 389.4l24 104C27.1 504.2 36.7 512 48 512c256.1 0 464-207.5 464-464 0-11.2-7.7-20.9-18.6-23.4z"
+									></path>
+								</svg>
+								<a
+									class="person-info__text"
+									href="tel:+385994046906"
+								>
+									+385 99 404 6906
 								</a>
 							</div>
 						</div>
@@ -81,11 +122,29 @@
 				</div>
 
 				<div class="person-card">
-					<div class="animation-container">
-						<div class="rhombus">
-							<img src="./img/placeholder.jpeg" />
-						</div>
-					</div>
+					<svg
+						class="rhombus-svg"
+						xmlns="http://www.w3.org/2000/svg"
+						viewBox="120 130 370 530"
+					>
+						<path
+							d="M223.14,190.34c-18.11,35.28-34.67,71.13-53.43,106.14-15.18,28.32-31.94,56.58-39.17,87.35s3.32,54.29,20.55,83.4c18.87,31.87,38.29,63.64,60.76,94.23,18.53,25.23,33.94,57.44,60.7,78.61,17.11,13.53,43,16.82,64.87,13.62,26.92-4,32.88-13.37,42.73-31,25.94-46.39,54.68-91.77,80.36-138.35,11.57-21,23.35-42.73,23.25-66.23-.15-35.77-18.95-65.08-35.18-97.78-17.18-34.61-32-69.4-51.86-103.36-17.57-30.06-35.11-75.37-84.3-79.43C264.39,133.61,238.64,160.13,223.14,190.34Z"
+						/>
+
+						<clipPath id="shape">
+							<path
+								d="M223.14,190.34c-18.11,35.28-34.67,71.13-53.43,106.14-15.18,28.32-31.94,56.58-39.17,87.35s3.32,54.29,20.55,83.4c18.87,31.87,38.29,63.64,60.76,94.23,18.53,25.23,33.94,57.44,60.7,78.61,17.11,13.53,43,16.82,64.87,13.62,26.92-4,32.88-13.37,42.73-31,25.94-46.39,54.68-91.77,80.36-138.35,11.57-21,23.35-42.73,23.25-66.23-.15-35.77-18.95-65.08-35.18-97.78-17.18-34.61-32-69.4-51.86-103.36-17.57-30.06-35.11-75.37-84.3-79.43C264.39,133.61,238.64,160.13,223.14,190.34Z"
+							/>
+						</clipPath>
+
+						<image
+							href="img/Dunja.png"
+							clip-path="url(#shape)"
+							height="100%"
+							x="45"
+							y="130"
+						></image>
+					</svg>
 
 					<div>
 						<div class="person-info">
@@ -103,7 +162,7 @@
 									></path>
 								</svg>
 								<div class="person-info__text">
-									Leo Bolješić
+									Dunja Olbina
 								</div>
 							</div>
 							<div>
@@ -120,7 +179,7 @@
 									></path>
 								</svg>
 								<div class="person-info__text">
-									Main organiser
+									EBEC programme coordinator
 								</div>
 							</div>
 							<div>
@@ -138,9 +197,29 @@
 								</svg>
 								<a
 									class="person-info__text"
-									href="mailto:leo.boljesic@BEST-eu.org"
+									href="mailto:ebec-coordinator@best-eu.org"
 								>
-									leo.boljesic@BEST-eu.org
+									ebec-coordinator@BEST-eu.org
+								</a>
+							</div>
+							<div>
+								<svg
+									aria-hidden="true"
+									focusable="false"
+									xmlns="http://www.w3.org/2000/svg"
+									viewBox="0 0 512 512"
+									class="person-info__icon"
+								>
+									<path
+										fill="royalblue"
+										d="M493.4 24.6l-104-24c-11.3-2.6-22.9 3.3-27.5 13.9l-48 112c-4.2 9.8-1.4 21.3 6.9 28l60.6 49.6c-36 76.7-98.9 140.5-177.2 177.2l-49.6-60.6c-6.8-8.3-18.2-11.1-28-6.9l-112 48C3.9 366.5-2 378.1.6 389.4l24 104C27.1 504.2 36.7 512 48 512c256.1 0 464-207.5 464-464 0-11.2-7.7-20.9-18.6-23.4z"
+									></path>
+								</svg>
+								<a
+									class="person-info__text"
+									href="tel:+381644976001"
+								>
+									+381 64 497 6001
 								</a>
 							</div>
 						</div>
@@ -148,11 +227,29 @@
 				</div>
 
 				<div class="person-card">
-					<div class="animation-container">
-						<div class="rhombus">
-							<img src="./img/placeholder.jpeg" />
-						</div>
-					</div>
+					<svg
+						class="rhombus-svg"
+						xmlns="http://www.w3.org/2000/svg"
+						viewBox="120 130 370 530"
+					>
+						<path
+							d="M223.14,190.34c-18.11,35.28-34.67,71.13-53.43,106.14-15.18,28.32-31.94,56.58-39.17,87.35s3.32,54.29,20.55,83.4c18.87,31.87,38.29,63.64,60.76,94.23,18.53,25.23,33.94,57.44,60.7,78.61,17.11,13.53,43,16.82,64.87,13.62,26.92-4,32.88-13.37,42.73-31,25.94-46.39,54.68-91.77,80.36-138.35,11.57-21,23.35-42.73,23.25-66.23-.15-35.77-18.95-65.08-35.18-97.78-17.18-34.61-32-69.4-51.86-103.36-17.57-30.06-35.11-75.37-84.3-79.43C264.39,133.61,238.64,160.13,223.14,190.34Z"
+						/>
+
+						<clipPath id="shape">
+							<path
+								d="M223.14,190.34c-18.11,35.28-34.67,71.13-53.43,106.14-15.18,28.32-31.94,56.58-39.17,87.35s3.32,54.29,20.55,83.4c18.87,31.87,38.29,63.64,60.76,94.23,18.53,25.23,33.94,57.44,60.7,78.61,17.11,13.53,43,16.82,64.87,13.62,26.92-4,32.88-13.37,42.73-31,25.94-46.39,54.68-91.77,80.36-138.35,11.57-21,23.35-42.73,23.25-66.23-.15-35.77-18.95-65.08-35.18-97.78-17.18-34.61-32-69.4-51.86-103.36-17.57-30.06-35.11-75.37-84.3-79.43C264.39,133.61,238.64,160.13,223.14,190.34Z"
+							/>
+						</clipPath>
+
+						<image
+							href="img/noni.jpg"
+							clip-path="url(#shape)"
+							height="100%"
+							x="45"
+							y="130"
+						></image>
+					</svg>
 
 					<div>
 						<div class="person-info">
@@ -170,7 +267,7 @@
 									></path>
 								</svg>
 								<div class="person-info__text">
-									Leo Bolješić
+									Antonia Ravlija
 								</div>
 							</div>
 							<div>
@@ -187,7 +284,7 @@
 									></path>
 								</svg>
 								<div class="person-info__text">
-									Main organiser
+									Local corporate relations coordinator
 								</div>
 							</div>
 							<div>
@@ -205,9 +302,29 @@
 								</svg>
 								<a
 									class="person-info__text"
-									href="mailto:leo.boljesic@BEST-eu.org"
+									href="mailto:antonia.ravlija@best.hr"
 								>
-									leo.boljesic@BEST-eu.org
+									antonia.ravlija@BEST.hr
+								</a>
+							</div>
+							<div>
+								<svg
+									aria-hidden="true"
+									focusable="false"
+									xmlns="http://www.w3.org/2000/svg"
+									viewBox="0 0 512 512"
+									class="person-info__icon"
+								>
+									<path
+										fill="royalblue"
+										d="M493.4 24.6l-104-24c-11.3-2.6-22.9 3.3-27.5 13.9l-48 112c-4.2 9.8-1.4 21.3 6.9 28l60.6 49.6c-36 76.7-98.9 140.5-177.2 177.2l-49.6-60.6c-6.8-8.3-18.2-11.1-28-6.9l-112 48C3.9 366.5-2 378.1.6 389.4l24 104C27.1 504.2 36.7 512 48 512c256.1 0 464-207.5 464-464 0-11.2-7.7-20.9-18.6-23.4z"
+									></path>
+								</svg>
+								<a
+									class="person-info__text"
+									href="tel:+385998866454"
+								>
+									+385 99 886 6454
 								</a>
 							</div>
 						</div>
@@ -215,11 +332,29 @@
 				</div>
 
 				<div class="person-card">
-					<div class="animation-container">
-						<div class="rhombus">
-							<img src="./img/placeholder.jpeg" />
-						</div>
-					</div>
+					<svg
+						class="rhombus-svg"
+						xmlns="http://www.w3.org/2000/svg"
+						viewBox="120 130 370 530"
+					>
+						<path
+							d="M223.14,190.34c-18.11,35.28-34.67,71.13-53.43,106.14-15.18,28.32-31.94,56.58-39.17,87.35s3.32,54.29,20.55,83.4c18.87,31.87,38.29,63.64,60.76,94.23,18.53,25.23,33.94,57.44,60.7,78.61,17.11,13.53,43,16.82,64.87,13.62,26.92-4,32.88-13.37,42.73-31,25.94-46.39,54.68-91.77,80.36-138.35,11.57-21,23.35-42.73,23.25-66.23-.15-35.77-18.95-65.08-35.18-97.78-17.18-34.61-32-69.4-51.86-103.36-17.57-30.06-35.11-75.37-84.3-79.43C264.39,133.61,238.64,160.13,223.14,190.34Z"
+						/>
+
+						<clipPath id="shape">
+							<path
+								d="M223.14,190.34c-18.11,35.28-34.67,71.13-53.43,106.14-15.18,28.32-31.94,56.58-39.17,87.35s3.32,54.29,20.55,83.4c18.87,31.87,38.29,63.64,60.76,94.23,18.53,25.23,33.94,57.44,60.7,78.61,17.11,13.53,43,16.82,64.87,13.62,26.92-4,32.88-13.37,42.73-31,25.94-46.39,54.68-91.77,80.36-138.35,11.57-21,23.35-42.73,23.25-66.23-.15-35.77-18.95-65.08-35.18-97.78-17.18-34.61-32-69.4-51.86-103.36-17.57-30.06-35.11-75.37-84.3-79.43C264.39,133.61,238.64,160.13,223.14,190.34Z"
+							/>
+						</clipPath>
+
+						<image
+							href="img/sulen.jpg"
+							clip-path="url(#shape)"
+							height="100%"
+							x="45"
+							y="130"
+						></image>
+					</svg>
 
 					<div>
 						<div class="person-info">
@@ -236,9 +371,7 @@
 										d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z"
 									></path>
 								</svg>
-								<div class="person-info__text">
-									Leo Bolješić
-								</div>
+								<div class="person-info__text">Sara Sulen</div>
 							</div>
 							<div>
 								<svg
@@ -254,7 +387,7 @@
 									></path>
 								</svg>
 								<div class="person-info__text">
-									Main organiser
+									President of local BEST group Zagreb
 								</div>
 							</div>
 							<div>
@@ -272,9 +405,29 @@
 								</svg>
 								<a
 									class="person-info__text"
-									href="mailto:leo.boljesic@BEST-eu.org"
+									href="mailto:sara.sulen@best.hr"
 								>
-									leo.boljesic@BEST-eu.org
+									sara.sulen@BEST.hr
+								</a>
+							</div>
+							<div>
+								<svg
+									aria-hidden="true"
+									focusable="false"
+									xmlns="http://www.w3.org/2000/svg"
+									viewBox="0 0 512 512"
+									class="person-info__icon"
+								>
+									<path
+										fill="royalblue"
+										d="M493.4 24.6l-104-24c-11.3-2.6-22.9 3.3-27.5 13.9l-48 112c-4.2 9.8-1.4 21.3 6.9 28l60.6 49.6c-36 76.7-98.9 140.5-177.2 177.2l-49.6-60.6c-6.8-8.3-18.2-11.1-28-6.9l-112 48C3.9 366.5-2 378.1.6 389.4l24 104C27.1 504.2 36.7 512 48 512c256.1 0 464-207.5 464-464 0-11.2-7.7-20.9-18.6-23.4z"
+									></path>
+								</svg>
+								<a
+									class="person-info__text"
+									href="tel:+385992115992"
+								>
+									+385 99 211 5992
 								</a>
 							</div>
 						</div>

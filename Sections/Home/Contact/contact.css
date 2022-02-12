@@ -1,24 +1,8 @@
-* {
-	margin: 0;
-}
-
-:root {
-	--primary-clr: royalblue;
-}
-
 .contact-section {
-	background-image: url("img/+\ pattern.png");
-	min-width: 420px;
+	/* background-image: url("img/+\ pattern.png"); */
+	min-width: 40rem;
 
-	font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-		"Lucida Sans", Arial, sans-serif;
-}
-
-.contact-section h1 {
-	text-align: center;
-	font-size: 8rem;
-
-	color: var(--primary-clr);
+	overflow: hidden;
 }
 
 .people-cards {
@@ -26,6 +10,7 @@
 	flex-wrap: wrap;
 	gap: 4rem;
 	justify-content: center;
+	/* justify-content: left;  */
 
 	margin: 4rem;
 }
@@ -36,7 +21,8 @@
 	gap: 1rem;
 }
 
-.people-cards > div:first-child {
+.people-cards > div:first-child,
+.people-cards > div:last-child {
 	flex: 1 1 100%;
 }
 
@@ -44,43 +30,27 @@
 	position: relative;
 }
 
-.animation-container {
+.rhombus-svg {
+	height: 15rem;
+
 	animation-name: float;
 	animation-duration: 8s;
 	animation-iteration-count: infinite;
-	/* animation-delay: 3s; */
+	/* animation-delay added in js */
 }
 
-.animation-container > .rhombus {
-	margin: 4rem -1.5rem;
-	border: 1rem solid var(--primary-clr);
-	border-radius: 20%;
-
-	width: 100px;
-	height: 100px;
-
-	overflow: hidden;
-	display: inline-flex;
-	align-items: center;
-	justify-content: center;
-
-	transform: rotate(67.5deg) skewX(45deg) scaleY(0.707);
-
-	background-color: rgb(255, 255, 255);
-}
-
-.animation-container > .rhombus img {
-	width: 325%;
-	height: 130%;
-
-	transform: rotate(-45deg);
-	flex-shrink: 0;
+.rhombus-svg > path {
+	fill: none;
+	stroke: var(--accent-clr);
+	/* padding: 2px; */
+	stroke-miterlimit: 10;
+	stroke-width: 1rem;
 }
 
 .person-info {
 	display: grid;
 	grid-template-rows: repeat(3, 1fr);
-	gap: 1rem;
+	gap: 1em;
 
 	position: absolute;
 	top: 50%;
@@ -94,25 +64,46 @@
 }
 
 .person-info__icon {
-	width: 2rem;
+	width: 2em;
+}
+
+.person-info__icon > path {
+	fill: var(--accent-clr);
 }
 
 .person-info__text {
-	font-size: 2rem;
+	font-size: 2em;
 	text-decoration: none;
 	white-space: nowrap;
+	vertical-align: middle;
 
-	color: var(--primary-clr);
+	color: var(--accent-clr);
+}
+
+@media only screen and (max-width: 600px) {
+	.people-cards {
+		gap: 1.5rem;
+
+		margin: 1rem;
+	}
+
+	.rhombus-svg {
+		height: 12rem;
+	}
+
+	.person-info {
+		font-size: 0.75rem;
+	}
 }
 
 @keyframes float {
 	0% {
-		transform: translateY(-0.5rem);
+		transform: translateY(0rem);
 	}
 	50% {
-		transform: translateY(0.5rem);
+		transform: translateY(1rem);
 	}
 	100% {
-		transform: translateY(-0.5rem);
+		transform: translateY(0rem);
 	}
 }
