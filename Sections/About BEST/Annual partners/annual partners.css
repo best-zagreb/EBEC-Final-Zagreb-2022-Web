@@ -1,0 +1,36 @@
+.partners-section {
+  min-width: 20rem;
+}
+
+.images-wrapper {
+  width: 80%;
+  margin: 0 auto;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.images-wrapper img {
+  width: 100%;
+  max-width: 40rem;
+
+  -webkit-transition: transform 0.3s ease-in-out;
+  -moz-transition: transform 0.3s ease-in-out;
+  -ms-transition: transform 0.3s ease-in-out;
+  -o-transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+}
+
+.images-wrapper img:hover,
+.images-wrapper img:focus {
+  transform: scale(1.1);
+}
+
+@media only screen and (max-width: 768px) {
+  .images-wrapper {
+    gap: 1rem;
+  }
+}
