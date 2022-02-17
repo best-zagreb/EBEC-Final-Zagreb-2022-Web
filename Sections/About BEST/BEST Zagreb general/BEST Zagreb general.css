@@ -1,173 +1,174 @@
 body {
-	min-width: 32rem;
+  min-width: 32rem;
 }
 
 .general-section {
-	width: clamp(30rem, 80%, 120rem);
-	margin-inline: auto;
-	margin-bottom: 30px; /* because of navigation buttons */
+  width: clamp(30rem, 80%, 120rem);
+  margin-inline: auto;
+  margin-bottom: 30px; /* because of navigation buttons */
 
-	display: flex;
-	gap: 2rem;
-	justify-content: center;
-	align-items: center;
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
 }
 
 .general-s__info,
 .general-s__carousel {
-	flex: 1 1 50%;
+  flex: 1 1 50%;
 }
 
 .general-s__info {
-	border: solid 3px #faa519;
-	border-radius: 1rem;
-	padding: 1.5rem 2rem;
+  border: solid 3px #faa519;
+  border-radius: 1rem;
+  padding: 1.5rem 2rem;
 
-	text-align: center;
+  line-height: 1.4;
+  text-align: center;
 
-	display: flex;
-	flex-wrap: wrap;
-	gap: 1.5rem;
-	justify-content: center;
-	align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: center;
 }
 
 .general-s__info-link {
-	font-size: 1.375rem;
-	font-weight: 700;
+  font-size: 1.375rem;
+  font-weight: 700;
 
-	/* text-decoration: none; */
-	color: var(--accent-clr);
+  /* text-decoration: none; */
+  color: var(--accent-clr);
 }
 
 img {
-	/* pointer for lightbox */
-	cursor: pointer;
+  /* pointer for lightbox */
+  cursor: pointer;
 }
 
 .general-s__carousel {
-	height: 100%;
+  height: 100%;
 }
 
 .carousel {
-	position: relative;
-	height: 400px;
-	width: 80%;
-	margin: 0 auto;
+  position: relative;
+  height: 400px;
+  width: 80%;
+  margin: 0 auto;
 }
 
 .carousel__image {
-	width: 100%;
-	height: 100%;
-	object-fit: cover; /* image will be cut instead of streached */
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* image will be cut instead of streached */
 }
 
 .carousel__track-container {
-	height: 100%;
-	position: relative;
-	overflow: hidden;
-	border-radius: 100px;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  border-radius: 100px;
 }
 
 .carousel__track {
-	padding: 0;
-	margin: 0;
-	list-style: none;
+  padding: 0;
+  margin: 0;
+  list-style: none;
 
-	height: 100%; /* necessary cause js track.transform shrinks them to 0 */
+  height: 100%; /* necessary cause js track.transform shrinks them to 0 */
 }
 
 .carousel__slide {
-	position: absolute;
-	top: 0;
-	bottom: 0;
+  position: absolute;
+  top: 0;
+  bottom: 0;
 
-	width: 100%;
+  width: 100%;
 }
 
 /* Next and previous buttons */
 .carousel__button {
-	position: absolute;
-	top: 50%;
-	transform: translateY(-50%); /* move up 50% of button height */
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%); /* move up 50% of button height */
 
-	cursor: pointer;
+  cursor: pointer;
 
-	background: none;
-	border-radius: 30%;
-	border: none;
+  background: none;
+  border-radius: 30%;
+  border: none;
 
-	transition: background 0.2s ease-in; /* animate background fade-in on hover */
+  transition: background 0.2s ease-in; /* animate background fade-in on hover */
 }
 
 .carousel__button:hover {
-	background: rgba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0.3);
 }
 
 .carousel__prevBtn {
-	left: -40px;
+  left: -40px;
 }
 
 .carousel__nextBtn {
-	right: -40px;
+  right: -40px;
 }
 
 .carousel__button svg {
-	width: 30px;
-	margin: 40px 0;
+  width: 30px;
+  margin: 40px 0;
 }
 
 .carousel__button svg path {
-	fill: var(--accent-clr);
+  fill: var(--accent-clr);
 }
 
 /* Navigation buttons */
 .carousel__nav {
-	/* background-color: pink; */
-	display: flex;
-	justify-content: center;
-	padding: 10px 0;
+  /* background-color: pink; */
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
 }
 
 .carousel__indicator {
-	border: none;
-	border-radius: 0;
-	border-radius: 50%;
-	width: 15px;
-	height: 15px;
-	background: var(--accent-clr);
-	filter: brightness(50%);
-	margin: 0 12px;
+  border: none;
+  border-radius: 0;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  background: var(--accent-clr);
+  filter: brightness(50%);
+  margin: 0 12px;
 
-	/* animate background fade-in on hover */
-	-moz-transition: filter 0.2s ease-in;
-	-o-transition: filter 0.2s ease-in;
-	-webkit-transition: filter 0.2s ease-in;
-	transition: filter 0.2s ease-in;
+  /* animate background fade-in on hover */
+  -moz-transition: filter 0.2s ease-in;
+  -o-transition: filter 0.2s ease-in;
+  -webkit-transition: filter 0.2s ease-in;
+  transition: filter 0.2s ease-in;
 }
 
 .carousel__indicator:hover {
-	filter: brightness(90%);
+  filter: brightness(90%);
 }
 
 .carousel__indicator.current-slide {
-	filter: brightness(100%);
+  filter: brightness(100%);
 }
 
 .carousel__indicator:not(.carousel__indicator.current-slide) {
-	cursor: pointer;
+  cursor: pointer;
 }
 
 @media only screen and (max-width: 900px) {
-	.general-section {
-		flex-wrap: wrap;
-	}
+  .general-section {
+    flex-wrap: wrap;
+  }
 
-	.carousel {
-		height: 200px;
-	}
+  .carousel {
+    height: 200px;
+  }
 
-	.carousel__track-container {
-		border-radius: 3rem;
-	}
+  .carousel__track-container {
+    border-radius: 3rem;
+  }
 }
