@@ -1,83 +1,119 @@
 * {
-	box-sizing: border-box;
-	margin: 0;
-}
-/* default section height */
-
-.section{
-	height: 60rem;
-	
+  box-sizing: border-box;
+  margin: 0;
 }
 
 :root {
-	/* colors depend on project */
-	--primary-clr: #3c6f9b;
-	--secondary-clr: #294f66;
-	--accent-clr: #5cb0e5;
-	--text-clr: #666666;
+  /* colors depend on project */
+  --primary-clr: #3c6f9b;
+  --secondary-clr: #294f66;
+  --accent-clr: #5cb0e5;
+  --text-clr: #666666;
 
-	--dark-bg-clr: #252525;
+  --bg-clr-dark: #252525;
 
-	font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-		"Lucida Sans", Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
 
 html {
-	scroll-behavior: smooth;
+  scroll-behavior: smooth;
+}
+
+body {
+  /* so everything just shrink on tiny tiny screens (<320px) */
+  min-width: 320px;
 }
 
 /* names of pages */
 h1 {
-	margin: 2rem;
+  margin: 2rem;
 
-	text-align: center;
-	text-transform: uppercase;
+  text-align: center;
+  text-transform: uppercase;
 
-	font-size: 8rem;
+  font-size: 8rem;
 
-	color: var(--primary-clr);
+  color: var(--primary-clr);
 }
 
 /* names of sections */
 h2 {
-	margin: 1.5rem;
+  margin: 1.5rem;
+  padding-top: 3rem;
 
-	text-align: center;
-	text-transform: uppercase;
+  text-align: center;
+  text-transform: uppercase;
 
-	font-size: 6rem;
+  font-size: 6rem;
 
-	color: var(--primary-clr);
+  color: var(--primary-clr);
 }
 
 /* names of subsections */
 h3 {
-	margin: 1rem;
+  margin: 1rem;
+  padding-top: 2rem;
 
-	text-align: center;
-	font-size: 4rem;
+  text-align: center;
+  font-size: 4rem;
 
-	color: var(--secondary-clr);
+  color: var(--secondary-clr);
 }
 
 /* other titles (posts etc) */
 h4 {
-	font-size: 1.5rem;
+  font-size: 1.5rem;
 
-	color: var(--accent-clr);
+  color: var(--accent-clr);
 }
 
 p,
 pre {
-	font-size: 1.25rem;
+  font-size: 1.25rem;
 
-	color: var(--text-clr);
+  color: var(--text-clr);
 }
 
 a {
-	color: var(--accent-clr);
+  color: var(--accent-clr);
 }
 
 .hidden {
-	display: none;
+  display: none;
+}
+
+@media only screen and (max-width: 450px) {
+  /* names of pages */
+  h1 {
+    margin: 1rem;
+
+    font-size: 5rem;
+  }
+
+  /* names of sections */
+  h2 {
+    margin: 0.75rem;
+    padding-top: 1.5rem;
+
+    font-size: 3.5rem;
+  }
+
+  /* names of subsections */
+  h3 {
+    margin: 0.5rem;
+    padding-top: 1rem;
+
+    font-size: 2.25rem;
+  }
+
+  /* other titles (posts etc) */
+  h4 {
+    font-size: 1.375rem;
+  }
+
+  p,
+  pre {
+    font-size: 1.1rem;
+  }
 }
