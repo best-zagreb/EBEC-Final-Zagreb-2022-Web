@@ -3,7 +3,7 @@
   padding-top: 6rem;
   padding-inline: 1rem;
 
-  width: clamp(24rem, 100%, 70rem);
+  max-width: 70rem;
 }
 
 .collab-s__images {
