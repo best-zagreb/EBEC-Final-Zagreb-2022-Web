@@ -1,102 +1,98 @@
-* {
-	margin: 0;
-}
-
-:root {
-	--primary-clr: royalblue;
-	--bg-clr-dark: #252525;
-}
-
 .icons-section {
-	min-width: 20rem;
+  margin: 2rem auto;
+  padding-top: 6rem;
 
-	/* background-color: var(--bg-clr-dark); */
-
-	font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-		"Lucida Sans", Arial, sans-serif;
+  max-width: 100rem;
 }
 
 .files-cards {
-	padding: 2rem 4rem;
-
-	display: flex;
-	flex-wrap: wrap;
-	gap: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: space-around;
+  align-items: baseline;
 }
 
-/* .files-cards * {
-	border: black solid 2px;
-} */
-
 .file-card {
-	margin: 0 auto;
+  max-width: 20rem;
 
-	display: grid;
-	grid-template-rows: 3 auto;
-	gap: 0.5rem;
+  display: grid;
+  place-items: center;
+  grid-template-rows: 3 auto;
+  gap: 1.5rem;
 
-	text-align: center;
-
-	width: 20rem;
+  text-align: center;
 }
 
 .card__bg-circle {
-	position: relative;
-	margin: 0 auto;
+  height: 15rem;
+  aspect-ratio: 1;
 
-	height: 15rem;
-	aspect-ratio: 1;
+  display: grid;
+  place-items: center;
 
-	border-radius: 50%;
-	background-color: var(--primary-clr);
+  border-radius: 50%;
+  background-color: var(--primary-clr);
 }
 
-.card__bg-circle svg {
-	position: absolute;
-	top: 50%;
-	transform: translate(-50%, -50%);
-}
-
-/* .card__bg-circle svg path {
-	fill: var(--bg-clr-dark);
-} */
-
+/* per icon alignment and sizing */
 .sg-icon {
-	width: 70%;
-	margin-top: 0.375rem;
+  width: 70%;
+  margin-top: 0.375rem;
 }
 
+/* per icon alignment and sizing */
 .sch-icon {
-	width: 55%;
-	margin-top: -0.375rem;
+  width: 55%;
+  margin-top: -0.375rem;
 }
 
 .card__doc-name,
 .card__doc-text {
-	text-transform: uppercase;
+  text-transform: uppercase;
 
-	color: var(--primary-clr);
+  color: var(--primary-clr);
 }
 
 .card__doc-name {
-	padding: 10px;
-
-	font-size: 2rem;
-	letter-spacing: 0.6px;
+  font-size: 2rem;
+  letter-spacing: 0.6px;
 }
 
 .card__doc-text {
-	text-decoration: none;
-	font-size: 1.25rem;
-	letter-spacing: 0.4px;
+  letter-spacing: 0.4px;
+  text-decoration: none;
 }
 
-@media only screen and (max-width: 505px) {
-	.files-cards {
-		padding-inline: 0.5rem;
-	}
+.card__doc-text:hover,
+.card__doc-text:focus {
+  text-decoration: underline;
+}
 
-	.card__bg-circle {
-		height: 10rem;
-	}
+@media only screen and (max-width: 600px) {
+  .files-cards {
+    gap: 1rem;
+  }
+
+  .file-card {
+    gap: 0.75rem;
+  }
+
+  .card__bg-circle {
+    height: 10rem;
+  }
+
+  .card__doc-text {
+    letter-spacing: 0px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .file-card {
+    max-width: 12rem;
+  }
+
+  .card__doc-name {
+    font-size: 1.5rem;
+  }
 }
