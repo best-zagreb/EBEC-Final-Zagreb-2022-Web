@@ -18,27 +18,30 @@
 
 .post_image {
   max-height: 15rem;
-  aspect-ratio: 1;
+  width: 15rem;
+  height: 100%;
+  object-fit: cover;
 
   margin-right: 1rem;
 
   /* wrap text around image */
   float: left;
 
-  filter: brightness(50%);
+  /* brightness had to be removed because of bug with primary-nav */
+  /* filter: brightness(50%); */
 
   /* animations for changing brightness for image */
-  -webkit-transition: filter 0.3s ease-in-out;
+  /* -webkit-transition: filter 0.3s ease-in-out;
   -moz-transition: filter 0.3s ease-in-out;
   -ms-transition: filter 0.3s ease-in-out;
   -o-transition: filter 0.3s ease-in-out;
-  transition: filter 0.3s ease-in-out;
+  transition: filter 0.3s ease-in-out; */
 }
 
-.post_image:hover,
+/* .post_image:hover,
 .post_image:focus {
   filter: brightness(100%);
-}
+} */
 
 .post__data-wrapper {
   margin: 2rem 1rem 0.25rem 1rem;
@@ -127,7 +130,6 @@
   }
 
   .post_image {
-    object-fit: cover; /* image will be cut instead of streached */
     width: 100%;
     max-height: 10rem;
     margin-right: 0;

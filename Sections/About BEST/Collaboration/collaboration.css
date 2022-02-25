@@ -3,7 +3,7 @@
   padding-top: 6rem;
   padding-inline: 1rem;
 
-  width: clamp(24rem, 100%, 70rem);
+  max-width: 70rem;
 }
 
 .collab-s__images {
@@ -31,6 +31,8 @@
 }
 
 .collab-s__img-container img {
+  max-height: 15rem;
+
   -webkit-transition: transform 0.3s ease-in-out;
   -moz-transition: transform 0.3s ease-in-out;
   -ms-transition: transform 0.3s ease-in-out;
@@ -75,6 +77,10 @@
 
   .collab-s__img-container {
     width: 50%;
+  }
+
+  .collab-s__img-container img {
+    max-height: 8rem;
   }
 
   .collab-s__svg-container {
