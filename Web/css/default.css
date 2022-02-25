@@ -1,6 +1,9 @@
 * {
   box-sizing: border-box;
   margin: 0;
+
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
 
 :root {
@@ -11,16 +14,20 @@
   --text-clr: #666666;
 
   --bg-clr-dark: #252525;
-
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
 }
 
 html {
   scroll-behavior: smooth;
+
+  height: 100%;
 }
 
 body {
+  /* so the footer sticks to the bottom of page with margin-top: auto; */
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+
   /* so everything just shrink on tiny tiny screens (<320px) */
   min-width: 320px;
 }
