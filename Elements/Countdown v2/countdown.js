@@ -62,15 +62,8 @@ if (new Date() > ClosingDay) {
   if (calculatedTime.daysLeft !== 1)
     document.querySelector(".countdown__daysText").innerHTML += "S";
 
-  if (calculatedTime.daysLeft < 10) {
-    document.querySelector(".countdown__days").innerHTML = (
-      "0" + calculatedTime.daysLeft
-    ).slice(-2);
-  } else {
-    document.querySelector(".countdown__days").innerHTML =
-      calculatedTime.daysLeft;
-  }
-
+  document.querySelector(".countdown__days").innerHTML =
+    calculatedTime.daysLeft;
   document.querySelector(".countdown__hours").innerHTML = (
     "0" + calculatedTime.hoursLeft
   ).slice(-2);
@@ -83,9 +76,8 @@ if (new Date() > ClosingDay) {
     calculatedTime = calculateTime();
 
     // could be optimized by checking if the values differ, then update
-    document.querySelector(".countdown__days").innerHTML = (
-      "0" + calculatedTime.daysLeft
-    ).slice(-2);
+    document.querySelector(".countdown__days").innerHTML =
+      calculatedTime.daysLeft;
     document.querySelector(".countdown__hours").innerHTML = (
       "0" + calculatedTime.hoursLeft
     ).slice(-2);
