@@ -1,6 +1,6 @@
 .files-section {
-  margin: 2rem auto;
-  padding-top: 6rem;
+  margin-inline: 2rem;
+  padding-top: 3rem;
 
   max-width: 100rem;
 }
@@ -9,8 +9,8 @@
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
-  justify-content: space-between;
-  align-items: baseline;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .file-card {
@@ -76,10 +76,15 @@
 
   .file-card {
     gap: 0.75rem;
+    max-width: 12rem;
   }
 
   .card__bg-circle {
     height: 10rem;
+  }
+
+  .card__doc-name {
+    font-size: 1.5rem;
   }
 
   .card__doc-text {
@@ -89,10 +94,14 @@
 
 @media only screen and (max-width: 450px) {
   .file-card {
-    max-width: 12rem;
+    max-width: 10rem;
   }
 
   .card__doc-name {
-    font-size: 1.5rem;
+    font-size: 1rem;
+  }
+
+  .card__doc-text {
+    font-size: 0.875rem;
   }
 }

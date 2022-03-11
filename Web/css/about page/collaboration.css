@@ -51,7 +51,7 @@
 
 .collab-s__text {
   margin: 0 auto;
-  width: clamp(22rem, 100%, 55rem);
+  max-width: 55rem;
 
   line-height: 1.6;
   text-align: center;
