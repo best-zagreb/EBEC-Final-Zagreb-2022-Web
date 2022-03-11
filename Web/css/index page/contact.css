@@ -1,6 +1,5 @@
 .contact-section {
   /* background-image: url("img/+\ pattern.png"); */
-
   overflow: hidden;
 }
 
@@ -12,10 +11,12 @@
   /* justify-content: left;  */
 
   margin: 4rem;
-  width: 100%;
+  /* width: 50vw; */
 }
 
 .person-card {
+  width: 100%;
+
   display: flex;
   justify-content: center;
   gap: 1rem;
@@ -32,6 +33,7 @@
 
 .rhombus-svg {
   height: 10rem;
+  /* min-width: 100%; */
 
   animation-name: float;
   animation-duration: 8s;
@@ -50,7 +52,7 @@
 .person-info {
   display: grid;
   grid-template-rows: repeat(3, 1fr);
-  gap: 1em;
+  gap: 0.875em;
 
   position: absolute;
   top: 50%;
@@ -93,6 +95,15 @@
 
   .person-info {
     font-size: 0.75rem;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .rhombus-svg {
+    height: 4rem;
+  }
+
+  .person-info {
+    font-size: 0.625rem;
   }
 }
 
