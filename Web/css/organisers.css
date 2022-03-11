@@ -62,6 +62,7 @@
 }
 
 .org__function {
+  text-transform: capitalize;
   font-size: 1.25em;
 }
 

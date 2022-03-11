@@ -2,7 +2,8 @@
   margin: 2rem auto;
   padding-top: 1rem;
 
-  width: clamp(20rem, 80%, 80rem);
+  width: 80%;
+  max-width: 80rem;
 
   display: flex;
   flex-wrap: wrap;
@@ -45,6 +46,10 @@
 }
 
 @media only screen and (max-width: 400px) {
+  .BEST-external-section {
+    width: 95%;
+  }
+
   .external-s__btn {
     padding: 1.125rem 1.75rem;
 
