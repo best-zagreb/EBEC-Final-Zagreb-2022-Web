@@ -1,9 +1,6 @@
 * {
   box-sizing: border-box;
   margin: 0;
-
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
 }
 
 :root {
@@ -28,8 +25,23 @@ body {
   flex-direction: column;
   min-height: 100%;
 
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+
   /* so everything just shrink on tiny tiny screens (<320px) */
   min-width: 320px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+pre,
+a {
+  font-family: inherit;
 }
 
 /* names of pages */
