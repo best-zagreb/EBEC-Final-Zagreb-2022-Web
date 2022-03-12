@@ -51,7 +51,7 @@ h1 {
   text-align: center;
   text-transform: uppercase;
 
-  font-size: 8rem;
+  font-size: min(8rem, 16vw);
 
   color: var(--primary-clr);
 }
@@ -64,7 +64,7 @@ h2 {
   text-align: center;
   text-transform: uppercase;
 
-  font-size: 6rem;
+  font-size: min(6rem, 12vw);
 
   color: var(--primary-clr);
 }
@@ -75,7 +75,7 @@ h3 {
   padding-top: 2rem;
 
   text-align: center;
-  font-size: 4rem;
+  font-size: min(4rem, 8vw);
 
   color: var(--secondary-clr);
 }
@@ -107,7 +107,7 @@ a {
   h1 {
     margin: 1rem;
 
-    font-size: 5rem;
+    /* font-size: 5rem; */
   }
 
   /* names of sections */
@@ -115,7 +115,7 @@ a {
     margin: 0.75rem;
     padding-top: 1.5rem;
 
-    font-size: 3.5rem;
+    /* font-size: 3.5rem; */
   }
 
   /* names of subsections */
@@ -123,7 +123,7 @@ a {
     margin: 0.5rem;
     padding-top: 1rem;
 
-    font-size: 2.25rem;
+    /* font-size: 2.25rem; */
   }
 
   /* other titles (posts etc) */
