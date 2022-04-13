@@ -1,5 +1,6 @@
 .general-section {
-  width: clamp(24rem, 80%, 100rem);
+  width: 80%;
+  max-width: 100rem;
   margin: 2rem auto;
   /* margin-bottom: 30px; because of navigation buttons */
   padding-top: 1rem;
@@ -154,6 +155,12 @@ img {
 
 .carousel__indicator:not(.carousel__indicator.current-slide) {
   cursor: pointer;
+}
+
+@media only screen and (max-width: 450px) {
+  .general-section {
+    width: 95%;
+  }
 }
 
 @media only screen and (max-width: 900px) {
