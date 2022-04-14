@@ -15,8 +15,8 @@
     <link href="css/index page/files.css" rel="stylesheet" />
     <link href="css/index page/contact.css" rel="stylesheet" />
     <link href="css/footer.css" rel="stylesheet" />
+
     <script src="js/nav.js" defer></script>
-    <script src="js/randomText.js" defer></script>
     <script src="js/countdown.js" defer></script>
     <script src="js/carousel.js" defer></script>
     <script src="js/delayAnimation.js" defer></script>
@@ -34,8 +34,10 @@
           <img />
         </div> -->
 
-        <ul class="primary-nav" id="primary-nav" data-visible="false">
-          <li><a class="current-site" href="index.html">EBEC Final</a></li>
+        <ul class="primary-nav" data-visible="false">
+          <li>
+            <a class="current-site" href="index.html">EBEC Final</a>
+          </li>
           <li><a href="about.html">About BEST</a></li>
           <li class="hidden"><a href="schedule.html">Schedule</a></li>
           <li><a href="updates.html">Updates</a></li>
@@ -156,21 +158,18 @@
           />
         </svg>
 
-        <div class="header__quote">
-          <div id="quote"></div>
-          <cite id="author"></cite>
-        </div>
+        <div class="header__motto">Where innovation begins.</div>
 
         <div class="countdown">
-          <span class="countdown__daysWhole">
-            <span class="countdown__days"></span>
-            <span class="countdown__daysText"> DAY</span>
-          </span>
-          <span class="countdown__hours"></span> HR
-          <span class="countdown__minutes"></span> MIN
-          <span class="countdown__secondsWhole">
-            <span class="countdown__seconds"></span> SEC
-          </span>
+          <div class="countdown_starts-in">Starts in</div>
+          <span class="countdown__days"></span>
+          <span class="countdown__daysText"> DAY</span>
+          <span class="countdown__hours"></span>
+          <span class="countdown__hrsText"> HR</span>
+          <span class="countdown__minutes"></span>
+          <span class="countdown__minsText"> MIN</span>
+          <span class="countdown__seconds"></span>
+          <span class="countdown__secsText"> SEC</span>
         </div>
       </div>
     </header>
@@ -274,9 +273,10 @@
       <div class="main-s__content-container">
         <h3 class="main-s__heading">What is EBEC</h3>
         <p class="main-s__text">
-          <strong>European BEST Engineering Competition</strong> (EBEC) is a 3
-          level, team-based engineering competition made by students – for
-          students. It is held in 19 countries across Europe in 2 categories –
+          <strong>European BEST Engineering Competition</strong>
+          (EBEC) is a 3 level, team-based engineering competition made by
+          students – for students. It is held in 19 countries across Europe in 2
+          categories –
           <strong>Innovative or Team Design and Case Study</strong>
           .<br /><br />
           The top 10 Europe teams in each category can show off their skills at
@@ -318,7 +318,6 @@
               }
             </style>
           </defs>
-          <title>EBEC_pyramid_2015_corbel</title>
           <polygon
             class="cls-1"
             points="34.66 168.9 -0.84 239.98 387.46 239.98 351.91 168.9 34.66 168.9"
@@ -331,24 +330,22 @@
             class="cls-3"
             points="119.85 0 84.35 71.07 303.85 71.07 268.3 0 119.85 0"
           />
-          <text class="cls-4" transform="translate(94.59 113.86)">
-            9 National &amp;
-            <tspan class="cls-5" x="117.74" y="0">R</tspan>
-            <tspan x="130.51" y="0">egional</tspan>
-            <tspan x="37.89" y="25.2">EBEC</tspan>
-            <tspan class="cls-5" x="91.43" y="25.2">R</tspan>
-            <tspan x="104.21" y="25.2">ounds</tspan>
-          </text>
-          <text class="cls-4" transform="translate(94.5 197.74)">
-            51 Local EBEC
-            <tspan class="cls-5" x="131.14" y="0">R</tspan>
-            <tspan x="143.91" y="0">ounds</tspan>
-            <tspan x="32.71" y="25.2">in 19</tspan>
-            <tspan class="cls-6" x="75.86" y="25.2"></tspan>
-            <tspan x="79.36" y="25.2">Countries</tspan>
-          </text>
           <text class="cls-4" transform="translate(147.15 41.44)">
             EBEC Final
+          </text>
+
+          <text class="cls-4" transform="translate(94.59 113.86)">
+            9 National &amp Regional
+          </text>
+          <text class="cls-4" transform="translate(132.48 139.06)">
+            EBEC Rounds
+          </text>
+
+          <text class="cls-4" transform="translate(94.5 197.74)">
+            51 Local EBEC Rounds
+          </text>
+          <text class="cls-4" transform="translate(127.21 222.94)">
+            in 19 Countries
           </text>
         </svg>
       </div>
@@ -600,6 +597,104 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. In lacinia malesuada le
       <h2>Contact</h2>
 
       <div class="people-cards">
+        <div class="person-card">
+          <svg
+            class="rhombus-svg"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="120 130 370 530"
+          >
+            <path
+              d="M223.14,190.34c-18.11,35.28-34.67,71.13-53.43,106.14-15.18,28.32-31.94,56.58-39.17,87.35s3.32,54.29,20.55,83.4c18.87,31.87,38.29,63.64,60.76,94.23,18.53,25.23,33.94,57.44,60.7,78.61,17.11,13.53,43,16.82,64.87,13.62,26.92-4,32.88-13.37,42.73-31,25.94-46.39,54.68-91.77,80.36-138.35,11.57-21,23.35-42.73,23.25-66.23-.15-35.77-18.95-65.08-35.18-97.78-17.18-34.61-32-69.4-51.86-103.36-17.57-30.06-35.11-75.37-84.3-79.43C264.39,133.61,238.64,160.13,223.14,190.34Z"
+            />
+
+            <clipPath id="shape">
+              <path
+                d="M223.14,190.34c-18.11,35.28-34.67,71.13-53.43,106.14-15.18,28.32-31.94,56.58-39.17,87.35s3.32,54.29,20.55,83.4c18.87,31.87,38.29,63.64,60.76,94.23,18.53,25.23,33.94,57.44,60.7,78.61,17.11,13.53,43,16.82,64.87,13.62,26.92-4,32.88-13.37,42.73-31,25.94-46.39,54.68-91.77,80.36-138.35,11.57-21,23.35-42.73,23.25-66.23-.15-35.77-18.95-65.08-35.18-97.78-17.18-34.61-32-69.4-51.86-103.36-17.57-30.06-35.11-75.37-84.3-79.43C264.39,133.61,238.64,160.13,223.14,190.34Z"
+              />
+            </clipPath>
+
+            <image
+              href="img/people/roberto.jpg"
+              clip-path="url(#shape)"
+              height="100%"
+              x="45"
+              y="130"
+            ></image>
+          </svg>
+
+          <div>
+            <div class="person-info">
+              <div>
+                <svg
+                  aria-hidden="true"
+                  focusable="false"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 448 512"
+                  class="person-info__icon"
+                >
+                  <path
+                    fill="royalblue"
+                    d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z"
+                  ></path>
+                </svg>
+                <div class="person-info__text">Roberto Gregov</div>
+              </div>
+              <div>
+                <svg
+                  aria-hidden="true"
+                  focusable="false"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 576 512"
+                  class="person-info__icon"
+                >
+                  <path
+                    fill="royalblue"
+                    d="M519.442 288.651c-41.519 0-59.5 31.593-82.058 31.593C377.409 320.244 432 144 432 144s-196.288 80-196.288-3.297c0-35.827 36.288-46.25 36.288-85.985C272 19.216 243.885 0 210.539 0c-34.654 0-66.366 18.891-66.366 56.346 0 41.364 31.711 59.277 31.711 81.75C175.885 207.719 0 166.758 0 166.758v333.237s178.635 41.047 178.635-28.662c0-22.473-40-40.107-40-81.471 0-37.456 29.25-56.346 63.577-56.346 33.673 0 61.788 19.216 61.788 54.717 0 39.735-36.288 50.158-36.288 85.985 0 60.803 129.675 25.73 181.23 25.73 0 0-34.725-120.101 25.827-120.101 35.962 0 46.423 36.152 86.308 36.152C556.712 416 576 387.99 576 354.443c0-34.199-18.962-65.792-56.558-65.792z"
+                  ></path>
+                </svg>
+                <div class="person-info__text">Participants Coordinator</div>
+              </div>
+              <div>
+                <svg
+                  aria-hidden="true"
+                  focusable="false"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 512 512"
+                  class="person-info__icon"
+                >
+                  <path
+                    fill="royalblue"
+                    d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"
+                  ></path>
+                </svg>
+                <a
+                  class="person-info__text"
+                  href="mailto:roberto.gregov@BEST-eu.org"
+                >
+                  roberto.gregov@BEST-eu.org
+                </a>
+              </div>
+              <div>
+                <svg
+                  aria-hidden="true"
+                  focusable="false"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 512 512"
+                  class="person-info__icon"
+                >
+                  <path
+                    fill="royalblue"
+                    d="M493.4 24.6l-104-24c-11.3-2.6-22.9 3.3-27.5 13.9l-48 112c-4.2 9.8-1.4 21.3 6.9 28l60.6 49.6c-36 76.7-98.9 140.5-177.2 177.2l-49.6-60.6c-6.8-8.3-18.2-11.1-28-6.9l-112 48C3.9 366.5-2 378.1.6 389.4l24 104C27.1 504.2 36.7 512 48 512c256.1 0 464-207.5 464-464 0-11.2-7.7-20.9-18.6-23.4z"
+                  ></path>
+                </svg>
+                <a class="person-info__text" href="tel:+385953667752">
+                  +385 95 366 7752
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div class="person-card">
           <svg
             class="rhombus-svg"
@@ -998,9 +1093,9 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. In lacinia malesuada le
     <footer>
       <div class="footer-info">
         <p>
-          &copy;
-          <a class="footer-info__link" href="https://best.hr">BEST Zagreb</a> |
-          Brought to you with 💖 by IT Working Group
+          &copy
+          <a class="footer-info__link" href="https://best.hr">BEST Zagreb</a>
+          | Brought to you with 💖 by IT Working Group
         </p>
       </div>
       <div class="footer-social">

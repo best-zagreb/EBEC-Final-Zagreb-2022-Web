@@ -27,9 +27,6 @@ body {
 
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
-
-  /* so everything just shrink on tiny tiny screens (<320px) */
-  min-width: 320px;
 }
 
 h1,
