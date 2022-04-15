@@ -1,3 +1,12 @@
+const countdown = document.querySelector(".countdown");
+const countdownEventStatus = document.querySelector(".countdown__event-status");
+const countdownDays = document.querySelector(".countdown__days");
+const countdownDaysText = document.querySelector(".countdown__days-text");
+const countdownHours = document.querySelector(".countdown__hours");
+const countdownMinutes = document.querySelector(".countdown__minutes");
+const countdownSeconds = document.querySelector(".countdown__seconds");
+const countdownSecondsText = document.querySelector(".countdown__secs-text");
+
 const OpeningDay = new Date(2022, 06, 22, 10); // 22nd July 2022 at 10 am
 // console.log(OpeningDay);
 const ClosingDay = new Date(2022, 06, 30); // 29th to 30th July 2022 at midnight
@@ -23,66 +32,50 @@ let calculatedTime = calculateTime();
 
 if (new Date() > ClosingDay) {
   // event has ended
-  document.querySelector(".countdown").innerHTML = "EVENT ENDED";
+  countdown.innerText = "";
+  countdown.appendChild(countdownEventStatus);
+  countdownEventStatus.innerText = "EVENT ENDED";
 } else if (new Date() > OpeningDay) {
   // event has started
-  document.querySelector(".countdown").innerHTML = "EVENT LIVE";
+  countdown.innerText = "";
+  countdown.appendChild(countdownEventStatus);
+  countdownEventStatus.innerText = "EVENT LIVE";
+  countdownEventStatus.style.fontSize = "3em";
 } else if (calculatedTime.daysLeft < 1) {
   // last day
-  document.querySelector(".countdown__daysWhole").classList.add("hidden");
+  countdownDays.classList.add("hidden");
+  countdownDaysText.classList.add("hidden");
 
-  document.querySelector(".countdown__hours").innerHTML = (
-    "0" + calculatedTime.hoursLeft
-  ).slice(-2);
-  document.querySelector(".countdown__minutes").innerHTML = (
-    "0" + calculatedTime.minutesLeft
-  ).slice(-2);
-  document.querySelector(".countdown__seconds").innerHTML = (
-    "0" + calculatedTime.secondsLeft
-  ).slice(-2);
+  countdownHours.innerText = ("0" + calculatedTime.hoursLeft).slice(-2);
+  countdownMinutes.innerText = ("0" + calculatedTime.minutesLeft).slice(-2);
+  countdownSeconds.innerText = ("0" + calculatedTime.secondsLeft).slice(-2);
 
   // set interval to update element every second
   setInterval(function () {
     calculatedTime = calculateTime();
 
     // could be optimized by checking if the values differ, then update
-    document.querySelector(".countdown__hours").innerHTML = (
-      "0" + calculatedTime.hoursLeft
-    ).slice(-2);
-    document.querySelector(".countdown__minutes").innerHTML = (
-      "0" + calculatedTime.minutesLeft
-    ).slice(-2);
-    document.querySelector(".countdown__seconds").innerHTML = (
-      "0" + calculatedTime.secondsLeft
-    ).slice(-2);
+    countdownHours.innerText = ("0" + calculatedTime.hoursLeft).slice(-2);
+    countdownMinutes.innerText = ("0" + calculatedTime.minutesLeft).slice(-2);
+    countdownSeconds.innerText = ("0" + calculatedTime.secondsLeft).slice(-2);
   }, 1000);
 } else {
-  document.querySelector(".countdown__secondsWhole").classList.add("hidden");
+  countdownSeconds.classList.add("hidden");
+  countdownSecondsText.classList.add("hidden");
 
-  if (calculatedTime.daysLeft !== 1)
-    document.querySelector(".countdown__daysText").innerHTML += "S";
+  if (calculatedTime.daysLeft !== 1) countdownDaysText.innerText += "S";
 
-  document.querySelector(".countdown__days").innerHTML =
-    calculatedTime.daysLeft;
-  document.querySelector(".countdown__hours").innerHTML = (
-    "0" + calculatedTime.hoursLeft
-  ).slice(-2);
-  document.querySelector(".countdown__minutes").innerHTML = (
-    "0" + calculatedTime.minutesLeft
-  ).slice(-2);
+  countdownDays.innerText = calculatedTime.daysLeft;
+  countdownHours.innerText = ("0" + calculatedTime.hoursLeft).slice(-2);
+  countdownMinutes.innerText = ("0" + calculatedTime.minutesLeft).slice(-2);
 
   // set interval to update element every 30 seconds
   setInterval(function () {
     calculatedTime = calculateTime();
 
     // could be optimized by checking if the values differ, then update
-    document.querySelector(".countdown__days").innerHTML =
-      calculatedTime.daysLeft;
-    document.querySelector(".countdown__hours").innerHTML = (
-      "0" + calculatedTime.hoursLeft
-    ).slice(-2);
-    document.querySelector(".countdown__minutes").innerHTML = (
-      "0" + calculatedTime.minutesLeft
-    ).slice(-2);
+    countdownDays.innerText = calculatedTime.daysLeft;
+    countdownHours.innerText = ("0" + calculatedTime.hoursLeft).slice(-2);
+    countdownMinutes.innerText = ("0" + calculatedTime.minutesLeft).slice(-2);
   }, 1000 * 30);
 }
