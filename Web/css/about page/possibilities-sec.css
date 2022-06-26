@@ -1,0 +1,72 @@
+.possibilities-section {
+	max-width: 100rem;
+	margin: auto;
+
+	padding: min(4rem, 6vw) 1rem;
+
+	display: flex;
+	gap: min(2rem, 6vw);
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: baseline;
+}
+
+.possibilities-s__box {
+	width: min(22rem, 45%);
+
+	display: flex;
+	gap: min(2rem, 1vw);
+	flex-direction: column;
+	justify-content: space-between;
+
+	text-align: center;
+}
+
+.possibilities-s__box:hover > .possibilities-s__heading {
+	color: orange;
+}
+
+.possibilities-s__box:hover > .possibilities-s__icon {
+	color: orange;
+	animation: fadeToRightFadeInLeft 0.4s ease forwards;
+}
+
+.possibilities-s__icon {
+	color: var(--accent-clr);
+}
+
+.possibilities-s__heading {
+	color: var(--secondary-clr);
+}
+
+.possibilities-s__text {
+	line-height: 1.6;
+}
+
+@media only screen and (max-width: 320px) {
+	.possibilities-s__box {
+		width: 95%;
+	}
+
+	.possibilities-s__icon {
+		transform: scale(0.75);
+	}
+}
+
+@keyframes fadeToRightFadeInLeft {
+	0% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+	49% {
+		opacity: 0;
+		transform: translateX(5rem);
+	}
+	50% {
+		transform: translateX(-5rem);
+	}
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}

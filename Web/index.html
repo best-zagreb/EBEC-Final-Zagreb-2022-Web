@@ -3,29 +3,37 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<meta name="revisit-after" content="10 days" />
+
+		<meta name="author" content="BEST Zagreb IT WG" />
+		<meta name="copyright" content="BEST Zagreb" />
+
+		<meta
+			name="description"
+			content="This July BEST Zagreb is hosting the final round of European BEST Engineering Competition. 
+			EBEC Final Zagreb 2022 will round up over 60 of the best engineering student and many more student volunteers from all over Europe."
+		/>
+		<meta
+			name="keywords"
+			content="EBEC, European BEST Engineering Competition, EBEC Final, Zagreb, BEST, BEST Zagreb, students, project, Europe, engineering"
+		/>
+
+		<meta property="og:image" content="img/logos/Main Logo-02.png" />
+		<meta
+			property="og:description"
+			content="This July BEST Zagreb is hosting the final round of European BEST Engineering Competition. 
+			EBEC Final Zagreb 2022 will round up over 60 of the best engineering student and many more student volunteers from all over Europe."
+		/>
+		<meta property="og:title" content="EBEC Final Zagreb 2022" />
+
 		<!-- Google page indexing -->
 		<meta
 			name="google-site-verification"
 			content="VSdvgu74Ql0gid6CTJF100AokkKB2NqoWKyRHhL0udM"
 		/>
-		<!-- Google Analytics -->
-		<script>
-			window.ga =
-				window.ga ||
-				function () {
-					(ga.q = ga.q || []).push(arguments);
-				};
-			ga.l = +new Date();
-			ga("create", "UA-XXXXX-Y", "auto");
-			ga("send", "pageview");
-		</script>
-		<script
-			async
-			src="https://www.google-analytics.com/analytics.js"
-		></script>
-		<!-- End Google Analytics -->
 
-		<link rel="icon" href="img/logos/Main Logo-03.svg" />
+		<link rel="icon" href="img/logos/Main Logo-03.png" />
 
 		<title>EBEC Final Zagreb 2022</title>
 
@@ -37,12 +45,15 @@
 		<link href="css/index page/contact.css" rel="stylesheet" />
 		<link href="css/footer.css" rel="stylesheet" />
 
+		<script src="js/backgroundParalax.js" defer></script>
 		<script src="js/nav.js" defer></script>
 		<script src="js/countdown.js" defer></script>
 		<script src="js/carousel.js" defer></script>
 		<script src="js/delayAnimation.js" defer></script>
 	</head>
 	<body>
+		<div class="background-image"></div>
+
 		<div class="primary-navigation">
 			<button
 				class="mobile-nav-toggle"
@@ -398,7 +409,7 @@
 				<div class="file-card">
 					<a
 						class="card__bg-circle"
-						href="https://drive.google.com/file/d/1HeVoWFD1O6scG6K9JgGHj0g9WkELCnDg/view"
+						href="https://drive.google.com/file/d/1PYAxUU0YZIVUfxcxxgCZoMIQNToGCUKr/view"
 						target="_blank"
 					>
 						<svg
@@ -420,7 +431,7 @@
 					<p>
 						<a
 							class="card__doc-text"
-							href="https://drive.google.com/file/d/1HeVoWFD1O6scG6K9JgGHj0g9WkELCnDg/view"
+							href="https://drive.google.com/file/d/1PYAxUU0YZIVUfxcxxgCZoMIQNToGCUKr/view"
 							target="_blank"
 							>Download the <strong>survival guide</strong> for
 							EBEC Final Zagreb 2022</a
@@ -464,7 +475,7 @@
 				<div class="file-card">
 					<a
 						class="card__bg-circle"
-						href="https://drive.google.com/file/d/1Ym8s5RFesCiEJEYLkYQQ2DKH3Q4wCcbk/view"
+						href="https://docs.google.com/spreadsheets/d/1706PstC25NEV4CkMD5RypU8v_zTljP1C/view"
 						target="_blank"
 					>
 						<svg
@@ -486,7 +497,7 @@
 					<p>
 						<a
 							class="card__doc-text"
-							href="https://drive.google.com/file/d/1Ym8s5RFesCiEJEYLkYQQ2DKH3Q4wCcbk/view"
+							href="https://docs.google.com/spreadsheets/d/1706PstC25NEV4CkMD5RypU8v_zTljP1C/view"
 							target="_blank"
 							>Download the <strong>schedule</strong> for EBEC
 							Final Zagreb 2022</a
@@ -496,7 +507,7 @@
 			</div>
 		</section>
 
-		<section class="main-section flex-row-reverse hidden">
+		<!-- <section class="main-section flex-row-reverse hidden">
 			<div class="main-s__content-container hidden">
 				<h3 class="main-s__heading">Partners</h3>
 				<p class="main-s__text">
@@ -587,9 +598,9 @@
 					</div>
 				</div>
 			</div>
-		</section>
+		</section> -->
 
-		<section class="main-section">
+		<!-- <section class="main-section">
 			<div class="main-s__content-container hidden">
 				<h3 class="main-s__heading">Latest news</h3>
 				<p class="main-s__text">
@@ -660,36 +671,38 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. In lacinia malesuada le
 					</article>
 				</div>
 			</div>
-		</section>
+		</section> -->
 
 		<section class="contact-section">
 			<h2>Contact</h2>
 
 			<div class="people-cards">
 				<div class="person-card">
-					<svg
-						class="rhombus-svg"
-						xmlns="http://www.w3.org/2000/svg"
-						viewBox="120 130 370 530"
-					>
-						<path
-							d="M223.14,190.34c-18.11,35.28-34.67,71.13-53.43,106.14-15.18,28.32-31.94,56.58-39.17,87.35s3.32,54.29,20.55,83.4c18.87,31.87,38.29,63.64,60.76,94.23,18.53,25.23,33.94,57.44,60.7,78.61,17.11,13.53,43,16.82,64.87,13.62,26.92-4,32.88-13.37,42.73-31,25.94-46.39,54.68-91.77,80.36-138.35,11.57-21,23.35-42.73,23.25-66.23-.15-35.77-18.95-65.08-35.18-97.78-17.18-34.61-32-69.4-51.86-103.36-17.57-30.06-35.11-75.37-84.3-79.43C264.39,133.61,238.64,160.13,223.14,190.34Z"
-						/>
-
-						<clipPath id="shape">
+					<div>
+						<svg
+							class="rhombus-svg"
+							xmlns="http://www.w3.org/2000/svg"
+							viewBox="120 130 370 530"
+						>
 							<path
 								d="M223.14,190.34c-18.11,35.28-34.67,71.13-53.43,106.14-15.18,28.32-31.94,56.58-39.17,87.35s3.32,54.29,20.55,83.4c18.87,31.87,38.29,63.64,60.76,94.23,18.53,25.23,33.94,57.44,60.7,78.61,17.11,13.53,43,16.82,64.87,13.62,26.92-4,32.88-13.37,42.73-31,25.94-46.39,54.68-91.77,80.36-138.35,11.57-21,23.35-42.73,23.25-66.23-.15-35.77-18.95-65.08-35.18-97.78-17.18-34.61-32-69.4-51.86-103.36-17.57-30.06-35.11-75.37-84.3-79.43C264.39,133.61,238.64,160.13,223.14,190.34Z"
 							/>
-						</clipPath>
 
-						<image
-							href="img/people/roberto.jpg"
-							clip-path="url(#shape)"
-							height="100%"
-							x="45"
-							y="130"
-						></image>
-					</svg>
+							<clipPath id="shape">
+								<path
+									d="M223.14,190.34c-18.11,35.28-34.67,71.13-53.43,106.14-15.18,28.32-31.94,56.58-39.17,87.35s3.32,54.29,20.55,83.4c18.87,31.87,38.29,63.64,60.76,94.23,18.53,25.23,33.94,57.44,60.7,78.61,17.11,13.53,43,16.82,64.87,13.62,26.92-4,32.88-13.37,42.73-31,25.94-46.39,54.68-91.77,80.36-138.35,11.57-21,23.35-42.73,23.25-66.23-.15-35.77-18.95-65.08-35.18-97.78-17.18-34.61-32-69.4-51.86-103.36-17.57-30.06-35.11-75.37-84.3-79.43C264.39,133.61,238.64,160.13,223.14,190.34Z"
+								/>
+							</clipPath>
+
+							<image
+								href="img/people/roberto.jpg"
+								clip-path="url(#shape)"
+								height="100%"
+								x="45"
+								y="130"
+							></image>
+						</svg>
+					</div>
 
 					<div>
 						<div class="person-info">
@@ -772,29 +785,31 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. In lacinia malesuada le
 				</div>
 
 				<div class="person-card">
-					<svg
-						class="rhombus-svg"
-						xmlns="http://www.w3.org/2000/svg"
-						viewBox="120 130 370 530"
-					>
-						<path
-							d="M223.14,190.34c-18.11,35.28-34.67,71.13-53.43,106.14-15.18,28.32-31.94,56.58-39.17,87.35s3.32,54.29,20.55,83.4c18.87,31.87,38.29,63.64,60.76,94.23,18.53,25.23,33.94,57.44,60.7,78.61,17.11,13.53,43,16.82,64.87,13.62,26.92-4,32.88-13.37,42.73-31,25.94-46.39,54.68-91.77,80.36-138.35,11.57-21,23.35-42.73,23.25-66.23-.15-35.77-18.95-65.08-35.18-97.78-17.18-34.61-32-69.4-51.86-103.36-17.57-30.06-35.11-75.37-84.3-79.43C264.39,133.61,238.64,160.13,223.14,190.34Z"
-						/>
-
-						<clipPath id="shape">
+					<div>
+						<svg
+							class="rhombus-svg"
+							xmlns="http://www.w3.org/2000/svg"
+							viewBox="120 130 370 530"
+						>
 							<path
 								d="M223.14,190.34c-18.11,35.28-34.67,71.13-53.43,106.14-15.18,28.32-31.94,56.58-39.17,87.35s3.32,54.29,20.55,83.4c18.87,31.87,38.29,63.64,60.76,94.23,18.53,25.23,33.94,57.44,60.7,78.61,17.11,13.53,43,16.82,64.87,13.62,26.92-4,32.88-13.37,42.73-31,25.94-46.39,54.68-91.77,80.36-138.35,11.57-21,23.35-42.73,23.25-66.23-.15-35.77-18.95-65.08-35.18-97.78-17.18-34.61-32-69.4-51.86-103.36-17.57-30.06-35.11-75.37-84.3-79.43C264.39,133.61,238.64,160.13,223.14,190.34Z"
 							/>
-						</clipPath>
 
-						<image
-							href="img/people/Leo.png"
-							clip-path="url(#shape)"
-							height="100%"
-							x="45"
-							y="130"
-						></image>
-					</svg>
+							<clipPath id="shape">
+								<path
+									d="M223.14,190.34c-18.11,35.28-34.67,71.13-53.43,106.14-15.18,28.32-31.94,56.58-39.17,87.35s3.32,54.29,20.55,83.4c18.87,31.87,38.29,63.64,60.76,94.23,18.53,25.23,33.94,57.44,60.7,78.61,17.11,13.53,43,16.82,64.87,13.62,26.92-4,32.88-13.37,42.73-31,25.94-46.39,54.68-91.77,80.36-138.35,11.57-21,23.35-42.73,23.25-66.23-.15-35.77-18.95-65.08-35.18-97.78-17.18-34.61-32-69.4-51.86-103.36-17.57-30.06-35.11-75.37-84.3-79.43C264.39,133.61,238.64,160.13,223.14,190.34Z"
+								/>
+							</clipPath>
+
+							<image
+								href="img/people/Leo.png"
+								clip-path="url(#shape)"
+								height="100%"
+								x="45"
+								y="130"
+							></image>
+						</svg>
+					</div>
 
 					<div>
 						<div class="person-info">
@@ -877,29 +892,31 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. In lacinia malesuada le
 				</div>
 
 				<div class="person-card">
-					<svg
-						class="rhombus-svg"
-						xmlns="http://www.w3.org/2000/svg"
-						viewBox="120 130 370 530"
-					>
-						<path
-							d="M223.14,190.34c-18.11,35.28-34.67,71.13-53.43,106.14-15.18,28.32-31.94,56.58-39.17,87.35s3.32,54.29,20.55,83.4c18.87,31.87,38.29,63.64,60.76,94.23,18.53,25.23,33.94,57.44,60.7,78.61,17.11,13.53,43,16.82,64.87,13.62,26.92-4,32.88-13.37,42.73-31,25.94-46.39,54.68-91.77,80.36-138.35,11.57-21,23.35-42.73,23.25-66.23-.15-35.77-18.95-65.08-35.18-97.78-17.18-34.61-32-69.4-51.86-103.36-17.57-30.06-35.11-75.37-84.3-79.43C264.39,133.61,238.64,160.13,223.14,190.34Z"
-						/>
-
-						<clipPath id="shape">
+					<div>
+						<svg
+							class="rhombus-svg"
+							xmlns="http://www.w3.org/2000/svg"
+							viewBox="120 130 370 530"
+						>
 							<path
 								d="M223.14,190.34c-18.11,35.28-34.67,71.13-53.43,106.14-15.18,28.32-31.94,56.58-39.17,87.35s3.32,54.29,20.55,83.4c18.87,31.87,38.29,63.64,60.76,94.23,18.53,25.23,33.94,57.44,60.7,78.61,17.11,13.53,43,16.82,64.87,13.62,26.92-4,32.88-13.37,42.73-31,25.94-46.39,54.68-91.77,80.36-138.35,11.57-21,23.35-42.73,23.25-66.23-.15-35.77-18.95-65.08-35.18-97.78-17.18-34.61-32-69.4-51.86-103.36-17.57-30.06-35.11-75.37-84.3-79.43C264.39,133.61,238.64,160.13,223.14,190.34Z"
 							/>
-						</clipPath>
 
-						<image
-							href="img/people/Dunja.png"
-							clip-path="url(#shape)"
-							height="100%"
-							x="45"
-							y="130"
-						></image>
-					</svg>
+							<clipPath id="shape">
+								<path
+									d="M223.14,190.34c-18.11,35.28-34.67,71.13-53.43,106.14-15.18,28.32-31.94,56.58-39.17,87.35s3.32,54.29,20.55,83.4c18.87,31.87,38.29,63.64,60.76,94.23,18.53,25.23,33.94,57.44,60.7,78.61,17.11,13.53,43,16.82,64.87,13.62,26.92-4,32.88-13.37,42.73-31,25.94-46.39,54.68-91.77,80.36-138.35,11.57-21,23.35-42.73,23.25-66.23-.15-35.77-18.95-65.08-35.18-97.78-17.18-34.61-32-69.4-51.86-103.36-17.57-30.06-35.11-75.37-84.3-79.43C264.39,133.61,238.64,160.13,223.14,190.34Z"
+								/>
+							</clipPath>
+
+							<image
+								href="img/people/Dunja.png"
+								clip-path="url(#shape)"
+								height="100%"
+								x="45"
+								y="130"
+							></image>
+						</svg>
+					</div>
 
 					<div>
 						<div class="person-info">
@@ -982,29 +999,31 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. In lacinia malesuada le
 				</div>
 
 				<div class="person-card">
-					<svg
-						class="rhombus-svg"
-						xmlns="http://www.w3.org/2000/svg"
-						viewBox="120 130 370 530"
-					>
-						<path
-							d="M223.14,190.34c-18.11,35.28-34.67,71.13-53.43,106.14-15.18,28.32-31.94,56.58-39.17,87.35s3.32,54.29,20.55,83.4c18.87,31.87,38.29,63.64,60.76,94.23,18.53,25.23,33.94,57.44,60.7,78.61,17.11,13.53,43,16.82,64.87,13.62,26.92-4,32.88-13.37,42.73-31,25.94-46.39,54.68-91.77,80.36-138.35,11.57-21,23.35-42.73,23.25-66.23-.15-35.77-18.95-65.08-35.18-97.78-17.18-34.61-32-69.4-51.86-103.36-17.57-30.06-35.11-75.37-84.3-79.43C264.39,133.61,238.64,160.13,223.14,190.34Z"
-						/>
-
-						<clipPath id="shape">
+					<div>
+						<svg
+							class="rhombus-svg"
+							xmlns="http://www.w3.org/2000/svg"
+							viewBox="120 130 370 530"
+						>
 							<path
 								d="M223.14,190.34c-18.11,35.28-34.67,71.13-53.43,106.14-15.18,28.32-31.94,56.58-39.17,87.35s3.32,54.29,20.55,83.4c18.87,31.87,38.29,63.64,60.76,94.23,18.53,25.23,33.94,57.44,60.7,78.61,17.11,13.53,43,16.82,64.87,13.62,26.92-4,32.88-13.37,42.73-31,25.94-46.39,54.68-91.77,80.36-138.35,11.57-21,23.35-42.73,23.25-66.23-.15-35.77-18.95-65.08-35.18-97.78-17.18-34.61-32-69.4-51.86-103.36-17.57-30.06-35.11-75.37-84.3-79.43C264.39,133.61,238.64,160.13,223.14,190.34Z"
 							/>
-						</clipPath>
 
-						<image
-							href="img/people/noni.jpg"
-							clip-path="url(#shape)"
-							height="100%"
-							x="45"
-							y="130"
-						></image>
-					</svg>
+							<clipPath id="shape">
+								<path
+									d="M223.14,190.34c-18.11,35.28-34.67,71.13-53.43,106.14-15.18,28.32-31.94,56.58-39.17,87.35s3.32,54.29,20.55,83.4c18.87,31.87,38.29,63.64,60.76,94.23,18.53,25.23,33.94,57.44,60.7,78.61,17.11,13.53,43,16.82,64.87,13.62,26.92-4,32.88-13.37,42.73-31,25.94-46.39,54.68-91.77,80.36-138.35,11.57-21,23.35-42.73,23.25-66.23-.15-35.77-18.95-65.08-35.18-97.78-17.18-34.61-32-69.4-51.86-103.36-17.57-30.06-35.11-75.37-84.3-79.43C264.39,133.61,238.64,160.13,223.14,190.34Z"
+								/>
+							</clipPath>
+
+							<image
+								href="img/people/noni.jpg"
+								clip-path="url(#shape)"
+								height="100%"
+								x="45"
+								y="130"
+							></image>
+						</svg>
+					</div>
 
 					<div>
 						<div class="person-info">
@@ -1087,29 +1106,31 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. In lacinia malesuada le
 				</div>
 
 				<div class="person-card">
-					<svg
-						class="rhombus-svg"
-						xmlns="http://www.w3.org/2000/svg"
-						viewBox="120 130 370 530"
-					>
-						<path
-							d="M223.14,190.34c-18.11,35.28-34.67,71.13-53.43,106.14-15.18,28.32-31.94,56.58-39.17,87.35s3.32,54.29,20.55,83.4c18.87,31.87,38.29,63.64,60.76,94.23,18.53,25.23,33.94,57.44,60.7,78.61,17.11,13.53,43,16.82,64.87,13.62,26.92-4,32.88-13.37,42.73-31,25.94-46.39,54.68-91.77,80.36-138.35,11.57-21,23.35-42.73,23.25-66.23-.15-35.77-18.95-65.08-35.18-97.78-17.18-34.61-32-69.4-51.86-103.36-17.57-30.06-35.11-75.37-84.3-79.43C264.39,133.61,238.64,160.13,223.14,190.34Z"
-						/>
-
-						<clipPath id="shape">
+					<div>
+						<svg
+							class="rhombus-svg"
+							xmlns="http://www.w3.org/2000/svg"
+							viewBox="120 130 370 530"
+						>
 							<path
 								d="M223.14,190.34c-18.11,35.28-34.67,71.13-53.43,106.14-15.18,28.32-31.94,56.58-39.17,87.35s3.32,54.29,20.55,83.4c18.87,31.87,38.29,63.64,60.76,94.23,18.53,25.23,33.94,57.44,60.7,78.61,17.11,13.53,43,16.82,64.87,13.62,26.92-4,32.88-13.37,42.73-31,25.94-46.39,54.68-91.77,80.36-138.35,11.57-21,23.35-42.73,23.25-66.23-.15-35.77-18.95-65.08-35.18-97.78-17.18-34.61-32-69.4-51.86-103.36-17.57-30.06-35.11-75.37-84.3-79.43C264.39,133.61,238.64,160.13,223.14,190.34Z"
 							/>
-						</clipPath>
 
-						<image
-							href="img/people/sulen.jpg"
-							clip-path="url(#shape)"
-							height="100%"
-							x="45"
-							y="130"
-						></image>
-					</svg>
+							<clipPath id="shape">
+								<path
+									d="M223.14,190.34c-18.11,35.28-34.67,71.13-53.43,106.14-15.18,28.32-31.94,56.58-39.17,87.35s3.32,54.29,20.55,83.4c18.87,31.87,38.29,63.64,60.76,94.23,18.53,25.23,33.94,57.44,60.7,78.61,17.11,13.53,43,16.82,64.87,13.62,26.92-4,32.88-13.37,42.73-31,25.94-46.39,54.68-91.77,80.36-138.35,11.57-21,23.35-42.73,23.25-66.23-.15-35.77-18.95-65.08-35.18-97.78-17.18-34.61-32-69.4-51.86-103.36-17.57-30.06-35.11-75.37-84.3-79.43C264.39,133.61,238.64,160.13,223.14,190.34Z"
+								/>
+							</clipPath>
+
+							<image
+								href="img/people/sulen.jpg"
+								clip-path="url(#shape)"
+								height="100%"
+								x="45"
+								y="130"
+							></image>
+						</svg>
+					</div>
 
 					<div>
 						<div class="person-info">
