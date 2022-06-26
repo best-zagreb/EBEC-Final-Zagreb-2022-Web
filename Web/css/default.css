@@ -1,32 +1,34 @@
 * {
-  box-sizing: border-box;
-  margin: 0;
+	box-sizing: border-box;
+	margin: 0;
 }
 
 :root {
-  /* colors depend on project */
-  --primary-clr: #3c6f9b;
-  --secondary-clr: #294f66;
-  --accent-clr: #5cb0e5;
-  --text-clr: #666666;
+	/* colors depend on project */
+	--primary-clr: #3c6f9b;
+	--secondary-clr: #294f66;
+	--accent-clr: #5cb0e5;
+	--text-clr: #666666;
 
-  --bg-clr-dark: #252525;
+	--bg-clr-dark: #252525;
 }
 
 html {
-  scroll-behavior: smooth;
+	scroll-behavior: smooth;
 
-  height: 100%;
+	height: 100%;
 }
 
 body {
-  /* so the footer sticks to the bottom of page with margin-top: auto; */
-  display: flex;
-  flex-direction: column;
-  min-height: 100%;
+	/* so the footer sticks to the bottom of page with margin-top: auto; */
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
 
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
+	font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+		"Lucida Sans", Arial, sans-serif;
+
+	position: relative;
 }
 
 h1,
@@ -38,98 +40,100 @@ h6,
 p,
 pre,
 a {
-  font-family: inherit;
+	font-family: inherit;
 }
 
 /* names of pages */
 h1 {
-  margin: 2rem;
+	margin: 2rem;
 
-  text-align: center;
-  text-transform: uppercase;
+	text-align: center;
+	text-transform: uppercase;
 
-  font-size: min(8rem, 16vw);
+	font-size: min(8rem, 14vw);
 
-  color: var(--primary-clr);
+	color: var(--primary-clr);
 }
 
 /* names of sections */
 h2 {
-  margin: 1.5rem;
-  padding-top: 3rem;
+	margin: 1.5rem;
+	padding-top: 3rem;
 
-  text-align: center;
-  text-transform: uppercase;
+	text-align: center;
+	text-transform: uppercase;
 
-  font-size: min(6rem, 12vw);
+	font-size: min(6rem, 10vw);
 
-  color: var(--primary-clr);
+	color: var(--primary-clr);
 }
 
 /* names of subsections */
 h3 {
-  margin: 1rem;
-  padding-top: 2rem;
+	margin: 1rem;
+	padding-top: 2rem;
 
-  text-align: center;
-  font-size: min(4rem, 8vw);
+	text-align: center;
+	font-size: min(4rem, 8vw);
 
-  color: var(--secondary-clr);
+	color: var(--secondary-clr);
 }
 
 /* other titles (posts etc) */
 h4 {
-  font-size: 1.5rem;
+	font-size: min(1.375rem, 5vw);
 
-  color: var(--accent-clr);
+	color: var(--accent-clr);
 }
 
 p,
 pre {
-  font-size: 1.25rem;
+	font-size: min(1.25rem, 3.75vw);
 
-  color: var(--text-clr);
+	color: var(--text-clr);
 }
 
 a {
-  color: var(--accent-clr);
+	color: var(--accent-clr);
 }
 
 .hidden {
-  display: none;
+	display: none;
 }
 
 @media only screen and (max-width: 450px) {
-  /* names of pages */
-  h1 {
-    margin: 1rem;
+	/* names of pages */
+	h1 {
+		margin: 1rem;
+	}
 
-    /* font-size: 5rem; */
-  }
+	/* names of sections */
+	h2 {
+		margin: 0.75rem;
+		padding-top: 1.5rem;
+	}
 
-  /* names of sections */
-  h2 {
-    margin: 0.75rem;
-    padding-top: 1.5rem;
+	/* names of subsections */
+	h3 {
+		margin: 0.5rem;
+		padding-top: 1rem;
+	}
+}
 
-    /* font-size: 3.5rem; */
-  }
+.subheading-hr {
+	width: 40%;
+	margin: 1rem auto;
+	border-top: min(1rem, 3vw) dotted var(--primary-clr);
+}
 
-  /* names of subsections */
-  h3 {
-    margin: 0.5rem;
-    padding-top: 1rem;
+.background-image {
+	z-index: -9999;
 
-    /* font-size: 2.25rem; */
-  }
+	background-image: url(../img/EBEC-Final_background.png);
+	background-size: 100vw;
 
-  /* other titles (posts etc) */
-  h4 {
-    font-size: 1.375rem;
-  }
+	position: absolute;
+	inset: 0;
 
-  p,
-  pre {
-    font-size: 1.1rem;
-  }
+	opacity: 0.1;
 }

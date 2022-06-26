@@ -1,0 +1,68 @@
+.numbers-section {
+	background-image: linear-gradient(
+			rgba(0, 0, 0, 0.5) 100%,
+			rgba(0, 0, 0, 0.5) 100%
+		),
+		url("../../img/BEST\ Zagreb/BEST-Zagreb-7.webp");
+	background-size: cover;
+	background-position: 0 -700px;
+}
+
+.numbers-s__container {
+	max-width: 120rem;
+	margin: auto;
+
+	padding: min(3rem, 6vw) 1rem;
+
+	display: flex;
+	gap: min(2rem, 2vw);
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.numbers-s__box {
+	width: min(26rem, 95%);
+	padding: min(3rem, 6vw);
+
+	border-radius: 0.5rem;
+
+	display: flex;
+	gap: min(0.75rem, 1vw);
+	flex-direction: column;
+	justify-content: space-between;
+
+	text-align: center;
+
+	opacity: 0.8;
+	background-color: gray;
+
+	transition: transform 0.4s ease-in-out;
+}
+
+.numbers-s__box:hover {
+	opacity: 0.9;
+	transform: scale(1.05);
+}
+
+.numbers-s__icon {
+	color: orange;
+}
+
+.numbers-s__counter {
+	font-size: min(4rem, 12vw);
+	font-weight: 500;
+	color: orange;
+}
+
+.numbers-s__text {
+	font-size: min(1.75rem, 6vw);
+
+	color: whitesmoke;
+}
+
+@media only screen and (max-width: 320px) {
+	.numbers-s__icon {
+		transform: scale(0.75);
+	}
+}
