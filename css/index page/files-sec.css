@@ -4,7 +4,7 @@
 }
 
 .files-cards {
-  font-size: min(1rem, 1.25vw);
+  font-size: min(1rem, 1.375vw);
 
   display: flex;
   flex-wrap: wrap;
@@ -69,7 +69,7 @@
 }
 
 .card__doc-text {
-  font-size: inherit;
+  font-size: min(1em, 2vw);
   letter-spacing: 0.4px;
   text-decoration: none;
 }
@@ -79,8 +79,8 @@
   text-decoration: underline;
 }
 
-@media only screen and (max-width: 320px) {
+/* @media only screen and (max-width: 320px) {
   .files-cards {
     font-size: min(1rem, 2vw);
   }
-}
+} */
