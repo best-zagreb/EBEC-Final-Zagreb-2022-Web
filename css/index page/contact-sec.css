@@ -3,7 +3,8 @@
   /* overflow: hidden; */
 
   max-width: 120rem;
-  margin: min(3rem, 8vw) auto;
+  margin-inline: auto;
+  margin-bottom: min(3rem, 8vw);
 }
 
 .people-cards {
@@ -70,12 +71,6 @@
 
   color: var(--accent-clr);
 }
-
-/* @media only screen and (max-width: 320px) {
-	.rhombus-svg {
-		display: none;
-	}
-} */
 
 @keyframes float {
   0% {
