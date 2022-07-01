@@ -7,7 +7,7 @@
 
 .images-wrapper {
   display: flex;
-  gap: 4rem;
+  gap: min(4rem, 8vw);
   justify-content: center;
   align-items: center;
 }
@@ -25,11 +25,4 @@
 .images-wrapper img:hover,
 .images-wrapper img:focus {
   transform: scale(1.1);
-}
-
-@media only screen and (max-width: 400px) {
-  .images-wrapper {
-    flex-wrap: wrap;
-    gap: 1rem;
-  }
 }
