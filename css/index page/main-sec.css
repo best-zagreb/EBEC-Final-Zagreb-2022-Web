@@ -19,12 +19,7 @@
 
 .main-s__image {
   width: 100%;
-}
-
-@media (max-width: 800px) {
-  .main-s__image {
-    max-height: 10rem;
-  }
+  max-height: 20vw;
 }
 
 .main-s__heading {

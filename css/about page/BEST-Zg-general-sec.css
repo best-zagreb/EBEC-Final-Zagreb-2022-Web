@@ -1,14 +1,19 @@
 .BEST-Zg-general-section {
-  width: 80%;
   max-width: 100rem;
-  margin: 2rem auto;
-  /* margin-bottom: 30px; because of navigation buttons */
+  margin: min(2rem, 4vw) auto;
+  padding-inline: 4vw;
   padding-top: 1rem;
 
   display: flex;
-  gap: 2rem;
+  gap: min(2rem, 4vw);
   justify-content: center;
   align-items: center;
+}
+
+@media only screen and (max-width: 768px) {
+  .BEST-Zg-general-section {
+    flex-wrap: wrap;
+  }
 }
 
 .general-s__info,
@@ -19,7 +24,7 @@
 .general-s__info {
   border: solid 3px #faa519;
   border-radius: 1rem;
-  padding: 1.5rem 2rem;
+  padding: 1.5rem min(2rem, 3vw);
 
   line-height: 1.4;
   text-align: center;
@@ -50,7 +55,7 @@ img {
 
 .carousel {
   position: relative;
-  height: 400px;
+  height: min(25rem, 30vw);
   width: 70%;
   margin: 0 auto;
 }
@@ -65,7 +70,7 @@ img {
   height: 100%;
   position: relative;
   overflow: hidden;
-  border-radius: 100px;
+  border-radius: 2vw;
 }
 
 .carousel__track {
@@ -96,24 +101,25 @@ img {
   border-radius: 30%;
   border: none;
 
-  transition: background 0.2s ease-in; /* animate background fade-in on hover */
+  transition: background-color 0.2s ease-in; /* animate background fade-in on hover */
 }
 
-.carousel__button:hover {
-  background: rgba(0, 0, 0, 0.3);
+.carousel__button:hover,
+.carousel__button:focus {
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .carousel__prevBtn {
-  left: -40px;
+  left: max(-4rem, -12vw);
 }
 
 .carousel__nextBtn {
-  right: -40px;
+  right: max(-4rem, -12vw);
 }
 
-.carousel__button svg {
-  width: 30px;
-  margin: 40px 0;
+.carousel__button > svg {
+  width: min(2.5rem, 6vw);
+  margin: 2rem 0;
 }
 
 .carousel__button svg path {
@@ -125,18 +131,17 @@ img {
   /* background-color: pink; */
   display: flex;
   justify-content: center;
-  padding: 10px 0;
+  padding: 1rem 0;
 }
 
 .carousel__indicator {
   border: none;
-  border-radius: 0;
   border-radius: 50%;
-  width: 15px;
-  height: 15px;
+  width: min(1.5rem, 3vw);
+  aspect-ratio: 1;
   background: var(--accent-clr);
   filter: brightness(50%);
-  margin: 0 12px;
+  margin: 0 min(1rem, 2vw);
 
   /* animate background fade-in on hover */
   -moz-transition: filter 0.2s ease-in;
@@ -155,25 +160,4 @@ img {
 
 .carousel__indicator:not(.carousel__indicator.current-slide) {
   cursor: pointer;
-}
-
-@media only screen and (max-width: 450px) {
-  .general-section {
-    width: 95%;
-  }
-}
-
-@media only screen and (max-width: 900px) {
-  .general-section {
-    flex-wrap: wrap;
-    margin: 1rem auto calc(1rem + 30px) auto;
-  }
-
-  .carousel {
-    height: 200px;
-  }
-
-  .carousel__track-container {
-    border-radius: 3rem;
-  }
 }

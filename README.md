@@ -4,15 +4,14 @@ This is a repo which contains all the files necessary for the webpage to look as
 
 Useful links:
 [Web](https://ebec-final-zagreb-2022.netlify.app/)
-[Drive](https://drive.google.com/drive/u/1/folders/1bPgM50-mtkoYLCE54O8txg7cpV8L_msj)
+[Drive](https://drive.google.com/drive/folders/1UBn48a6tbh-MhGPCnxJKsi-RhWbRhWJK?usp=sharing)
 
-[EBEC Final Zg VI](https://lbgzagreb.slack.com/files/UML2NDSS2/F02M1JPE48K/vi_ebec_final.pdf) | 
-[BEST VI](https://private.best.eu.org/toolbox/welcome.jsp?entry=hpuck0l&selectedSubEntry=hpuck0l) | 
-[Dopis](https://drive.google.com/file/d/1BSrnP00VpRK66rr5h_E6j4vqPpk9pXv_/view) | 
-[EBEC local web](https://best.hr/ebec/) | 
+[EBEC Final Zg VI](https://lbgzagreb.slack.com/files/UML2NDSS2/F02M1JPE48K/vi_ebec_final.pdf) |
+[BEST VI](https://private.best.eu.org/toolbox/welcome.jsp?entry=hpuck0l&selectedSubEntry=hpuck0l) |
+[Dopis](https://drive.google.com/file/d/1BSrnP00VpRK66rr5h_E6j4vqPpk9pXv_/view) |
+[EBEC local web](https://best.hr/ebec/) |
 [EBEC Final Turin 2019 web](https://www.bestorino.com/ebecfinal/) |
 [Schedule](https://docs.google.com/spreadsheets/d/1GtH79MJElWUphnlKzePiw0892swHtk_0IiimOFVZ_Kg) |
-[Survival guide](#)
+[Survival guide](https://drive.google.com/file/d/1PYAxUU0YZIVUfxcxxgCZoMIQNToGCUKr/view)
 
-In default.css you'll find basic styles for page content that MUST be included on every page. Try not to overwrite them within your css files if not neccessary.
-Also, default.html is the basic page from which you can build.
+In default.css you'll find basic styles for page content that MUST be included on every page alongside normalise.css and fonts.css. Try not to overwrite them within your css files if not neccessary.
