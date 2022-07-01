@@ -1,24 +1,22 @@
 .BEST-general-section {
   margin: 2rem auto;
-  padding-inline: 1rem;
+  padding-inline: min(4rem, 4vw);
 
-  width: 80%;
   max-width: 80rem;
 
   display: flex;
-  gap: 2rem;
+  gap: min(2rem, 2vw);
   justify-content: center;
   align-items: center;
 }
 
 .BEST-general-s__logomark {
-  max-width: 20rem;
-  min-width: 10rem;
-  width: 100%;
+  /* max-width: 15rem; */
+  width: min(60vw + 5rem, 50rem);
 }
 
 .BEST-general-s__hrz-divider {
-  width: 0px;
+  width: 0;
   height: 12rem;
 
   border: solid #1c75bc 2px;
@@ -30,23 +28,16 @@
   text-align: justify;
 }
 
-@media only screen and (max-width: 710px) {
+@media only screen and (max-width: 550px) {
   .BEST-general-section {
     flex-wrap: wrap;
-
-    width: 95%;
   }
 
   .BEST-general-s__logomark {
-    max-width: 12rem;
+    width: 30vw;
   }
 
   .BEST-general-s__hrz-divider {
     display: none;
-  }
-
-  .BEST-general-s__text {
-    line-height: 1.4;
-    text-align: center;
   }
 }

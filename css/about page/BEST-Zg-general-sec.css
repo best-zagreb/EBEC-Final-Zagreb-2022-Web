@@ -1,0 +1,166 @@
+.BEST-Zg-general-section {
+  max-width: 100rem;
+  margin: min(2rem, 4vw) auto;
+  padding-inline: 4vw;
+  padding-top: 1rem;
+
+  display: flex;
+  gap: min(2rem, 4vw);
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (max-width: 768px) {
+  .BEST-Zg-general-section {
+    flex-wrap: wrap;
+  }
+}
+
+.general-s__info,
+.general-s__carousel {
+  flex: 1 1 50%;
+}
+
+.general-s__info {
+  border: solid 3px #faa519;
+  border-radius: 1rem;
+  padding: 1.5rem min(2rem, 3vw);
+
+  line-height: 1.4;
+  text-align: center;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.general-s__info-link {
+  font-size: min(1.5rem, 4.5vw);
+  font-weight: 700;
+
+  text-decoration: none;
+  color: var(--accent-clr);
+}
+
+.general-s__info-link:hover,
+.general-s__info-link:focus {
+  text-decoration: underline;
+}
+
+.general-s__carousel {
+  height: 100%;
+}
+
+.carousel {
+  position: relative;
+  height: min(25rem, 30vw);
+  width: 70%;
+  margin: 0 auto;
+}
+
+.carousel__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* image will be cut instead of streached */
+
+  /* pointer for lightbox */
+  cursor: pointer;
+}
+
+.carousel__track-container {
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  border-radius: 2vw;
+}
+
+.carousel__track {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+  height: 100%; /* necessary cause js track.transform shrinks them to 0 */
+}
+
+.carousel__slide {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+
+  width: 100%;
+}
+
+/* Next and previous buttons */
+.carousel__button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%); /* move up 50% of button height */
+
+  cursor: pointer;
+
+  background: none;
+  border-radius: 30%;
+  border: none;
+
+  transition: background-color 0.2s ease-in; /* animate background fade-in on hover */
+}
+
+.carousel__button:hover,
+.carousel__button:focus {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.carousel__prevBtn {
+  left: max(-4rem, -12vw);
+}
+
+.carousel__nextBtn {
+  right: max(-4rem, -12vw);
+}
+
+.carousel__button > svg {
+  width: min(2.5rem, 6vw);
+  margin: 2rem 0;
+}
+
+.carousel__button svg path {
+  fill: var(--accent-clr);
+}
+
+/* Navigation buttons */
+.carousel__nav {
+  /* background-color: pink; */
+  display: flex;
+  justify-content: center;
+  padding: 1rem 0;
+}
+
+.carousel__indicator {
+  border: none;
+  border-radius: 50%;
+  width: min(1.5rem, 3vw);
+  aspect-ratio: 1;
+  background: var(--accent-clr);
+  filter: brightness(50%);
+  margin: 0 min(1rem, 2vw);
+
+  /* animate background fade-in on hover */
+  -moz-transition: filter 0.2s ease-in;
+  -o-transition: filter 0.2s ease-in;
+  -webkit-transition: filter 0.2s ease-in;
+  transition: filter 0.2s ease-in;
+}
+
+.carousel__indicator:hover {
+  filter: brightness(90%);
+}
+
+.carousel__indicator.current-slide {
+  filter: brightness(100%);
+}
+
+.carousel__indicator:not(.carousel__indicator.current-slide) {
+  cursor: pointer;
+}

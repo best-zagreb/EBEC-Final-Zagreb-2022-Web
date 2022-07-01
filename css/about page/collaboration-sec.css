@@ -1,13 +1,12 @@
 .collaboration-section {
   margin: 2rem auto;
-  padding-top: 6rem;
   padding-inline: 1rem;
 
-  max-width: 70rem;
+  max-width: 80rem;
 }
 
 .collab-s__images {
-  margin-bottom: 2rem;
+  margin-bottom: min(2rem, 2vw);
 
   display: flex;
   gap: 4%;
@@ -51,7 +50,6 @@
 
 .collab-s__text {
   margin: 0 auto;
-  max-width: 55rem;
 
   line-height: 1.6;
   text-align: center;
@@ -66,15 +64,7 @@
   text-decoration: underline;
 }
 
-@media only screen and (max-width: 505px) {
-  .collaboration-section {
-    padding-top: 2rem;
-  }
-
-  .collab-s__images {
-    margin-bottom: 0.25rem;
-  }
-
+@media only screen and (max-width: 450px) {
   .collab-s__img-container {
     width: 50%;
   }
@@ -84,11 +74,6 @@
   }
 
   .collab-s__svg-container {
-    width: 0;
-  }
-
-  .collab-s__text {
-    font-size: 1.1rem;
-    line-height: 1.2;
+    display: none;
   }
 }
