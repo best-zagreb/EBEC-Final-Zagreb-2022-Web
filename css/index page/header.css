@@ -48,9 +48,6 @@ header {
   font-size: 2.5em;
 
   text-align: center;
-  /* font-family: "Brush Script MT", cursive, sans-serif; */
-  font-family: Roboto, Trebuchet MS, sans-serif;
-  font-weight: 1000;
 }
 
 .countdown {
@@ -59,7 +56,7 @@ header {
   text-align: center;
   text-transform: uppercase;
   color: white;
-  font-family: Trebuchet MS, fantasy, sans-serif;
+  font-family: "Simply Rounded Regular", sans-serif;
 }
 
 .countdown__event-status {

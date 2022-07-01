@@ -34,15 +34,18 @@
 
   text-align: center;
 
-  opacity: 0.8;
-  background-color: gray;
+  background-color: rgba(128, 128, 128, 0.8);
 
   transition: transform 0.4s ease-in-out;
 }
 
 .numbers-s__box:hover {
-  opacity: 0.9;
+  background-color: rgba(128, 128, 128, 0.9);
   transform: scale(1.05);
+}
+
+.numbers-s__box * {
+  opacity: 1;
 }
 
 .numbers-s__icon {

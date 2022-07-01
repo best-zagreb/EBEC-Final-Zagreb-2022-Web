@@ -37,6 +37,8 @@
 
     <title>EBEC Final Zagreb 2022</title>
 
+    <link href="css/normalize.css" rel="stylesheet" />
+    <link href="css/fonts.css" rel="stylesheet" />
     <link href="css/default.css" rel="stylesheet" />
     <link href="css/nav.css" rel="stylesheet" />
     <link href="css/index page/header.css" rel="stylesheet" />
@@ -49,7 +51,7 @@
     <script src="js/nav.js" defer></script>
     <script src="js/countdown.js" defer></script>
     <script src="js/carousel.js" defer></script>
-    <script src="js/delayAnimation.js" defer></script>
+    <!-- <script src="js/delayAnimation.js" defer></script> -->
   </head>
   <body>
     <div class="background-image"></div>
@@ -190,10 +192,10 @@
           />
         </svg>
 
-        <div class="header__motto">Where innovation begins.</div>
+        <h4 class="header__motto">Where innovation begins.</h4>
 
         <div class="countdown">
-          <div class="countdown__event-status">Starts in</div>
+          <h5 class="countdown__event-status">Starts in</h5>
           <span class="countdown__days"></span>
           <span class="countdown__days-text"> DAY</span>
           <span class="countdown__hours"></span>
@@ -339,7 +341,8 @@
               .cls-4 {
                 font-size: 21px;
                 fill: #fff;
-                font-family: Corbel-Bold, Corbel;
+                font-family: Corbel-Bold, Corbel, "Simply Rounded Regular",
+                  Roboto;
                 font-weight: 700;
               }
               .cls-5 {
@@ -599,77 +602,63 @@
 		</section> -->
 
     <!-- <section class="main-section">
-			<div class="main-s__content-container hidden">
-				<h3 class="main-s__heading">Latest news</h3>
-				<p class="main-s__text">
-					Stay up to date on all things EBEC Final by taking a look at
-					the latest news. To make sure you didn't miss anything,
-					check out the
-					<a href="updates.html"><em>UPDATES</em></a> page for older
-					posts.
-				</p>
-			</div>
+      <div class="main-s__content-container">
+        <h3 class="main-s__heading">Latest news</h3>
+        <p class="main-s__text">
+          Stay up to date on all things EBEC Final by taking a look at the
+          latest news. To make sure you didn't miss anything, check out the
+          <a href="updates.html"><em>UPDATES</em></a> page for older posts.
+        </p>
+      </div>
 
-			<div class="main-s__content-container hidden">
-				<div class="posts">
-					<article class="post" id="post-02">
-						<div class="post__data-wrapper">
-							<div class="post__row">
-								<h4 class="post__title">Post title</h4>
+      <div class="main-s__content-container">
+        <div class="posts">
+          <article class="post" id="post-02">
+            <div class="post__data-wrapper">
+              <div class="post__row">
+                <h4 class="post__title">Post title</h4>
+              </div>
 
-								<p class="post__tag">
-									Tag: <a href="#">Info</a>
-								</p>
-							</div>
-
-							<pre class="post__text">
+              <pre class="post__text">
 Nam interdum, metus et aliquet porta, est turpis rhoncus elit, et blandit tortor ex ac ipsum. Phasellus venenatis laoreet risus id efficitur. Donec ante ante, gravida et ultricies in, scelerisque rhoncus metus. Nam non diam mollis, lobortis neque nec, suscipit nibh. Quisque sed quam porttitor ex bibendum consequat nec quis erat. Vivamus vulputate ligula ut ex viverra, ut aliquam eros vehicula. Cras felis nisi, bibendum nec luctus quis, tempor eu tortor. Curabitur lacinia sem orci, non tincidunt sapien mattis id. Suspendisse sagittis orci sed tortor vestibulum cursus. Nulla nec orci ut tellus feugiat pulvinar eu vel ipsum. Nulla in nisi augue. Fusce vitae ornare sem. Praesent non nulla et est maximus mattis. Donec lectus arcu, auctor a consectetur facilisis, accumsan quis urna.
 
 Nunc et arcu eu ante luctus scelerisque. Nullam congue est tincidunt leo accumsan molestie. Vivamus posuere quis enim dapibus rutrum. Donec nec sollicitudin felis. Nulla egestas malesuada massa, id finibus augue euismod nec. Nunc posuere elit non dui vehicula, in consectetur ante consectetur. Nam scelerisque mauris cursus mauris posuere, sit amet vehicula ipsum tempus. Maecenas scelerisque laoreet nisi a gravida. Mauris consequat placerat arcu, a tristique massa eleifend quis. Quisque quis consectetur tellus, eget dictum lacus. Integer malesuada lorem neque, placerat varius leo tincidunt ac. Curabitur sit amet neque ut lacus malesuada lobortis. Etiam pellentesque turpis sit amet eleifend efficitur. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vulputate euismod leo, eu fringilla risus ornare ac.
 					</pre
-							>
+              >
 
-							<div class="post__row">
-								<p class="post__date">29/01/2022</p>
+              <div class="post__row">
+                <p class="post__date">29/01/2022</p>
 
-								<a
-									class="post__read-more-link"
-									href="updates.html#post-02"
-									>READ MORE -></a
-								>
-							</div>
-						</div>
-					</article>
+                <a class="post__read-more-link" href="updates.html#post-02"
+                  >READ MORE -></a
+                >
+              </div>
+            </div>
+          </article>
 
-					<article class="post" id="post-01">
-						<div class="post__data-wrapper">
-							<div class="post__row">
-								<h4 class="post__title">Post title</h4>
+          <article class="post" id="post-01">
+            <div class="post__data-wrapper">
+              <div class="post__row">
+                <h4 class="post__title">Post title</h4>
+              </div>
 
-								<p class="post__tag">
-									Tag: <a href="#">Info</a>
-								</p>
-							</div>
-
-							<pre class="post__text">
+              <pre class="post__text">
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. In lacinia malesuada lectus, a scelerisque enim facilisis nec. Morbi mattis odio at metus pharetra semper. Donec consequat egestas odio sit amet faucibus. Curabitur rhoncus mi vitae urna dignissim, eu interdum arcu iaculis. Suspendisse nec mauris tincidunt, tristique lorem non, blandit ipsum. Donec varius lectus ac hendrerit facilisis. Ut sed orci non felis venenatis tincidunt ac non velit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Ut ornare nibh et felis vestibulum iaculis. Morbi hendrerit ipsum vitae turpis mattis, in pulvinar ex condimentum. Maecenas efficitur finibus nibh, nec vestibulum libero volutpat sit amet. Duis porta malesuada euismod. Vivamus fringilla mauris eget tellus feugiat, in vulputate erat placerat. Praesent at egestas neque, non efficitur ipsum.
 					</pre
-							>
+              >
 
-							<div class="post__row">
-								<p class="post__date">29/01/2022</p>
+              <div class="post__row">
+                <p class="post__date">29/01/2022</p>
 
-								<a
-									class="post__read-more-link"
-									href="updates.html#post-01"
-									>READ MORE -></a
-								>
-							</div>
-						</div>
-					</article>
-				</div>
-			</div>
-		</section> -->
+                <a class="post__read-more-link" href="updates.html#post-01"
+                  >READ MORE -></a
+                >
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section> -->
 
     <section class="contact-section">
       <h2>Contact</h2>
@@ -717,7 +706,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. In lacinia malesuada le
                     d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z"
                   ></path>
                 </svg>
-                <div class="person-info__text">Roberto Gregov</div>
+                <p class="person-info__text">Roberto Gregov</p>
               </div>
               <div>
                 <svg
@@ -732,7 +721,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. In lacinia malesuada le
                     d="M519.442 288.651c-41.519 0-59.5 31.593-82.058 31.593C377.409 320.244 432 144 432 144s-196.288 80-196.288-3.297c0-35.827 36.288-46.25 36.288-85.985C272 19.216 243.885 0 210.539 0c-34.654 0-66.366 18.891-66.366 56.346 0 41.364 31.711 59.277 31.711 81.75C175.885 207.719 0 166.758 0 166.758v333.237s178.635 41.047 178.635-28.662c0-22.473-40-40.107-40-81.471 0-37.456 29.25-56.346 63.577-56.346 33.673 0 61.788 19.216 61.788 54.717 0 39.735-36.288 50.158-36.288 85.985 0 60.803 129.675 25.73 181.23 25.73 0 0-34.725-120.101 25.827-120.101 35.962 0 46.423 36.152 86.308 36.152C556.712 416 576 387.99 576 354.443c0-34.199-18.962-65.792-56.558-65.792z"
                   ></path>
                 </svg>
-                <div class="person-info__text">Participants Coordinator</div>
+                <p class="person-info__text">Participants Coordinator</p>
               </div>
               <div>
                 <svg
@@ -817,7 +806,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. In lacinia malesuada le
                     d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z"
                   ></path>
                 </svg>
-                <div class="person-info__text">Leo Bolješić</div>
+                <p class="person-info__text">Leo Bolješić</p>
               </div>
               <div>
                 <svg
@@ -832,7 +821,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. In lacinia malesuada le
                     d="M519.442 288.651c-41.519 0-59.5 31.593-82.058 31.593C377.409 320.244 432 144 432 144s-196.288 80-196.288-3.297c0-35.827 36.288-46.25 36.288-85.985C272 19.216 243.885 0 210.539 0c-34.654 0-66.366 18.891-66.366 56.346 0 41.364 31.711 59.277 31.711 81.75C175.885 207.719 0 166.758 0 166.758v333.237s178.635 41.047 178.635-28.662c0-22.473-40-40.107-40-81.471 0-37.456 29.25-56.346 63.577-56.346 33.673 0 61.788 19.216 61.788 54.717 0 39.735-36.288 50.158-36.288 85.985 0 60.803 129.675 25.73 181.23 25.73 0 0-34.725-120.101 25.827-120.101 35.962 0 46.423 36.152 86.308 36.152C556.712 416 576 387.99 576 354.443c0-34.199-18.962-65.792-56.558-65.792z"
                   ></path>
                 </svg>
-                <div class="person-info__text">Final Round Main Organiser</div>
+                <p class="person-info__text">Final Round Main Organiser</p>
               </div>
               <div>
                 <svg
@@ -917,7 +906,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. In lacinia malesuada le
                     d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z"
                   ></path>
                 </svg>
-                <div class="person-info__text">Dunja Olbina</div>
+                <p class="person-info__text">Dunja Olbina</p>
               </div>
               <div>
                 <svg
@@ -932,7 +921,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. In lacinia malesuada le
                     d="M519.442 288.651c-41.519 0-59.5 31.593-82.058 31.593C377.409 320.244 432 144 432 144s-196.288 80-196.288-3.297c0-35.827 36.288-46.25 36.288-85.985C272 19.216 243.885 0 210.539 0c-34.654 0-66.366 18.891-66.366 56.346 0 41.364 31.711 59.277 31.711 81.75C175.885 207.719 0 166.758 0 166.758v333.237s178.635 41.047 178.635-28.662c0-22.473-40-40.107-40-81.471 0-37.456 29.25-56.346 63.577-56.346 33.673 0 61.788 19.216 61.788 54.717 0 39.735-36.288 50.158-36.288 85.985 0 60.803 129.675 25.73 181.23 25.73 0 0-34.725-120.101 25.827-120.101 35.962 0 46.423 36.152 86.308 36.152C556.712 416 576 387.99 576 354.443c0-34.199-18.962-65.792-56.558-65.792z"
                   ></path>
                 </svg>
-                <div class="person-info__text">EBEC Programme Coordinator</div>
+                <p class="person-info__text">EBEC Programme Coordinator</p>
               </div>
               <div>
                 <svg
@@ -1017,7 +1006,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. In lacinia malesuada le
                     d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z"
                   ></path>
                 </svg>
-                <div class="person-info__text">Antonia Ravlija</div>
+                <p class="person-info__text">Antonia Ravlija</p>
               </div>
               <div>
                 <svg
@@ -1032,9 +1021,9 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. In lacinia malesuada le
                     d="M519.442 288.651c-41.519 0-59.5 31.593-82.058 31.593C377.409 320.244 432 144 432 144s-196.288 80-196.288-3.297c0-35.827 36.288-46.25 36.288-85.985C272 19.216 243.885 0 210.539 0c-34.654 0-66.366 18.891-66.366 56.346 0 41.364 31.711 59.277 31.711 81.75C175.885 207.719 0 166.758 0 166.758v333.237s178.635 41.047 178.635-28.662c0-22.473-40-40.107-40-81.471 0-37.456 29.25-56.346 63.577-56.346 33.673 0 61.788 19.216 61.788 54.717 0 39.735-36.288 50.158-36.288 85.985 0 60.803 129.675 25.73 181.23 25.73 0 0-34.725-120.101 25.827-120.101 35.962 0 46.423 36.152 86.308 36.152C556.712 416 576 387.99 576 354.443c0-34.199-18.962-65.792-56.558-65.792z"
                   ></path>
                 </svg>
-                <div class="person-info__text">
+                <p class="person-info__text">
                   Local Corporate Relations Coordinator
-                </div>
+                </p>
               </div>
               <div>
                 <svg
@@ -1119,7 +1108,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. In lacinia malesuada le
                     d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z"
                   ></path>
                 </svg>
-                <div class="person-info__text">Sara Sulen</div>
+                <p class="person-info__text">Sara Sulen</p>
               </div>
               <div>
                 <svg
@@ -1134,9 +1123,9 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. In lacinia malesuada le
                     d="M519.442 288.651c-41.519 0-59.5 31.593-82.058 31.593C377.409 320.244 432 144 432 144s-196.288 80-196.288-3.297c0-35.827 36.288-46.25 36.288-85.985C272 19.216 243.885 0 210.539 0c-34.654 0-66.366 18.891-66.366 56.346 0 41.364 31.711 59.277 31.711 81.75C175.885 207.719 0 166.758 0 166.758v333.237s178.635 41.047 178.635-28.662c0-22.473-40-40.107-40-81.471 0-37.456 29.25-56.346 63.577-56.346 33.673 0 61.788 19.216 61.788 54.717 0 39.735-36.288 50.158-36.288 85.985 0 60.803 129.675 25.73 181.23 25.73 0 0-34.725-120.101 25.827-120.101 35.962 0 46.423 36.152 86.308 36.152C556.712 416 576 387.99 576 354.443c0-34.199-18.962-65.792-56.558-65.792z"
                   ></path>
                 </svg>
-                <div class="person-info__text">
+                <p class="person-info__text">
                   President of Local BEST Group Zagreb
-                </div>
+                </p>
               </div>
               <div>
                 <svg
