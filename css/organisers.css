@@ -1,93 +1,136 @@
 .organisers-container {
-	max-width: 120rem;
-	margin: 0 auto;
+  max-width: 120rem;
+  margin: 0 auto;
 
-	padding: 1rem;
+  padding: 1rem;
 
-	display: flex;
-	gap: min(1rem, 2vw);
-	flex-wrap: wrap;
-	justify-content: space-around;
-	align-items: center;
+  display: flex;
+  gap: min(1rem, 2vw);
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .organiser-card {
-	font-size: min(1rem, 0.5rem + 1vw);
+  font-size: min(1rem, 0.5rem + 1vw);
 
-	width: clamp(18em, 48%, 24rem);
+  width: min(48%, 25rem);
 
-	border: 2px solid var(--secondary-clr);
-	border-radius: 3em;
+  border: 2px solid var(--secondary-clr);
+  border-radius: 3em;
 
-	margin-block: 0.5em;
+  margin-block: 0.5em;
 
-	background-color: white;
+  background-color: white;
 
-	box-shadow: 0.25rem 0.25rem 0.75rem gray;
+  box-shadow: 0.25rem 0.25rem 0.75rem gray;
 
-	display: flex;
-	flex-direction: column;
-	gap: 0.25em;
-	justify-content: baseline;
-	align-items: left;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25em;
+  justify-content: baseline;
+  align-items: left;
 
-	overflow: hidden;
+  overflow: hidden;
 }
 
 .org__image-container {
-	height: 20em;
+  height: 20em;
 }
 
 .org__image-container > img {
-	width: 100%;
-	height: 100%;
+  width: 100%;
+  height: 100%;
 
-	object-fit: cover;
+  object-fit: cover;
 }
 
 .org__info {
-	margin: 0.75em;
-	padding-bottom: 0.5em;
+  margin: 0.75em;
+  padding-bottom: 0.5em;
+  padding-right: 1em;
+  height: 10em;
+
+  display: grid;
+  place-items: left center;
 }
 
 .org__info > * {
-	margin-block: 0.25em;
+  margin-block: 0.25em;
 }
 
 .org__name {
-	font-size: 1.375em;
-	font-weight: 600;
+  font-size: 1.375em;
+  font-weight: 600;
 
-	color: var(--secondary-clr);
+  color: var(--secondary-clr);
 }
 
 .org__function {
-	text-transform: capitalize;
-	font-size: 1.25em;
+  text-transform: capitalize;
+  font-size: 1.25em;
 }
 
 .org__email-container {
-	display: flex;
-	gap: 0.75rem;
-	align-items: center;
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
 }
 
 .org__email {
-	text-decoration: none;
-	font-size: 1em;
+  text-decoration: none;
+  font-size: 1em;
 
-	color: var(--secondary-clr);
+  color: var(--secondary-clr);
 }
 
 .org__email-container:hover > .org__email,
 .org__email-container:focus > .org__email {
-	text-decoration: underline;
+  text-decoration: underline;
 }
 
 .org__envelope-icon {
-	width: 2em;
+  width: 2em;
 }
 
 .org__envelope-icon > path {
-	fill: var(--secondary-clr);
+  fill: var(--secondary-clr);
+}
+
+@media screen and (max-width: 550px) {
+  .organiser-card {
+    display: flex;
+    flex-direction: row;
+
+    width: 95%;
+  }
+
+  .org__image-container {
+    max-height: 12em;
+    height: auto;
+  }
+
+  .org__image-container > img {
+    width: 7em;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .org__image-container > img {
+    width: 5em;
+  }
+
+  .org__email-container {
+    gap: 0rem;
+  }
+
+  .org__envelope-icon {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 250px) {
+  .org__image-container {
+    display: none;
+  }
 }

@@ -1,74 +1,74 @@
 .contact-section {
-	/* background-image: url("img/+\ pattern.png"); */
-	/* overflow: hidden; */
+  /* background-image: url("img/+\ pattern.png"); */
+  /* overflow: hidden; */
 
-	max-width: 120rem;
-	margin: min(3rem, 8vw) auto;
+  max-width: 120rem;
+  margin: min(3rem, 8vw) auto;
 }
 
 .people-cards {
-	display: flex;
-	flex-wrap: wrap;
-	gap: min(3rem, 8vw);
-	justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: min(3rem, 8vw);
+  justify-content: center;
 }
 
 .person-card {
-	width: min(34rem, 90vw);
+  width: min(34rem, 90vw);
 
-	font-size: min(1rem, 3vw);
+  font-size: min(1rem, 3vw);
 
-	display: flex;
-	gap: min(1rem, 2vw);
+  display: flex;
+  gap: min(1rem, 2vw);
 }
 
 .person-card > div {
-	display: grid;
-	place-items: center;
+  display: grid;
+  place-items: center;
 }
 
 .rhombus-svg {
-	height: 12em;
+  height: 12em;
 
-	animation-name: float;
-	animation-duration: 8s;
-	animation-iteration-count: infinite;
-	/* animation-delay added in js */
+  animation-name: float;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  /* animation-delay added in js */
 }
 
 .rhombus-svg > path {
-	fill: none;
-	stroke: var(--accent-clr);
-	stroke-miterlimit: 10;
-	stroke-width: 1rem;
+  fill: none;
+  stroke: var(--accent-clr);
+  stroke-miterlimit: 10;
+  stroke-width: 1rem;
 }
 
 .person-info {
-	display: grid;
-	grid-template-rows: repeat(3, 1fr);
-	place-items: left center;
-	gap: 0.875em;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  place-items: left center;
+  gap: 0.875em;
 }
 
 .person-info > div {
-	display: flex;
-	align-items: center;
-	gap: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 .person-info__icon {
-	width: 1.25em;
+  width: 1.25em;
 }
 
 .person-info__icon > path {
-	fill: var(--accent-clr);
+  fill: var(--accent-clr);
 }
 
 .person-info__text {
-	font-size: 1.25em;
-	text-decoration: none;
+  font-size: 1.25em;
+  text-decoration: none;
 
-	color: var(--accent-clr);
+  color: var(--accent-clr);
 }
 
 /* @media only screen and (max-width: 320px) {
@@ -78,13 +78,13 @@
 } */
 
 @keyframes float {
-	0% {
-		transform: translateY(0rem);
-	}
-	50% {
-		transform: translateY(1rem);
-	}
-	100% {
-		transform: translateY(0rem);
-	}
+  0% {
+    transform: translateY(0rem);
+  }
+  50% {
+    transform: translateY(1rem);
+  }
+  100% {
+    transform: translateY(0rem);
+  }
 }
