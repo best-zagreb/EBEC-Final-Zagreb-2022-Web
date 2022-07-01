@@ -20,13 +20,13 @@
 }
 
 .header__content-container {
-  margin: 2rem 5rem;
+  font-size: min(2rem, 4vw);
 
-  font-size: 2rem;
+  margin: min(2rem, 4vw);
 
   display: flex;
   flex-wrap: wrap;
-  gap: 4rem;
+  gap: min(3rem, 6vw);
   align-content: center;
   align-items: center;
 }
@@ -73,20 +73,6 @@
   font-size: 3em;
 
   text-shadow: 1px 1px 2px white;
-}
-
-@media only screen and (max-width: 1200px) and (min-width: 767px) {
-  .header__content-container {
-    font-size: 1.75rem;
-    margin: 2rem;
-  }
-}
-
-@media only screen and (max-width: 767px) {
-  .header__content-container {
-    font-size: 1.25rem;
-    margin: 1.5rem;
-  }
 }
 
 @keyframes float {

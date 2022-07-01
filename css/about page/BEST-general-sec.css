@@ -5,14 +5,13 @@
   max-width: 80rem;
 
   display: flex;
-  gap: min(2rem, 2vw);
+  gap: min(2rem, 4vw);
   justify-content: center;
   align-items: center;
 }
 
 .BEST-general-s__logomark {
-  /* max-width: 15rem; */
-  width: min(60vw + 5rem, 50rem);
+  width: min(60vw, 50rem);
 }
 
 .BEST-general-s__hrz-divider {
@@ -28,16 +27,20 @@
   text-align: justify;
 }
 
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 768px) {
   .BEST-general-section {
     flex-wrap: wrap;
   }
 
   .BEST-general-s__logomark {
-    width: 30vw;
+    width: min(30vw, 10rem);
   }
 
   .BEST-general-s__hrz-divider {
     display: none;
+  }
+
+  .BEST-general-s__text {
+    text-align: center;
   }
 }
