@@ -1,5 +1,5 @@
 .main-section {
-  padding: min(2rem, 4vw);
+  padding: min(2rem, 3vw);
 
   display: flex;
   flex-wrap: wrap;
@@ -13,13 +13,18 @@
 }
 
 .main-s__content-container {
-  max-height: 40rem;
-  width: clamp(500px, 45%, 50rem);
+  width: min(45%, 50rem);
+}
+
+@media screen and (max-width: 768px) {
+  .main-s__content-container {
+    width: 100%;
+  }
 }
 
 .main-s__image {
   width: 100%;
-  max-height: 20vw;
+  max-height: min(15vw, 25rem);
 }
 
 .main-s__heading {
@@ -165,6 +170,8 @@
   border-radius: 1rem;
 
   box-shadow: 0.5rem 0.375rem 0.75rem gray;
+
+  overflow: hidden;
 
   background-color: white;
 }
