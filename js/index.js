@@ -80,3 +80,49 @@ if (new Date() > ClosingDay) {
     countdownMinutes.innerText = ("0" + calculatedTime.minutesLeft).slice(-2);
   }, 1000 * 30);
 }
+
+// posts loading from json
+
+const postTemplate = document.querySelector(".post-template");
+const posts = document.querySelector(".posts");
+let numberOfPosts = 2;
+
+console.log(postTemplate);
+
+fetch("../data/posts.json")
+  .then((res) => res.json())
+  .then((data) => {
+    data.map((post) => {
+      if (numberOfPosts > 0) {
+        const postElement = postTemplate.content.cloneNode(true).children[0];
+
+        const postTitleElement = postElement.querySelector(".post__title");
+        const postbodyElement = postElement.querySelector(".post__text");
+        const postDateElement = postElement.querySelector(".post__date");
+        const postReadMoreElement = postElement.querySelector(
+          ".post__read-more-link"
+        );
+
+        postElement.setAttribute("id", post.id);
+        postTitleElement.textContent = post.title;
+        postDateElement.textContent = post.date;
+        postReadMoreElement.setAttribute("href", "updates#" + post.id);
+
+        [post.body].map((paragraphObjects) => {
+          paragraphObjects.forEach((object) => {
+            postbodyElement.textContent += object.paragraph + "\n";
+          });
+        });
+
+        //   console.log(postImgElement);
+
+        posts.append(postElement);
+        numberOfPosts--;
+      } else {
+        return;
+      }
+    });
+  })
+  .catch((err) => {
+    console.error(err);
+  });

@@ -1,0 +1,170 @@
+[
+  {
+    "id": 9,
+    "title": "Who will be joining us this year in Zagreb. 🏅",
+    "tag": "News",
+    "body": [
+      {
+        "paragraph": "The competition was hard this year and only the best can continue a race to the top!🔝"
+      },
+      {
+        "paragraph": ""
+      },
+      {
+        "paragraph": "Tap the image to see who is coming to Zagreb."
+      }
+    ],
+    "date": "01/07/2022",
+    "imgUrl": "../img/posts/post-09-nrr-map.jpg"
+  },
+  {
+    "id": 8,
+    "title": "Accomodation in SD ‘Sava’ 🏡",
+    "tag": "Info",
+    "body": [
+      {
+        "paragraph": "It's time to reveal where all are participants will be hosted - Student dormitory Stjepan Radić!"
+      },
+      {
+        "paragraph": "SD Stjepan Radić is a home to over 3500 students 🛏️ during the academic year. Its close proximity to the town center, Jarun lake 🏐 and many other facilities together with the integrated messrooms, cafeteria and pastry shop 🍰, cinema and fitness center make it the go to place for students from all over Zagreb! 🎉"
+      }
+    ],
+    "date": "27/06/2022",
+    "imgUrl": "../img/posts/post-08-sd-sava.jpg"
+  },
+  {
+    "id": 7,
+    "title": "It's not only the BEST Zagreb team that is working hard 👏",
+    "tag": "News",
+    "body": [
+      {
+        "paragraph": "Our international colleagues are helping us and giving us support from all around Europe. 🥰"
+      },
+      {
+        "paragraph": ""
+      },
+      {
+        "paragraph": "Check out the Organisers page to meet them all! 🌍"
+      }
+    ],
+    "date": "22/06/2022",
+    "imgUrl": "../img/posts/post-07-int-team.jpg"
+  },
+  {
+    "id": 6,
+    "title": "It's time to introduce ‘our people behind the Final’ 🤩",
+    "tag": "News",
+    "body": [
+      {
+        "paragraph": "On the Organisers page you can find our organisation team. They are working hard to make sure the Final goes smoothly and makes an impact on all our hearts. 💘"
+      }
+    ],
+    "date": "13/06/2022",
+    "imgUrl": "../img/posts/post-06-local-team.jpg"
+  },
+  {
+    "id": 5,
+    "title": "Survival guide 📖",
+    "tag": "Info",
+    "body": [
+      {
+        "paragraph": "To make sure all participants are informed about the culture, accomodation, currency and transportation in Croatia, we made a special document containing all the neccesary information for you to ‘survive’ and be prepared for the competition! 🧭"
+      },
+      {
+        "paragraph": ""
+      },
+      {
+        "paragraph": "Check out the Survival guide on the homepage."
+      }
+    ],
+    "date": "08/06/2022",
+    "imgUrl": "../img/posts/post-05-sg.jpg"
+  },
+  {
+    "id": 4,
+    "title": "Our main sponsor - University of Zagreb 💙",
+    "tag": "News",
+    "body": [
+      {
+        "paragraph": "University is a second home to all Zagreb students and is helping us make this Final magical. 🌠"
+      },
+      {
+        "paragraph": "EBEC Final is one of the many projects University has helped LBG Zagreb with and we are happy to see our cooperation and mutual support grow bigger every day.💕"
+      },
+      {
+        "paragraph": ""
+      },
+      {
+        "paragraph": "You can find more information about them on the About BEST page!"
+      }
+    ],
+    "date": "06/06/2022",
+    "imgUrl": "../img/posts/post-04-uni.jpg"
+  },
+  {
+    "id": 3,
+    "title": "Official schedule 📅",
+    "tag": "Info",
+    "body": [
+      {
+        "paragraph": "The official schedule for EBEC Final Zagreb 2022 is out! 🕰️"
+      },
+      {
+        "paragraph": "The event will take place over 8 days during which participants will think, create, learn and most importantly have fun during many activities prepared for them."
+      },
+      {
+        "paragraph": ""
+      },
+      {
+        "paragraph": "Take a look at it on the homepage."
+      }
+    ],
+    "date": "01/06/2022",
+    "imgUrl": "../img/posts/post-03-sch.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Regional rounds are finished 🌍",
+    "tag": "News",
+    "body": [
+      {
+        "paragraph": "With the end of the last regional/national round in Maribor, there are only 2 months left until the final round and the opportunity of a lifetime to show of your knowledge and skills!"
+      }
+    ],
+    "date": "23/05/2022",
+    "imgUrl": "../img/posts/post-02-nrr-cogwheel.png"
+  },
+  {
+    "id": 1,
+    "title": "EBEC Zagreb ⚙️",
+    "tag": "News",
+    "body": [
+      {
+        "paragraph": "This weekend BEST Zagreb organised the local round of EBEC in two categories: Case study and Innovative design. Many students from University of Zagreb participated, but only two teams could be the winners which will soon participate in the regional round which will be held in May in Maribor. We wish them BEST of luck in the competition!"
+      }
+    ],
+    "date": "15/03/2022",
+    "imgUrl": "../img/posts/post-01-ebec-zg.jpg"
+  },
+  {
+    "id": 0,
+    "title": "EBEC Final is back in Zagreb 💠",
+    "tag": "News",
+    "body": [
+      {
+        "paragraph": "After 10 long years local BEST group Zagreb is once again bringing you the biggest student engineering competition EBEC Final! ♾️"
+      },
+      {
+        "paragraph": "It will bring over 150 students from all over Europe who will fight head to head in a number of engineering challenges for the title of ‘BEST Engineers of Europe’."
+      },
+      {
+        "paragraph": ""
+      },
+      {
+        "paragraph": "The competition will take place in Zagreb from the 22nd to the 30th of July. We cannot wait to meet you all!"
+      }
+    ],
+    "date": "01/01/2022",
+    "imgUrl": "../img/posts/post-00-best-zg.png"
+  }
+]

@@ -3,7 +3,7 @@
 
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: min(1rem, 2vw);
   justify-content: space-around;
   align-items: center;
 }
@@ -24,7 +24,7 @@
 
 .main-s__image {
   width: 100%;
-  max-height: min(15vw, 25rem);
+  max-height: min(30vw, 20rem);
 }
 
 .main-s__heading {
@@ -158,26 +158,24 @@
 }
 
 .posts {
-  margin: 1rem;
-
   display: grid;
   justify-content: center;
-  gap: 1rem;
+  gap: min(1rem, 2vw);
 }
 
 .post {
   border: solid 1px lightgrey;
-  border-radius: 1rem;
+  border-radius: min(1rem, 3vw);
 
-  box-shadow: 0.5rem 0.375rem 0.75rem gray;
+  box-shadow: min(0.5rem, 1vw) min(0.375rem, 0.75vw) min(0.75rem, 1.5vw) gray;
 
   overflow: hidden;
 
   background-color: white;
 }
 
-.post__data-wrapper {
-  margin: 0.5rem 1rem;
+.post__content-wrapper {
+  margin: min(0.5rem, 2vw) min(1rem, 4vw);
 }
 
 .post__row {
@@ -200,10 +198,9 @@
 }
 
 .post__text {
-  min-height: 4rem;
-  max-height: 4rem;
+  max-height: min(4rem, 16vw);
 
-  margin: 1rem 0;
+  margin: min(1rem, 2vw) 0;
 
   overflow: hidden;
 

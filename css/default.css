@@ -97,8 +97,7 @@ h4 {
   color: var(--accent-clr);
 }
 
-p,
-pre {
+p {
   font-size: min(1.25rem, 3.75vw);
 
   color: var(--text-clr);
