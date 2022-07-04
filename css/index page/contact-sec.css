@@ -7,14 +7,14 @@
   margin-bottom: min(3rem, 8vw);
 }
 
-.people-cards {
+.contacts {
   display: flex;
   flex-wrap: wrap;
   gap: min(3rem, 8vw);
   justify-content: center;
 }
 
-.person-card {
+.contact-card {
   width: min(34rem, 90vw);
 
   font-size: min(1rem, 3vw);
@@ -23,7 +23,7 @@
   gap: min(1rem, 2vw);
 }
 
-.person-card > div {
+.contact-card > div {
   display: grid;
   place-items: center;
 }
@@ -44,28 +44,31 @@
   stroke-width: 1rem;
 }
 
-.person-info {
+.contact-info {
   display: grid;
   grid-template-rows: repeat(3, 1fr);
   place-items: left center;
   gap: 0.875em;
 }
 
-.person-info > div {
+.contact-info > div {
   display: flex;
   align-items: center;
   gap: 0.5rem;
 }
 
-.person-info__icon {
+.contact-info__icon {
   width: 1.25em;
 }
 
-.person-info__icon > path {
+.contact-info__icon > path {
   fill: var(--accent-clr);
 }
 
-.person-info__text {
+.contact-info__name,
+.contact-info__function,
+.contact-info__email,
+.contact-info__tel {
   font-size: 1.25em;
   text-decoration: none;
 

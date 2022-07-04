@@ -1,0 +1,122 @@
+[
+  {
+    "team": "local",
+    "name": "Leo Bolješić",
+    "function": "Final Round Main Organiser",
+    "email": "ebec-finalmo@BEST-eu.org",
+    "tel": "+385 99 404 6906",
+    "imgUrl": "../img/people/person-Leo B.jpg"
+  },
+  {
+    "team": "local",
+    "name": "Antonia Ravlija",
+    "function": "Local Corporate Relations Coordinator",
+    "email": "antonia.ravlija@BEST.hr",
+    "tel": "+385 99 886 6454",
+    "imgUrl": "../img/people/person-Antonia R.jpg"
+  },
+  {
+    "team": "local",
+    "name": "Mihaela Voća",
+    "function": "Local Public Relations Coordinator",
+    "email": "mihaela.voca@BEST.hr",
+    "tel": "",
+    "imgUrl": "../img/people/person-Mihaela V.jpg"
+  },
+  {
+    "team": "local",
+    "name": "Roberto Gregov",
+    "function": "Participants Coordinator",
+    "email": "roberto.gregov@BEST-eu.org",
+    "tel": "+385 95 366 7752",
+    "imgUrl": "../img/people/person-Roberto G.jpg"
+  },
+  {
+    "team": "local",
+    "name": "Lucija Bogdan",
+    "function": "Local Logistics Coordinator",
+    "email": "lucija.bogdan@BEST.hr",
+    "tel": "",
+    "imgUrl": "../img/people/person-Lucija B.jpg"
+  },
+  {
+    "team": "local",
+    "name": "Antun Matijašec",
+    "function": "Local Topic Coordinator",
+    "email": "antun.matijasec@BEST.hr",
+    "tel": "",
+    "imgUrl": "../img/people/person-Antun M.jpg"
+  },
+  {
+    "team": "local",
+    "name": "Ivan Čičak",
+    "function": "Local Design Coordinator",
+    "email": "ivan.cicak@BEST.hr",
+    "tel": "",
+    "imgUrl": "../img/people/person-Ivan C.jpg"
+  },
+  {
+    "team": "local",
+    "name": "Lucija Šarac",
+    "function": "Local Human Resources Coordinator",
+    "email": "lucija.sarac@BEST.hr",
+    "tel": "",
+    "imgUrl": "../img/people/person-Lucija S.jpg"
+  },
+  {
+    "team": "international",
+    "name": "Dunja Olbina",
+    "function": "EBEC Programme Coordinator",
+    "email": "ebec-coordinator@BEST-eu.org",
+    "tel": "+381 64 497 6001",
+    "imgUrl": "../img/people/person-Dunja O.jpg"
+  },
+  {
+    "team": "international",
+    "name": "Lukasz Sobon",
+    "function": "Fundraising Coordinator",
+    "email": "ebec-frproject@BEST-eu.org",
+    "tel": "",
+    "imgUrl": "../img/people/person-Lukasz S.jpg"
+  },
+  {
+    "team": "international",
+    "name": "Elif Nur Caliskan",
+    "function": "Public Relations Coordinator",
+    "email": "ebec-prcoordinator@BEST-eu.org",
+    "tel": "",
+    "imgUrl": "../img/people/person-Elif NC.jpg"
+  },
+  {
+    "team": "international",
+    "name": "Slave Temkov",
+    "function": "EBEC Programme Secretary",
+    "email": "ebec-secretary@BEST-eu.org",
+    "tel": "",
+    "imgUrl": "../img/people/person-Slave T.jpg"
+  },
+  {
+    "team": "international",
+    "name": "Flávia Carvalhido",
+    "function": "Topic Coordinator",
+    "email": "ebec-topicgroupcoordinator@BEST-eu.org",
+    "tel": "",
+    "imgUrl": "../img/people/person-Flavia C.jpg"
+  },
+  {
+    "team": "international",
+    "name": "Nicholas Argyros",
+    "function": "National/Regional Round Support Coordinator",
+    "email": "ebec-nrrscoordinator@BEST-eu.org",
+    "tel": "",
+    "imgUrl": "../img/people/person-Nicholas A.jpg"
+  },
+  {
+    "team": "international",
+    "name": "Anastasia Semenova",
+    "function": "Local Round Support Coordinator",
+    "email": "ebec-lrscoordinator@BEST-eu.org",
+    "tel": "",
+    "imgUrl": "../img/people/person-Anastasia S.jpg"
+  }
+]

@@ -609,60 +609,40 @@
       </div>
 
       <div class="main-s__content-container">
-        <div class="posts">
-          <article class="post" id="10">
-            <div class="post__data-wrapper">
+        <div class="posts"></div>
+
+        <!-- posts added in js -->
+        <template data-post-template>
+          <article class="post" id="">
+            <div class="post__content-wrapper">
               <div class="post__row">
-                <h4 class="post__title">
-                  Who will be joining us this year in Zagreb. 🏅
-                </h4>
+                <h4 class="post__title"></h4>
               </div>
 
-              <pre class="post__text">
-The competition was hard this year and only the best can continue a race to the top!🔝
-
-Tap the image to see who is coming to Zagreb.</pre
-              >
+              <p class="post__text"></p>
 
               <div class="post__row">
-                <p class="post__date">01/07/2022</p>
+                <p class="post__date"></p>
 
-                <a class="post__read-more-link" href="updates.html#10"
-                  >READ MORE &rarr;</a
-                >
-              </div>
-            </div>
-          </article>
-
-          <article class="post" id="9">
-            <div class="post__data-wrapper">
-              <div class="post__row">
-                <h4 class="post__title">Accomodation in SD ‘Sava’ 🏡</h4>
-              </div>
-
-              <pre class="post__text">
-It's time to reveal where all are participants will be hosted - Student dormitory Stjepan Radić!
-SD Stjepan Radić is a home to over 3500 students 🛏️ during the academic year. Its close proximity to the town center, Jarun lake 🏐 and many other facilities together with the integrated messrooms, cafeteria and pastry shop 🍰, cinema and fitness center make it the go to place for students from all over Zagreb! 🎉</pre
-              >
-
-              <div class="post__row">
-                <p class="post__date">27/06/2022</p>
-
-                <a class="post__read-more-link" href="updates.html#9"
-                  >READ MORE &rarr;</a
-                >
+                <p>
+                  <a class="post__read-more-link" href="/updates.html"
+                    >READ MORE →</a
+                  >
+                </p>
               </div>
             </div>
           </article>
-        </div>
+        </template>
       </div>
     </section>
 
     <section class="contact-section" id="contact">
       <h2>Contact</h2>
 
-      <div class="people-cards">
-        <div class="person-card">
+      <div class="contacts"></div>
+
+      <template data-contact-template>
+        <div class="contact-card">
           <div>
             <svg
               class="rhombus-svg"
@@ -680,7 +660,8 @@ SD Stjepan Radić is a home to over 3500 students 🛏️ during the academic ye
               </clipPath>
 
               <image
-                href="img/people/roberto.jpg"
+                class="contact__image"
+                href=""
                 clip-path="url(#shape)"
                 height="100%"
                 x="45"
@@ -690,21 +671,21 @@ SD Stjepan Radić is a home to over 3500 students 🛏️ during the academic ye
           </div>
 
           <div>
-            <div class="person-info">
+            <div class="contact-info">
               <div>
                 <svg
                   aria-hidden="true"
                   focusable="false"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 448 512"
-                  class="person-info__icon"
+                  class="contact-info__icon"
                 >
                   <path
                     fill="royalblue"
                     d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z"
                   ></path>
                 </svg>
-                <p class="person-info__text">Roberto Gregov</p>
+                <p class="contact-info__name"></p>
               </div>
               <div>
                 <svg
@@ -712,14 +693,14 @@ SD Stjepan Radić is a home to over 3500 students 🛏️ during the academic ye
                   focusable="false"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 576 512"
-                  class="person-info__icon"
+                  class="contact-info__icon"
                 >
                   <path
                     fill="royalblue"
                     d="M519.442 288.651c-41.519 0-59.5 31.593-82.058 31.593C377.409 320.244 432 144 432 144s-196.288 80-196.288-3.297c0-35.827 36.288-46.25 36.288-85.985C272 19.216 243.885 0 210.539 0c-34.654 0-66.366 18.891-66.366 56.346 0 41.364 31.711 59.277 31.711 81.75C175.885 207.719 0 166.758 0 166.758v333.237s178.635 41.047 178.635-28.662c0-22.473-40-40.107-40-81.471 0-37.456 29.25-56.346 63.577-56.346 33.673 0 61.788 19.216 61.788 54.717 0 39.735-36.288 50.158-36.288 85.985 0 60.803 129.675 25.73 181.23 25.73 0 0-34.725-120.101 25.827-120.101 35.962 0 46.423 36.152 86.308 36.152C556.712 416 576 387.99 576 354.443c0-34.199-18.962-65.792-56.558-65.792z"
                   ></path>
                 </svg>
-                <p class="person-info__text">Participants Coordinator</p>
+                <p class="contact-info__function"></p>
               </div>
               <div>
                 <svg
@@ -727,19 +708,14 @@ SD Stjepan Radić is a home to over 3500 students 🛏️ during the academic ye
                   focusable="false"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 512 512"
-                  class="person-info__icon"
+                  class="contact-info__icon"
                 >
                   <path
                     fill="royalblue"
                     d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"
                   ></path>
                 </svg>
-                <a
-                  class="person-info__text"
-                  href="mailto:roberto.gregov@BEST-eu.org"
-                >
-                  roberto.gregov@BEST-eu.org
-                </a>
+                <a class="contact-info__email" href=""> </a>
               </div>
               <div>
                 <svg
@@ -747,422 +723,19 @@ SD Stjepan Radić is a home to over 3500 students 🛏️ during the academic ye
                   focusable="false"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 512 512"
-                  class="person-info__icon"
+                  class="contact-info__icon"
                 >
                   <path
                     fill="royalblue"
                     d="M493.4 24.6l-104-24c-11.3-2.6-22.9 3.3-27.5 13.9l-48 112c-4.2 9.8-1.4 21.3 6.9 28l60.6 49.6c-36 76.7-98.9 140.5-177.2 177.2l-49.6-60.6c-6.8-8.3-18.2-11.1-28-6.9l-112 48C3.9 366.5-2 378.1.6 389.4l24 104C27.1 504.2 36.7 512 48 512c256.1 0 464-207.5 464-464 0-11.2-7.7-20.9-18.6-23.4z"
                   ></path>
                 </svg>
-                <a class="person-info__text" href="tel:+385953667752">
-                  +385 95 366 7752
-                </a>
+                <a class="contact-info__tel" href=""> </a>
               </div>
             </div>
           </div>
         </div>
-
-        <div class="person-card">
-          <div>
-            <svg
-              class="rhombus-svg"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="120 130 370 530"
-            >
-              <path
-                d="M223.14,190.34c-18.11,35.28-34.67,71.13-53.43,106.14-15.18,28.32-31.94,56.58-39.17,87.35s3.32,54.29,20.55,83.4c18.87,31.87,38.29,63.64,60.76,94.23,18.53,25.23,33.94,57.44,60.7,78.61,17.11,13.53,43,16.82,64.87,13.62,26.92-4,32.88-13.37,42.73-31,25.94-46.39,54.68-91.77,80.36-138.35,11.57-21,23.35-42.73,23.25-66.23-.15-35.77-18.95-65.08-35.18-97.78-17.18-34.61-32-69.4-51.86-103.36-17.57-30.06-35.11-75.37-84.3-79.43C264.39,133.61,238.64,160.13,223.14,190.34Z"
-              />
-
-              <clipPath id="shape">
-                <path
-                  d="M223.14,190.34c-18.11,35.28-34.67,71.13-53.43,106.14-15.18,28.32-31.94,56.58-39.17,87.35s3.32,54.29,20.55,83.4c18.87,31.87,38.29,63.64,60.76,94.23,18.53,25.23,33.94,57.44,60.7,78.61,17.11,13.53,43,16.82,64.87,13.62,26.92-4,32.88-13.37,42.73-31,25.94-46.39,54.68-91.77,80.36-138.35,11.57-21,23.35-42.73,23.25-66.23-.15-35.77-18.95-65.08-35.18-97.78-17.18-34.61-32-69.4-51.86-103.36-17.57-30.06-35.11-75.37-84.3-79.43C264.39,133.61,238.64,160.13,223.14,190.34Z"
-                />
-              </clipPath>
-
-              <image
-                href="img/people/Leo.png"
-                clip-path="url(#shape)"
-                height="100%"
-                x="45"
-                y="130"
-              ></image>
-            </svg>
-          </div>
-
-          <div>
-            <div class="person-info">
-              <div>
-                <svg
-                  aria-hidden="true"
-                  focusable="false"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 448 512"
-                  class="person-info__icon"
-                >
-                  <path
-                    fill="royalblue"
-                    d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z"
-                  ></path>
-                </svg>
-                <p class="person-info__text">Leo Bolješić</p>
-              </div>
-              <div>
-                <svg
-                  aria-hidden="true"
-                  focusable="false"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 576 512"
-                  class="person-info__icon"
-                >
-                  <path
-                    fill="royalblue"
-                    d="M519.442 288.651c-41.519 0-59.5 31.593-82.058 31.593C377.409 320.244 432 144 432 144s-196.288 80-196.288-3.297c0-35.827 36.288-46.25 36.288-85.985C272 19.216 243.885 0 210.539 0c-34.654 0-66.366 18.891-66.366 56.346 0 41.364 31.711 59.277 31.711 81.75C175.885 207.719 0 166.758 0 166.758v333.237s178.635 41.047 178.635-28.662c0-22.473-40-40.107-40-81.471 0-37.456 29.25-56.346 63.577-56.346 33.673 0 61.788 19.216 61.788 54.717 0 39.735-36.288 50.158-36.288 85.985 0 60.803 129.675 25.73 181.23 25.73 0 0-34.725-120.101 25.827-120.101 35.962 0 46.423 36.152 86.308 36.152C556.712 416 576 387.99 576 354.443c0-34.199-18.962-65.792-56.558-65.792z"
-                  ></path>
-                </svg>
-                <p class="person-info__text">Final Round Main Organiser</p>
-              </div>
-              <div>
-                <svg
-                  aria-hidden="true"
-                  focusable="false"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 512 512"
-                  class="person-info__icon"
-                >
-                  <path
-                    fill="royalblue"
-                    d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"
-                  ></path>
-                </svg>
-                <a
-                  class="person-info__text"
-                  href="mailto:ebec-finalmo@best-eu.org"
-                >
-                  ebec-finalmo@BEST-eu.org
-                </a>
-              </div>
-              <div>
-                <svg
-                  aria-hidden="true"
-                  focusable="false"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 512 512"
-                  class="person-info__icon"
-                >
-                  <path
-                    fill="royalblue"
-                    d="M493.4 24.6l-104-24c-11.3-2.6-22.9 3.3-27.5 13.9l-48 112c-4.2 9.8-1.4 21.3 6.9 28l60.6 49.6c-36 76.7-98.9 140.5-177.2 177.2l-49.6-60.6c-6.8-8.3-18.2-11.1-28-6.9l-112 48C3.9 366.5-2 378.1.6 389.4l24 104C27.1 504.2 36.7 512 48 512c256.1 0 464-207.5 464-464 0-11.2-7.7-20.9-18.6-23.4z"
-                  ></path>
-                </svg>
-                <a class="person-info__text" href="tel:+385994046906">
-                  +385 99 404 6906
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="person-card">
-          <div>
-            <svg
-              class="rhombus-svg"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="120 130 370 530"
-            >
-              <path
-                d="M223.14,190.34c-18.11,35.28-34.67,71.13-53.43,106.14-15.18,28.32-31.94,56.58-39.17,87.35s3.32,54.29,20.55,83.4c18.87,31.87,38.29,63.64,60.76,94.23,18.53,25.23,33.94,57.44,60.7,78.61,17.11,13.53,43,16.82,64.87,13.62,26.92-4,32.88-13.37,42.73-31,25.94-46.39,54.68-91.77,80.36-138.35,11.57-21,23.35-42.73,23.25-66.23-.15-35.77-18.95-65.08-35.18-97.78-17.18-34.61-32-69.4-51.86-103.36-17.57-30.06-35.11-75.37-84.3-79.43C264.39,133.61,238.64,160.13,223.14,190.34Z"
-              />
-
-              <clipPath id="shape">
-                <path
-                  d="M223.14,190.34c-18.11,35.28-34.67,71.13-53.43,106.14-15.18,28.32-31.94,56.58-39.17,87.35s3.32,54.29,20.55,83.4c18.87,31.87,38.29,63.64,60.76,94.23,18.53,25.23,33.94,57.44,60.7,78.61,17.11,13.53,43,16.82,64.87,13.62,26.92-4,32.88-13.37,42.73-31,25.94-46.39,54.68-91.77,80.36-138.35,11.57-21,23.35-42.73,23.25-66.23-.15-35.77-18.95-65.08-35.18-97.78-17.18-34.61-32-69.4-51.86-103.36-17.57-30.06-35.11-75.37-84.3-79.43C264.39,133.61,238.64,160.13,223.14,190.34Z"
-                />
-              </clipPath>
-
-              <image
-                href="img/people/Dunja.png"
-                clip-path="url(#shape)"
-                height="100%"
-                x="45"
-                y="130"
-              ></image>
-            </svg>
-          </div>
-
-          <div>
-            <div class="person-info">
-              <div>
-                <svg
-                  aria-hidden="true"
-                  focusable="false"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 448 512"
-                  class="person-info__icon"
-                >
-                  <path
-                    fill="royalblue"
-                    d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z"
-                  ></path>
-                </svg>
-                <p class="person-info__text">Dunja Olbina</p>
-              </div>
-              <div>
-                <svg
-                  aria-hidden="true"
-                  focusable="false"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 576 512"
-                  class="person-info__icon"
-                >
-                  <path
-                    fill="royalblue"
-                    d="M519.442 288.651c-41.519 0-59.5 31.593-82.058 31.593C377.409 320.244 432 144 432 144s-196.288 80-196.288-3.297c0-35.827 36.288-46.25 36.288-85.985C272 19.216 243.885 0 210.539 0c-34.654 0-66.366 18.891-66.366 56.346 0 41.364 31.711 59.277 31.711 81.75C175.885 207.719 0 166.758 0 166.758v333.237s178.635 41.047 178.635-28.662c0-22.473-40-40.107-40-81.471 0-37.456 29.25-56.346 63.577-56.346 33.673 0 61.788 19.216 61.788 54.717 0 39.735-36.288 50.158-36.288 85.985 0 60.803 129.675 25.73 181.23 25.73 0 0-34.725-120.101 25.827-120.101 35.962 0 46.423 36.152 86.308 36.152C556.712 416 576 387.99 576 354.443c0-34.199-18.962-65.792-56.558-65.792z"
-                  ></path>
-                </svg>
-                <p class="person-info__text">EBEC Programme Coordinator</p>
-              </div>
-              <div>
-                <svg
-                  aria-hidden="true"
-                  focusable="false"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 512 512"
-                  class="person-info__icon"
-                >
-                  <path
-                    fill="royalblue"
-                    d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"
-                  ></path>
-                </svg>
-                <a
-                  class="person-info__text"
-                  href="mailto:ebec-coordinator@best-eu.org"
-                >
-                  ebec-coordinator@BEST-eu.org
-                </a>
-              </div>
-              <div>
-                <svg
-                  aria-hidden="true"
-                  focusable="false"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 512 512"
-                  class="person-info__icon"
-                >
-                  <path
-                    fill="royalblue"
-                    d="M493.4 24.6l-104-24c-11.3-2.6-22.9 3.3-27.5 13.9l-48 112c-4.2 9.8-1.4 21.3 6.9 28l60.6 49.6c-36 76.7-98.9 140.5-177.2 177.2l-49.6-60.6c-6.8-8.3-18.2-11.1-28-6.9l-112 48C3.9 366.5-2 378.1.6 389.4l24 104C27.1 504.2 36.7 512 48 512c256.1 0 464-207.5 464-464 0-11.2-7.7-20.9-18.6-23.4z"
-                  ></path>
-                </svg>
-                <a class="person-info__text" href="tel:+381644976001">
-                  +381 64 497 6001
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="person-card">
-          <div>
-            <svg
-              class="rhombus-svg"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="120 130 370 530"
-            >
-              <path
-                d="M223.14,190.34c-18.11,35.28-34.67,71.13-53.43,106.14-15.18,28.32-31.94,56.58-39.17,87.35s3.32,54.29,20.55,83.4c18.87,31.87,38.29,63.64,60.76,94.23,18.53,25.23,33.94,57.44,60.7,78.61,17.11,13.53,43,16.82,64.87,13.62,26.92-4,32.88-13.37,42.73-31,25.94-46.39,54.68-91.77,80.36-138.35,11.57-21,23.35-42.73,23.25-66.23-.15-35.77-18.95-65.08-35.18-97.78-17.18-34.61-32-69.4-51.86-103.36-17.57-30.06-35.11-75.37-84.3-79.43C264.39,133.61,238.64,160.13,223.14,190.34Z"
-              />
-
-              <clipPath id="shape">
-                <path
-                  d="M223.14,190.34c-18.11,35.28-34.67,71.13-53.43,106.14-15.18,28.32-31.94,56.58-39.17,87.35s3.32,54.29,20.55,83.4c18.87,31.87,38.29,63.64,60.76,94.23,18.53,25.23,33.94,57.44,60.7,78.61,17.11,13.53,43,16.82,64.87,13.62,26.92-4,32.88-13.37,42.73-31,25.94-46.39,54.68-91.77,80.36-138.35,11.57-21,23.35-42.73,23.25-66.23-.15-35.77-18.95-65.08-35.18-97.78-17.18-34.61-32-69.4-51.86-103.36-17.57-30.06-35.11-75.37-84.3-79.43C264.39,133.61,238.64,160.13,223.14,190.34Z"
-                />
-              </clipPath>
-
-              <image
-                href="img/people/noni.jpg"
-                clip-path="url(#shape)"
-                height="100%"
-                x="45"
-                y="130"
-              ></image>
-            </svg>
-          </div>
-
-          <div>
-            <div class="person-info">
-              <div>
-                <svg
-                  aria-hidden="true"
-                  focusable="false"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 448 512"
-                  class="person-info__icon"
-                >
-                  <path
-                    fill="royalblue"
-                    d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z"
-                  ></path>
-                </svg>
-                <p class="person-info__text">Antonia Ravlija</p>
-              </div>
-              <div>
-                <svg
-                  aria-hidden="true"
-                  focusable="false"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 576 512"
-                  class="person-info__icon"
-                >
-                  <path
-                    fill="royalblue"
-                    d="M519.442 288.651c-41.519 0-59.5 31.593-82.058 31.593C377.409 320.244 432 144 432 144s-196.288 80-196.288-3.297c0-35.827 36.288-46.25 36.288-85.985C272 19.216 243.885 0 210.539 0c-34.654 0-66.366 18.891-66.366 56.346 0 41.364 31.711 59.277 31.711 81.75C175.885 207.719 0 166.758 0 166.758v333.237s178.635 41.047 178.635-28.662c0-22.473-40-40.107-40-81.471 0-37.456 29.25-56.346 63.577-56.346 33.673 0 61.788 19.216 61.788 54.717 0 39.735-36.288 50.158-36.288 85.985 0 60.803 129.675 25.73 181.23 25.73 0 0-34.725-120.101 25.827-120.101 35.962 0 46.423 36.152 86.308 36.152C556.712 416 576 387.99 576 354.443c0-34.199-18.962-65.792-56.558-65.792z"
-                  ></path>
-                </svg>
-                <p class="person-info__text">
-                  Local Corporate Relations Coordinator
-                </p>
-              </div>
-              <div>
-                <svg
-                  aria-hidden="true"
-                  focusable="false"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 512 512"
-                  class="person-info__icon"
-                >
-                  <path
-                    fill="royalblue"
-                    d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"
-                  ></path>
-                </svg>
-                <a
-                  class="person-info__text"
-                  href="mailto:antonia.ravlija@best.hr"
-                >
-                  antonia.ravlija@BEST.hr
-                </a>
-              </div>
-              <div>
-                <svg
-                  aria-hidden="true"
-                  focusable="false"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 512 512"
-                  class="person-info__icon"
-                >
-                  <path
-                    fill="royalblue"
-                    d="M493.4 24.6l-104-24c-11.3-2.6-22.9 3.3-27.5 13.9l-48 112c-4.2 9.8-1.4 21.3 6.9 28l60.6 49.6c-36 76.7-98.9 140.5-177.2 177.2l-49.6-60.6c-6.8-8.3-18.2-11.1-28-6.9l-112 48C3.9 366.5-2 378.1.6 389.4l24 104C27.1 504.2 36.7 512 48 512c256.1 0 464-207.5 464-464 0-11.2-7.7-20.9-18.6-23.4z"
-                  ></path>
-                </svg>
-                <a class="person-info__text" href="tel:+385998866454">
-                  +385 99 886 6454
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="person-card">
-          <div>
-            <svg
-              class="rhombus-svg"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="120 130 370 530"
-            >
-              <path
-                d="M223.14,190.34c-18.11,35.28-34.67,71.13-53.43,106.14-15.18,28.32-31.94,56.58-39.17,87.35s3.32,54.29,20.55,83.4c18.87,31.87,38.29,63.64,60.76,94.23,18.53,25.23,33.94,57.44,60.7,78.61,17.11,13.53,43,16.82,64.87,13.62,26.92-4,32.88-13.37,42.73-31,25.94-46.39,54.68-91.77,80.36-138.35,11.57-21,23.35-42.73,23.25-66.23-.15-35.77-18.95-65.08-35.18-97.78-17.18-34.61-32-69.4-51.86-103.36-17.57-30.06-35.11-75.37-84.3-79.43C264.39,133.61,238.64,160.13,223.14,190.34Z"
-              />
-
-              <clipPath id="shape">
-                <path
-                  d="M223.14,190.34c-18.11,35.28-34.67,71.13-53.43,106.14-15.18,28.32-31.94,56.58-39.17,87.35s3.32,54.29,20.55,83.4c18.87,31.87,38.29,63.64,60.76,94.23,18.53,25.23,33.94,57.44,60.7,78.61,17.11,13.53,43,16.82,64.87,13.62,26.92-4,32.88-13.37,42.73-31,25.94-46.39,54.68-91.77,80.36-138.35,11.57-21,23.35-42.73,23.25-66.23-.15-35.77-18.95-65.08-35.18-97.78-17.18-34.61-32-69.4-51.86-103.36-17.57-30.06-35.11-75.37-84.3-79.43C264.39,133.61,238.64,160.13,223.14,190.34Z"
-                />
-              </clipPath>
-
-              <image
-                href="img/people/sulen.jpg"
-                clip-path="url(#shape)"
-                height="100%"
-                x="45"
-                y="130"
-              ></image>
-            </svg>
-          </div>
-
-          <div>
-            <div class="person-info">
-              <div>
-                <svg
-                  aria-hidden="true"
-                  focusable="false"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 448 512"
-                  class="person-info__icon"
-                >
-                  <path
-                    fill="royalblue"
-                    d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z"
-                  ></path>
-                </svg>
-                <p class="person-info__text">Sara Sulen</p>
-              </div>
-              <div>
-                <svg
-                  aria-hidden="true"
-                  focusable="false"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 576 512"
-                  class="person-info__icon"
-                >
-                  <path
-                    fill="royalblue"
-                    d="M519.442 288.651c-41.519 0-59.5 31.593-82.058 31.593C377.409 320.244 432 144 432 144s-196.288 80-196.288-3.297c0-35.827 36.288-46.25 36.288-85.985C272 19.216 243.885 0 210.539 0c-34.654 0-66.366 18.891-66.366 56.346 0 41.364 31.711 59.277 31.711 81.75C175.885 207.719 0 166.758 0 166.758v333.237s178.635 41.047 178.635-28.662c0-22.473-40-40.107-40-81.471 0-37.456 29.25-56.346 63.577-56.346 33.673 0 61.788 19.216 61.788 54.717 0 39.735-36.288 50.158-36.288 85.985 0 60.803 129.675 25.73 181.23 25.73 0 0-34.725-120.101 25.827-120.101 35.962 0 46.423 36.152 86.308 36.152C556.712 416 576 387.99 576 354.443c0-34.199-18.962-65.792-56.558-65.792z"
-                  ></path>
-                </svg>
-                <p class="person-info__text">
-                  President of Local BEST Group Zagreb
-                </p>
-              </div>
-              <div>
-                <svg
-                  aria-hidden="true"
-                  focusable="false"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 512 512"
-                  class="person-info__icon"
-                >
-                  <path
-                    fill="royalblue"
-                    d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"
-                  ></path>
-                </svg>
-                <a class="person-info__text" href="mailto:sara.sulen@best.hr">
-                  sara.sulen@BEST.hr
-                </a>
-              </div>
-              <div>
-                <svg
-                  aria-hidden="true"
-                  focusable="false"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 512 512"
-                  class="person-info__icon"
-                >
-                  <path
-                    fill="royalblue"
-                    d="M493.4 24.6l-104-24c-11.3-2.6-22.9 3.3-27.5 13.9l-48 112c-4.2 9.8-1.4 21.3 6.9 28l60.6 49.6c-36 76.7-98.9 140.5-177.2 177.2l-49.6-60.6c-6.8-8.3-18.2-11.1-28-6.9l-112 48C3.9 366.5-2 378.1.6 389.4l24 104C27.1 504.2 36.7 512 48 512c256.1 0 464-207.5 464-464 0-11.2-7.7-20.9-18.6-23.4z"
-                  ></path>
-                </svg>
-                <a class="person-info__text" href="tel:+385992115992">
-                  +385 99 211 5992
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      </template>
     </section>
 
     <footer>

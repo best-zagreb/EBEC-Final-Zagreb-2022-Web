@@ -64,12 +64,12 @@
 }
 
 .card__doc-name {
-  font-size: 2em;
+  font-size: 2.5em;
   letter-spacing: 0.6px;
 }
 
 .card__doc-text {
-  font-size: min(1em, 2vw);
+  font-size: min(1em, 3vw);
   letter-spacing: 0.4px;
   text-decoration: none;
 }
