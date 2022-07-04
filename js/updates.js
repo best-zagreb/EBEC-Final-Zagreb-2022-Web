@@ -1,4 +1,4 @@
-const postTemplate = document.querySelector(".post-template");
+const postTemplate = document.querySelector("[data-post-template]");
 const posts = document.querySelector(".posts");
 
 fetch("../data/posts.json")
@@ -10,7 +10,7 @@ fetch("../data/posts.json")
       const postImgElement = postElement.querySelector(".post__image");
       const postTitleElement = postElement.querySelector(".post__title");
       const postTagElement = postElement.querySelector(".post__tag > a");
-      const postbodyElement = postElement.querySelector(".post__text");
+      const postBodyElement = postElement.querySelector(".post__text");
       const postDateElement = postElement.querySelector(".post__date");
 
       postElement.setAttribute("id", post.id);
@@ -21,7 +21,7 @@ fetch("../data/posts.json")
 
       [post.body].map((paragraphObjects) => {
         paragraphObjects.forEach((object) => {
-          postbodyElement.textContent += object.paragraph + "\n";
+          postBodyElement.textContent += object.paragraph + "\n";
         });
       });
 

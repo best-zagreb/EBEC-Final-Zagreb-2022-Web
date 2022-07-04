@@ -83,7 +83,7 @@ if (new Date() > ClosingDay) {
 
 // posts loading from json
 
-const postTemplate = document.querySelector(".post-template");
+const postTemplate = document.querySelector("[data-post-template]");
 const posts = document.querySelector(".posts");
 let numberOfPosts = 2;
 
@@ -97,7 +97,7 @@ fetch("../data/posts.json")
         const postElement = postTemplate.content.cloneNode(true).children[0];
 
         const postTitleElement = postElement.querySelector(".post__title");
-        const postbodyElement = postElement.querySelector(".post__text");
+        const postBodyElement = postElement.querySelector(".post__text");
         const postDateElement = postElement.querySelector(".post__date");
         const postReadMoreElement = postElement.querySelector(
           ".post__read-more-link"
@@ -106,11 +106,11 @@ fetch("../data/posts.json")
         postElement.setAttribute("id", post.id);
         postTitleElement.textContent = post.title;
         postDateElement.textContent = post.date;
-        postReadMoreElement.setAttribute("href", "updates#" + post.id);
+        postReadMoreElement.setAttribute("href", "updates.html#" + post.id);
 
         [post.body].map((paragraphObjects) => {
           paragraphObjects.forEach((object) => {
-            postbodyElement.textContent += object.paragraph + "\n";
+            postBodyElement.textContent += object.paragraph + "\n";
           });
         });
 

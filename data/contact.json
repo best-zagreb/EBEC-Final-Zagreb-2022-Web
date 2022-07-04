@@ -1,0 +1,37 @@
+[
+  {
+    "name": "Roberto Gregov",
+    "function": "Participants Coordinator",
+    "email": "roberto.gregov@BEST-eu.org",
+    "tel": "+385 95 366 7752",
+    "imgUrl": "../img/people/person-Roberto G.jpg"
+  },
+  {
+    "name": "Leo Bolješić",
+    "function": "Final Round Main Organiser",
+    "email": "ebec-finalmo@BEST-eu.org",
+    "tel": "+385 99 404 6906",
+    "imgUrl": "../img/people/person-Leo B.jpg"
+  },
+  {
+    "name": "Dunja Olbina",
+    "function": "EBEC Programme Coordinator",
+    "email": "ebec-coordinator@BEST-eu.org",
+    "tel": "+381 64 497 6001",
+    "imgUrl": "../img/people/person-Dunja O.jpg"
+  },
+  {
+    "name": "Antonia Ravlija",
+    "function": "Local Corporate Relations Coordinator",
+    "email": "antonia.ravlija@BEST.hr",
+    "tel": "+385 99 886 6454",
+    "imgUrl": "../img/people/person-Antonia R.jpg"
+  },
+  {
+    "name": "Sara Sulen",
+    "function": "President of Local BEST Group Zagreb",
+    "email": "sara.sulen@best.hr",
+    "tel": "+385 99 211 5992",
+    "imgUrl": "../img/people/person-Sara S.jpg"
+  }
+]
