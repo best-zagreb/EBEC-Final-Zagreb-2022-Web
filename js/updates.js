@@ -31,6 +31,13 @@ fetch("../data/posts.json")
     });
   })
   .then(() => {
+    // if url with specified post id (#id)
+    if (window.location.hash.split("#")[1])
+      document
+        .querySelector('[id="' + window.location.hash.split("#")[1] + '"]')
+        .scrollIntoView(true);
+  })
+  .then(() => {
     // contains a bug where the scroll height is equal to client height on start of script
     // and because of that, part of the overflowing contant wont be recognized and therefore
     // the containing post will not be able to be overflow
@@ -107,7 +114,6 @@ fetch("../data/posts.json")
 
     images.forEach((image) => {
       if (!image.getAttribute("data-disable-lightbox")) {
-        console.log(image.getAttribute("data-disable-lightbox"));
         image.addEventListener("click", () => {
           lightbox.classList.add("active");
 

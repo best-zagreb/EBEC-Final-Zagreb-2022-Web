@@ -87,8 +87,6 @@ const postTemplate = document.querySelector("[data-post-template]");
 const posts = document.querySelector(".posts");
 let numberOfPosts = 2;
 
-console.log(postTemplate);
-
 fetch("../data/posts.json")
   .then((res) => res.json())
   .then((data) => {
@@ -106,7 +104,7 @@ fetch("../data/posts.json")
         postElement.setAttribute("id", post.id);
         postTitleElement.textContent = post.title;
         postDateElement.textContent = post.date;
-        postReadMoreElement.setAttribute("href", "updates.html#" + post.id);
+        postReadMoreElement.setAttribute("href", "updates#" + post.id);
 
         [post.body].map((paragraphObjects) => {
           paragraphObjects.forEach((object) => {
@@ -122,6 +120,58 @@ fetch("../data/posts.json")
         return;
       }
     });
+  })
+  .catch((err) => {
+    console.error(err);
+  });
+
+// contacts loading from json
+
+const contactTemplate = document.querySelector("[data-contact-template]");
+const contacts = document.querySelector(".contacts");
+
+fetch("../data/contacts.json")
+  .then((res) => res.json())
+  .then((data) => {
+    data.map((contact) => {
+      const contactElement =
+        contactTemplate.content.cloneNode(true).children[0];
+
+      const contactImgElement = contactElement.querySelector(".contact__image");
+      const contactNameElement = contactElement.querySelector(
+        ".contact-info__name"
+      );
+      const contactFunctionElement = contactElement.querySelector(
+        ".contact-info__function"
+      );
+      const contactEmailElement = contactElement.querySelector(
+        ".contact-info__email"
+      );
+      const contactTelElement =
+        contactElement.querySelector(".contact-info__tel");
+
+      contactImgElement.setAttribute("href", contact.imgUrl);
+      contactNameElement.textContent = contact.name;
+      contactFunctionElement.textContent = contact.function;
+      contactEmailElement.textContent = contact.email;
+      contactEmailElement.setAttribute("href", "mailto:" + contact.email);
+      contactTelElement.textContent = contact.tel;
+      contactTelElement.setAttribute(
+        "href",
+        "tel:" + contact.tel.replace(/\s/g, "")
+      );
+
+      //   console.log(contactImgElement);
+
+      contacts.append(contactElement);
+    });
+  })
+  .then(() => {
+    // if url with specified contact section (#contact)
+    if (window.location.hash.split("#")[1] === "contact")
+      document
+        .querySelector('[id="' + window.location.hash.split("#")[1] + '"]')
+        .scrollIntoView(true);
   })
   .catch((err) => {
     console.error(err);
