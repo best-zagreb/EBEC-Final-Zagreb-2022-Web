@@ -3,6 +3,23 @@ const navToggle = document.querySelector(".mobile-nav-toggle");
 
 navToggle.addEventListener("click", () => {
   const visibility = primaryNav.getAttribute("data-visible");
+
+  changeNavVisibility(visibility);
+});
+
+window.addEventListener("click", function (e) {
+  const visibility = primaryNav.getAttribute("data-visible");
+
+  if (
+    visibility === "true" &&
+    !primaryNav.contains(e.target) &&
+    !navToggle.contains(e.target)
+  ) {
+    changeNavVisibility(visibility);
+  }
+});
+
+function changeNavVisibility(visibility) {
   //   console.log(visibility);
 
   if (visibility === "false") {
@@ -12,4 +29,4 @@ navToggle.addEventListener("click", () => {
     primaryNav.setAttribute("data-visible", false);
     navToggle.setAttribute("data-expanded", false);
   }
-});
+}

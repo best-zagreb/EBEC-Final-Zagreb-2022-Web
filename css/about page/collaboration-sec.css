@@ -1,5 +1,5 @@
 .collaboration-section {
-  margin: 2rem auto;
+  margin: min(2rem, 4vw) auto;
   padding-inline: 1rem;
 
   max-width: 80rem;
@@ -32,10 +32,6 @@
 .collab-s__img-container img {
   max-height: 15rem;
 
-  -webkit-transition: transform 0.3s ease-in-out;
-  -moz-transition: transform 0.3s ease-in-out;
-  -ms-transition: transform 0.3s ease-in-out;
-  -o-transition: transform 0.3s ease-in-out;
   transition: transform 0.3s ease-in-out;
 }
 
@@ -70,7 +66,7 @@
   }
 
   .collab-s__img-container img {
-    max-height: 8rem;
+    /* max-height: 8rem; */
   }
 
   .collab-s__svg-container {

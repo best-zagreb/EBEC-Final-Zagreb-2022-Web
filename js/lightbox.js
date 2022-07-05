@@ -13,7 +13,8 @@ const images = document.querySelectorAll("img");
 
 images.forEach((image) => {
   if (!image.getAttribute("data-disable-lightbox")) {
-    console.log(image.getAttribute("data-disable-lightbox"));
+    // console.log(image.getAttribute("data-disable-lightbox"));
+
     image.addEventListener("click", () => {
       lightbox.classList.add("active");
 

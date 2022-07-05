@@ -1,58 +1,51 @@
 .BEST-external-section {
-  margin: 2rem auto;
+  margin: min(2rem, 4vw) auto;
   padding-top: 1rem;
 
-  width: 80%;
+  width: 90vw;
   max-width: 80rem;
 
   display: flex;
   flex-wrap: wrap;
-  gap: 2rem;
+  gap: min(2rem, 4vw);
   justify-content: space-around;
   align-items: center;
 }
 
 .external-s__btn {
-  padding: 1.5rem 3rem;
+  padding: min(1.5rem, 3vw) min(3rem, 6vw);
 
-  border-radius: 1.25rem;
+  border-radius: min(1.5rem, 3vw);
   background-color: var(--accent-clr);
   box-shadow: 0.375rem 0.25rem 0.5rem 0.125rem rgba(0, 0, 0, 0.2);
 
   text-transform: uppercase;
   text-decoration: none;
   text-align: center;
-  font-size: 1.25rem;
+  font-size: min(1.25rem, 3vw);
   font-weight: 600;
   letter-spacing: 0.2rem;
   color: white;
 
   /* animations for changing button brightness and size */
-  -webkit-transition: filter, transform 0.3s ease-in-out;
-  -moz-transition: filter, transform 0.3s ease-in-out;
-  -ms-transition: filter, transform 0.3s ease-in-out;
-  -o-transition: filter, transform 0.3s ease-in-out;
-  transition: filter, transform 0.3s ease-in-out;
-
-  outline: none;
+  transition: transform 0.3s ease-in-out;
 }
 
 .external-s__btn:hover,
 .external-s__btn:focus {
-  -webkit-filter: brightness(85%);
-  filter: brightness(85%);
+  background-color: var(--primary-clr);
 
   transform: scale(1.05);
 }
 
 @media only screen and (max-width: 450px) {
-  .BEST-external-section {
+  /* .BEST-external-section {
     width: 95%;
-  }
+  } */
 
   .external-s__btn {
-    padding: 1.125rem 1.75rem;
+    /* padding: 1.125rem 1.75rem; */
 
-    font-size: 1.125rem;
+    /* font-size: 1.125rem; */
   }
 }
