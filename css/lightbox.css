@@ -4,14 +4,11 @@ img:not(#lightbox) {
 }
 
 #lightbox {
-  position: fixed;
-  top: 0;
-  z-index: 1000;
-
-  width: 100%;
-  height: 100%;
-
   display: none;
+
+  position: fixed;
+  inset: 0;
+  z-index: 1001;
 
   background-color: rgba(0, 0, 0, 0.8);
 
@@ -23,17 +20,17 @@ img:not(#lightbox) {
   place-items: center;
 }
 
-#lightbox img {
-  margin: 2rem;
+#lightbox > img {
+  margin: min(2rem, 4vw);
 
-  max-width: min(90%, 60rem);
-  max-height: min(90%, 60rem);
+  max-width: 90vw;
+  max-height: 80vh;
 
   /* double outline */
   padding: 2px;
   background-color: white;
   border: 3px solid var(--accent-clr);
-  border-radius: 1rem;
+  border-radius: min(2rem, 4vw);
 
   cursor: default;
 }

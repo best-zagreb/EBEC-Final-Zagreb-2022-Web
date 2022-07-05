@@ -23,6 +23,7 @@ fetch("../data/organisers.json")
         organiserElement.querySelector(".org__email");
 
       organiserImgElement.setAttribute("src", organiser.imgUrl);
+      organiserImgElement.setAttribute("alt", organiser.name);
       organiserNameElement.textContent = organiser.name;
       organiserFunctionElement.textContent = organiser.function;
       organiserEmailContainerElement.setAttribute(
