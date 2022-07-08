@@ -1,3 +1,64 @@
+.filter-container {
+  width: min(95vw, 90rem);
+  margin: min(2rem, 2vw) auto;
+
+  display: flex;
+  justify-content: space-between;
+  gap: min(3rem, 2vw);
+}
+
+.filter__search {
+  width: 100%;
+
+  border: 1px solid gray;
+
+  padding-inline: min(1rem, 2vw);
+  border-radius: min(0.75rem, 1.5vw);
+}
+
+.filter__search:focus {
+  outline: 2px solid var(--accent-clr);
+}
+
+.filter__buttons {
+  display: flex;
+  align-items: center;
+  gap: clamp(1px, 0.2vw, 2px);
+}
+
+.filter__buttons > button {
+  width: min(12rem, 16vw);
+
+  padding: min(1rem, 2vw);
+
+  font-size: min(1.25rem, 3.75vw);
+  font-family: Roboto, sans-serif;
+
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--whitesmoke);
+  background-color: var(--accent-clr);
+  border: none;
+
+  transition: background-color 0.3s ease-in-out;
+}
+
+.filter__buttons > button[data-filter="false"] {
+  background-color: var(--accent-clr);
+}
+
+.filter__buttons > button[data-filter="true"] {
+  background-color: var(--secondary-clr);
+}
+
+.filter__info-btn {
+  border-radius: min(0.75rem, 1.5vw) 0 0 min(0.75rem, 1.5vw);
+}
+
+.filter__news-btn {
+  border-radius: 0 min(0.75rem, 1.5vw) min(0.75rem, 1.5vw) 0;
+}
+
 .posts {
   margin: min(2rem, 4vw);
 
@@ -16,6 +77,8 @@
   overflow: hidden;
 
   background-color: white;
+
+  transition: opacity 0.2s ease-in-out;
 }
 
 .post__image {
