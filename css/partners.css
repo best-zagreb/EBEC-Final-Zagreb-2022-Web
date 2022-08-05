@@ -1,0 +1,85 @@
+/* code forked from https://codepen.io/thebabydino/pen/PowXYpV?editors=1100 */
+
+.partners-grid {
+  --n-rows: 6;
+  --n-cols: 8;
+
+  --l: calc(min(100vw, 80rem) / var(--n-cols));
+  --hl: calc(0.5 * var(--l));
+  --ri: calc(0.5 * 1.73205 * var(--l));
+
+  margin: min(3rem, 6vw) min(0.5rem, 1vw);
+
+  display: grid;
+  place-content: center;
+  grid-template: repeat(var(--n-rows), var(--l)) / repeat(
+      var(--n-cols),
+      var(--ri)
+    );
+  grid-gap: var(--hl) 0;
+  padding: var(--hl) 0;
+
+  filter: drop-shadow(2px 2px 5px);
+}
+
+.hex-cell {
+  grid-column-end: span 2;
+
+  margin: calc(-1 * var(--hl)) 0;
+  transform: scale(0.95);
+  clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+
+  background-color: var(--whitesmoke);
+}
+
+@media only screen and (min-width: 451px) {
+  .hex-cell:nth-of-type(7n + 1) {
+    grid-column-start: 2;
+  }
+
+  .hex-cell:nth-of-type(16) {
+    grid-column-start: 6;
+  }
+
+  .hex-cell:nth-of-type(18) {
+    grid-column-start: 7;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .partners-grid {
+    --n-rows: 8;
+    --n-cols: 6;
+  }
+
+  .hex-cell:nth-of-type(5n + 1) {
+    grid-column-start: 2;
+  }
+
+  .hex-cell:nth-of-type(18) {
+    grid-column-start: 3;
+  }
+}
+
+.partner-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+
+  padding: min(1rem, 2vw);
+
+  /* for centering alt text */
+  display: grid;
+  place-items: center;
+
+  transition: padding 0.3s ease-in-out;
+}
+
+.hex-cell > a:hover > .partner-img,
+.hex-cell > a:focus > .partner-img {
+  padding: min(2rem, 4vw);
+}
+
+.partner-img-scale {
+  padding: min(1.5rem, 3vw);
+}

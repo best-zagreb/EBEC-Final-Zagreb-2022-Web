@@ -1,6 +1,6 @@
 .files-section {
   margin-inline: min(2rem, 4vw);
-  padding-top: min(2.5rem, 6vw);
+  padding-block: min(2.5rem, 6vw);
 }
 
 .files-cards {

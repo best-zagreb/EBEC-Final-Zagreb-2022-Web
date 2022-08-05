@@ -39,11 +39,12 @@
 
     <link href="css/schedule.css" rel="stylesheet" />
 
+    <script src="js/backgroundParalax.js" defer></script>
     <script src="js/nav.js" defer></script>
+
+    <script src="js/schedule.js" defer></script>
   </head>
   <body>
-    <div class="background-image"></div>
-
     <header class="primary-navigation">
       <button
         class="mobile-nav-toggle"
@@ -57,18 +58,82 @@
         </div> -->
 
         <ul class="primary-nav" data-visible="false">
-          <li><a class="current-site" href="index.html#home">EBEC Final</a></li>
+          <li><a class="current-site" href="index.html">EBEC Final</a></li>
           <li><a href="about.html">About BEST</a></li>
-          <li class="hidden"><a href="schedule.html">Schedule</a></li>
+          <li><a href="schedule.html">Schedule</a></li>
           <li><a href="updates.html">Updates</a></li>
-          <li class="hidden"><a href="partners.html">Partners</a></li>
+          <li><a href="partners.html">Partners</a></li>
           <li><a href="organisers.html">Organisers</a></li>
           <li><a href="index.html#contact">Contact</a></li>
         </ul>
       </nav>
     </header>
 
+    <h1>Schedule</h1>
+
+    <hr class="subheading-hr" />
     <!-- TODO: create schedule page -->
+
+    <section class="schedule-section">
+      <div class="outer-schedule-div">
+        <!-- <div class="times-div">
+          <p>07:00</p> <p>07:30</p>
+          <p>08:00</p> <p>08:30</p>
+          <p>09:00</p> <p>09:30</p>
+          <p>10:00</p> <p>10:30</p>
+          <p>11:00</p> <p>11:30</p>
+          <p>12:00</p> <p>12:30</p>
+          <p>13:00</p> <p>13:30</p>
+          <p>14:00</p> <p>14:30</p>
+          <p>15:00</p> <p>15:30</p>
+          <p>16:00</p> <p>16:30</p>
+          <p>17:00</p> <p>17:30</p>
+          <p>18:00</p> <p>18:30</p>
+          <p>19:00</p> <p>19:30</p>
+          <p>20:00</p> <p>20:30</p>
+          <p>21:00</p> <p>21:30</p>
+          <p>22:00</p> <p>22:30</p>
+          <p>23:00</p>
+        </div> -->
+
+        <div class="days">
+          <template data-sch-template>
+            <div class="day">
+              <p class="sch__date-dow">
+                <span class="sch__date"></span> <span class="sch__dow"></span>
+              </p>
+
+              <div class="day-card" tabindex="0">
+                <h4 class="day__title"></h4>
+
+                <hr class="split-schedule-hr" />
+                <h4 class="day__location"></h4>
+
+                <div class="activities">
+                  <template data-activity-template>
+                    <div class="activity">
+                      <p class="activity_name"></p>
+                      <p class="activity_time"></p>
+                    </div>
+
+                    <div class="double_activity">
+                      <div class="activity1">
+                        <p class="activity_name1"></p>
+                        <p class="activity_time1"></p>
+                      </div>
+                      <div class="activity2">
+                        <p class="activity_name2"></p>
+                        <p class="activity_time2"></p>
+                      </div>
+                    </div>
+                  </template>
+                </div>
+              </div>
+            </div>
+          </template>
+        </div>
+      </div>
+    </section>
 
     <footer>
       <div class="footer-info">

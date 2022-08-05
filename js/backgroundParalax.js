@@ -1,5 +1,8 @@
 // Background paralax
-const backgroundImage = document.querySelector(".background-image");
+
+const backgroundElement = document.createElement("div");
+backgroundElement.classList.add("background-image");
+document.querySelector("body").appendChild(backgroundElement);
 
 const scrollContainer = () => {
   return document.documentElement || document.body;
@@ -11,5 +14,5 @@ document.addEventListener("scroll", () => {
       (scrollContainer().scrollHeight - scrollContainer().clientHeight)) *
     100;
 
-  backgroundImage.style.left = -scrolledPercentage / 8 + "%";
+  backgroundElement.style.left = -scrolledPercentage / 8 + "%";
 });

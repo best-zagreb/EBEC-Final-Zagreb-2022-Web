@@ -1,0 +1,520 @@
+[
+  {
+    "date": "22/07",
+    "dow": "Friday",
+    "title": "ARRIVAL DAY",
+    "splitAct": "",
+    "activities": [
+      {
+        "activityName": "WELCOME PAX",
+        "startTime": "07:00",
+        "endTime": "20:00"
+      },
+
+      { "activityName": "Dinner", "startTime": "20:00", "endTime": "21:00" },
+
+      { "activityName": "Free time", "startTime": "21:00", "endTime": "22:00" },
+
+      {
+        "activityName": "Welcome Evening G2K",
+        "startTime": "22:00",
+        "endTime": "23:00"
+      }
+    ],
+    "location": "Student dormitory Stjepan Radić"
+  },
+  {
+    "date": "23/07",
+    "dow": "Saturday",
+    "title": "OFFICIAL OPENING",
+    "splitAct": "",
+    "activities": [
+      { "activityName": "Wake up", "startTime": "07:00", "endTime": "08:00" },
+
+      { "activityName": "Breakfast", "startTime": "08:00", "endTime": "08:45" },
+
+      {
+        "activityName": "Intro to the event for PAX",
+        "startTime": "08:45",
+        "endTime": "11:15"
+      },
+
+      {
+        "activityName": "Free Time/getting ready for OOD",
+        "startTime": "11:15",
+        "endTime": "13:00"
+      },
+
+      { "activityName": "Lunch", "startTime": "13:00", "endTime": "14:00" },
+
+      {
+        "activityName": "Going to the OOD Venue",
+        "startTime": "14:00",
+        "endTime": "14:45"
+      },
+
+      {
+        "activityName": "Settling in the OOD Venue",
+        "startTime": "14:45",
+        "endTime": "15:00"
+      },
+
+      {
+        "activityName": "OOD Activities",
+        "startTime": "15:00",
+        "endTime": "19:30"
+      },
+
+      {
+        "activityName": "Travelling to the accomodation",
+        "startTime": "19:30",
+        "endTime": "20:15"
+      },
+
+      { "activityName": "Dinner", "startTime": "20:15", "endTime": "21:30" },
+
+      { "activityName": "Free time", "startTime": "21:30", "endTime": "23:00" }
+    ],
+    "location": "FER"
+  },
+  {
+    "date": "24/07",
+    "dow": "Sunday",
+    "title": "COMPETITION",
+    "splitAct": "yes",
+    "activities": [
+      { "activityName": "Wake up", "startTime": "07:00", "endTime": "07:45" },
+
+      { "activityName": "Breakfast", "startTime": "07:45", "endTime": "08:30" },
+
+      {
+        "activityName": "Schedule and Topic Presentation",
+        "startTime": "08:30",
+        "endTime": "09:00"
+      },
+
+      {
+        "activityName": "Working Hours (PAX - Case Study)",
+        "startTime": "09:00",
+        "endTime": "13:00",
+        "bindNext": "yes"
+      },
+
+      {
+        "activityName": "Working Hours (PAX - Innovative Design)",
+        "startTime": "09:00",
+        "endTime": "12:30"
+      },
+
+      {
+        "activityName": "Lunch (PAX - Case Study)",
+        "startTime": "13:00",
+        "endTime": "14:15",
+        "bindNext": "yes"
+      },
+
+      {
+        "activityName": "Lunch (PAX - Innovative Design)",
+        "startTime": "12:30",
+        "endTime": "13:45"
+      },
+
+      {
+        "activityName": "Working Hours (PAX - Case Study)",
+        "startTime": "14:15",
+        "endTime": "17:00",
+        "bindNext": "yes"
+      },
+
+      {
+        "activityName": "Working Hours (PAX - Innovative Design)",
+        "startTime": "13:45",
+        "endTime": "19:30"
+      },
+
+      {
+        "activityName": "Work Delivery (PAX - Case Study)",
+        "startTime": "17:00",
+        "endTime": "17:30"
+      },
+
+      {
+        "activityName": "Case Study Presentations (PAX - Case Study)",
+        "startTime": "17:30",
+        "endTime": "20:00",
+        "bindNext": "yes"
+      },
+
+      {
+        "activityName": "Work Delivery (PAX - Innovative Design)",
+        "startTime": "19:30",
+        "endTime": "20:00"
+      },
+
+      { "activityName": "Dinner", "startTime": "20:00", "endTime": "21:00" },
+
+      { "activityName": "Free time", "startTime": "21:00", "endTime": "23:00" }
+    ],
+    "location": "Pauk"
+  },
+  {
+    "date": "25/07",
+    "dow": "Monday",
+    "title": "COMPETITION",
+    "splitAct": "yes",
+    "activities": [
+      { "activityName": "Wake up", "startTime": "07:00", "endTime": "07:45" },
+
+      { "activityName": "Breakfast", "startTime": "07:45", "endTime": "08:30" },
+
+      {
+        "activityName": "Schedule info",
+        "startTime": "08:30",
+        "endTime": "09:00"
+      },
+
+      {
+        "activityName": "Working Hours (PAX - Case Study)",
+        "startTime": "09:00",
+        "endTime": "13:00",
+        "bindNext": "yes"
+      },
+
+      {
+        "activityName": "Working Hours (PAX - Innovative Design)",
+        "startTime": "09:00",
+        "endTime": "12:30"
+      },
+
+      {
+        "activityName": "Lunch (PAX - Case Study)",
+        "startTime": "13:00",
+        "endTime": "14:15",
+        "bindNext": "yes"
+      },
+
+      {
+        "activityName": "Lunch (PAX - Innovative Design)",
+        "startTime": "12:30",
+        "endTime": "13:45"
+      },
+
+      {
+        "activityName": "Working Hours (PAX - Case Study)",
+        "startTime": "14:15",
+        "endTime": "17:30",
+        "bindNext": "yes"
+      },
+
+      {
+        "activityName": "Working Hours (PAX - Innovative Design)",
+        "startTime": "13:45",
+        "endTime": "16:30"
+      },
+
+      {
+        "activityName": "Work Delivery (PAX - Case Study)",
+        "startTime": "17:30",
+        "endTime": "18:00",
+        "bindNext": "yes"
+      },
+
+      {
+        "activityName": "Work Delivery (PAX - Innovative Design)",
+        "startTime": "16:30",
+        "endTime": "17:00"
+      },
+
+      {
+        "activityName": "Case Study Presentations (PAX - Case Study)",
+        "startTime": "18:00",
+        "endTime": "20:30",
+        "bindNext": "yes"
+      },
+
+      {
+        "activityName": "Innovative Design Show (PAX - Innovative Design)",
+        "startTime": "17:00",
+        "endTime": "20:30"
+      },
+
+      { "activityName": "Dinner", "startTime": "20:30", "endTime": "21:30" },
+
+      { "activityName": "Free time", "startTime": "21:30", "endTime": "22:30" },
+
+      { "activityName": "PARTY", "startTime": "22:30", "endTime": "23:00" }
+    ],
+    "location": "Pauk"
+  },
+  {
+    "date": "26/07",
+    "dow": "Tuesday",
+    "title": "FREE DAY",
+    "splitAct": "yes",
+    "activities": [
+      { "activityName": "Wake up", "startTime": "07:00", "endTime": "08:15" },
+
+      { "activityName": "Breakfast", "startTime": "08:15", "endTime": "09:00" },
+
+      {
+        "activityName": "CITY RALLY",
+        "startTime": "09:00",
+        "endTime": "14:00",
+        "bindNext": "yes"
+      },
+
+      {
+        "activityName": "AMAZINGA",
+        "startTime": "09:00",
+        "endTime": "14:00"
+      },
+
+      { "activityName": "Lunch", "startTime": "14:00", "endTime": "15:15" },
+
+      { "activityName": "Free Time", "startTime": "15:15", "endTime": "17:00" },
+
+      {
+        "activityName": "Jarun/Treasure Hunt",
+        "startTime": "17:00",
+        "endTime": "20:15"
+      },
+
+      { "activityName": "Dinner", "startTime": "20:15", "endTime": "21:30" },
+
+      { "activityName": "Free time", "startTime": "21:30", "endTime": "23:00" }
+    ],
+    "location": ""
+  },
+  {
+    "date": "27/07",
+    "dow": "Wednesday",
+    "title": "COMPETITION",
+    "splitAct": "yes",
+    "activities": [
+      { "activityName": "Wake up", "startTime": "07:00", "endTime": "08:00" },
+
+      { "activityName": "Breakfast", "startTime": "08:00", "endTime": "09:00" },
+
+      {
+        "activityName": "Schedule & Topic Presentation",
+        "startTime": "09:00",
+        "endTime": "09:30"
+      },
+
+      {
+        "activityName": "Working Hours (PAX - Case Study)",
+        "startTime": "09:30",
+        "endTime": "13:00",
+        "bindNext": "yes"
+      },
+
+      {
+        "activityName": "Working Hours (PAX - Innovative Design)",
+        "startTime": "09:30",
+        "endTime": "12:30"
+      },
+
+      {
+        "activityName": "Lunch (PAX - Case Study)",
+        "startTime": "13:00",
+        "endTime": "14:15",
+        "bindNext": "yes"
+      },
+
+      {
+        "activityName": "Lunch (PAX - Innovative Design)",
+        "startTime": "12:30",
+        "endTime": "13:45"
+      },
+
+      {
+        "activityName": "Working Hours (PAX - Case Study)",
+        "startTime": "14:15",
+        "endTime": "20:15",
+        "bindNext": "yes"
+      },
+
+      {
+        "activityName": "Working Hours (PAX - Innovative Design)",
+        "startTime": "13:45",
+        "endTime": "20:15"
+      },
+
+      {
+        "activityName": "Work Delivery",
+        "startTime": "20:15",
+        "endTime": "20:45"
+      },
+
+      { "activityName": "Dinner", "startTime": "20:45", "endTime": "21:45" },
+
+      { "activityName": "Free time", "startTime": "21:45", "endTime": "23:00" }
+    ],
+    "location": "Pauk"
+  },
+  {
+    "date": "28/07",
+    "dow": "Thursday",
+    "title": "COMPETITION",
+    "splitAct": "yes",
+    "activities": [
+      { "activityName": "Wake up", "startTime": "07:00", "endTime": "08:00" },
+
+      { "activityName": "Breakfast", "startTime": "08:00", "endTime": "09:00" },
+
+      {
+        "activityName": "Schedule & Topic Presentation",
+        "startTime": "09:00",
+        "endTime": "09:30"
+      },
+
+      {
+        "activityName": "Working Hours (PAX - Case Study)",
+        "startTime": "09:30",
+        "endTime": "13:00",
+        "bindNext": "yes"
+      },
+
+      {
+        "activityName": "Working Hours (PAX - Innovative Design)",
+        "startTime": "09:30",
+        "endTime": "12:30"
+      },
+
+      {
+        "activityName": "Lunch (PAX - Case Study)",
+        "startTime": "13:00",
+        "endTime": "14:15",
+        "bindNext": "yes"
+      },
+
+      {
+        "activityName": "Lunch (PAX - Innovative Design)",
+        "startTime": "12:30",
+        "endTime": "13:45"
+      },
+
+      {
+        "activityName": "Working Hours (PAX - Case Study)",
+        "startTime": "14:15",
+        "endTime": "16:45",
+        "bindNext": "yes"
+      },
+
+      {
+        "activityName": "Working Hours (PAX - Innovative Design)",
+        "startTime": "13:45",
+        "endTime": "16:45"
+      },
+
+      {
+        "activityName": "Work Delivery",
+        "startTime": "16:45",
+        "endTime": "17:15"
+      },
+
+      {
+        "activityName": "Case Study Presentations (PAX - Case Study)",
+        "startTime": "17:15",
+        "endTime": "20:15",
+        "bindNext": "yes"
+      },
+
+      {
+        "activityName": "Innovative Design Show (PAX - Innovative Design)",
+        "startTime": "17:15",
+        "endTime": "20:15"
+      },
+
+      { "activityName": "Dinner", "startTime": "20:15", "endTime": "21:15" },
+
+      { "activityName": "Free time", "startTime": "21:15", "endTime": "22:30" },
+
+      { "activityName": "PARTY", "startTime": "22:30", "endTime": "23:00" }
+    ],
+    "location": "Pauk"
+  },
+  {
+    "date": "29/07",
+    "dow": "Friday",
+    "title": "OFFICIAL CLOSING",
+    "splitAct": "",
+    "activities": [
+      { "activityName": "Wake up", "startTime": "07:00", "endTime": "08:00" },
+
+      { "activityName": "Breakfast", "startTime": "08:00", "endTime": "09:00" },
+
+      {
+        "activityName": "Masterclass S&B&D",
+        "startTime": "09:00",
+        "endTime": "10:30"
+      },
+
+      {
+        "activityName": "Coffee Break",
+        "startTime": "10:30",
+        "endTime": "11:00"
+      },
+
+      {
+        "activityName": "Siemens Career Activity",
+        "startTime": "11:00",
+        "endTime": "12:30"
+      },
+
+      { "activityName": "Lunch", "startTime": "12:30", "endTime": "13:30" },
+
+      {
+        "activityName": "Going to the OCD Venue",
+        "startTime": "13:30",
+        "endTime": "14:30"
+      },
+
+      {
+        "activityName": "Settling in the OCD Venue",
+        "startTime": "14:30",
+        "endTime": "15:00"
+      },
+
+      {
+        "activityName": "Activities at the OCD Venue",
+        "startTime": "15:00",
+        "endTime": "18:30"
+      },
+
+      { "activityName": "Toast", "startTime": "18:30", "endTime": "19:00" },
+
+      {
+        "activityName": "Transfer to accomodation",
+        "startTime": "19:00",
+        "endTime": "20:00"
+      },
+
+      { "activityName": "Dinner", "startTime": "20:00", "endTime": "21:15" },
+
+      { "activityName": "Free time", "startTime": "21:15", "endTime": "22:30" },
+
+      { "activityName": "PARTY", "startTime": "22:30", "endTime": "23:00" }
+    ],
+    "location": "Infobip"
+  },
+  {
+    "date": "30/07",
+    "dow": "Saturday",
+    "title": "DEPARTURE",
+    "splitAct": "yes",
+    "activities": [
+      { "activityName": "Wake up", "startTime": "07:00", "endTime": "08:00" },
+
+      { "activityName": "Breakfast", "startTime": "08:00", "endTime": "08:30" },
+
+      {
+        "activityName": "GOODBYE PAX",
+        "startTime": "08:30",
+        "endTime": "23:00"
+      }
+    ],
+
+    "location": "Student dormitory Stjepan Radić"
+  }
+]

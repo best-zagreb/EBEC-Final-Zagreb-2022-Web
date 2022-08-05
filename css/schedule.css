@@ -1,1 +1,160 @@
-/* TODO: create schedule page */
+.outer-schedule-div {
+  display: flex;
+  padding: min(2rem, 4vw);
+}
+
+/* .times-div{
+    padding-right: 2vw;
+    display:flex;
+    flex-direction: column;
+}
+.times-div > p{
+    font-size: 0.85rem;
+    color:white;
+    width: 50px;
+    margin: 0.1rem 0 0.1rem 0;
+    padding-left: 8px;
+    background-color: #3c6f9b;
+    border-radius: 5px;
+} */
+
+.days {
+  margin: 0 auto;
+
+  display: flex;
+  gap: min(1rem, 2vw);
+
+  overflow-x: scroll;
+}
+
+.sch__date-dow {
+  text-align: center;
+  font-weight: bold;
+}
+
+.sch__dow {
+  display: none;
+}
+
+.day:hover .sch__dow {
+  display: inline;
+}
+
+.day:hover > .day-card {
+  margin: 0 auto;
+}
+
+.day-card {
+  min-width: fit-content;
+  width: 10vw;
+  max-width: 8rem;
+  height: 55vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: min(1rem, 2vw);
+  background-color: var(--accent-clr);
+
+  transition: all 0.2s ease-in-out;
+}
+
+.day-card > p {
+  color: var(--white);
+  font-weight: bold;
+  padding-block: min(0.75rem, 1.5vw);
+
+  text-align: center;
+}
+
+.day__title {
+  color: white;
+
+  font-weight: 900;
+
+  writing-mode: vertical-lr;
+  letter-spacing: 8px;
+  word-spacing: 4px;
+}
+
+.split-schedule-hr,
+.day__location,
+.activities {
+  display: none;
+}
+
+.activities p {
+  font-size: min(0.875rem, 2.5vw);
+}
+
+.activity,
+.activity1,
+.activity2 {
+  border-radius: min(0.75rem, 1.5vw);
+  padding: min(0.5rem, 1vw);
+  border: 2px solid var(--primary-clr);
+  width: 100%;
+}
+
+.double_activity {
+  display: flex;
+  gap: min(0.25rem, 0.5vw);
+}
+
+.day-card:hover,
+.day-card:focus {
+  width: 40vw;
+  max-width: 15rem;
+  height: fit-content;
+
+  min-height: 55vh;
+  justify-content: left;
+
+  border-radius: min(1rem, 2vw);
+}
+
+.day-card:hover > .day__title,
+.day-card:focus > .day__title,
+.day-card:hover > .day__location,
+.day-card:focus > .day__location {
+  writing-mode: unset;
+  letter-spacing: normal;
+  word-spacing: normal;
+
+  font-weight: bold;
+  font-size: min(1.25rem, 3.75vw);
+
+  text-align: center;
+
+  padding-block: min(0.75rem, 1.5vw);
+}
+
+.day-card:hover > .split-schedule-hr,
+.day-card:focus > .split-schedule-hr {
+  display: block;
+
+  width: 95%;
+  margin-block: min(0.5rem, 1vw);
+
+  border: 0;
+  border-top: 3px dashed var(--primary-clr);
+}
+
+.day-card:hover > .day__location,
+.day-card:focus > .day__location {
+  display: inline;
+  color: white;
+}
+
+.day-card:hover .activities,
+.day-card:focus .activities {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: min(0.25rem, 0.5vw);
+  padding: min(0.5rem, 1vw);
+}

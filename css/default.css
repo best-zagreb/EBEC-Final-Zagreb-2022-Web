@@ -58,7 +58,8 @@ input {
 
 /* names of pages */
 h1 {
-  margin: 1.5rem;
+  margin-top: min(5rem, 7vw);
+  margin-bottom: min(1.5rem, 3vw);
 
   text-align: center;
   text-transform: uppercase;
@@ -115,11 +116,6 @@ a {
 }
 
 @media only screen and (max-width: 450px) {
-  /* names of pages */
-  h1 {
-    margin: 1rem;
-  }
-
   /* names of sections */
   h2 {
     margin: 0.75rem;
@@ -135,7 +131,7 @@ a {
 
 .subheading-hr {
   width: 40%;
-  margin: 1rem auto;
+  margin: min(1rem, 2vw) auto;
   border: none;
   border-top: min(1rem, 3vw) dotted var(--primary-clr);
 }
