@@ -22,22 +22,32 @@
   text-align: center;
 }
 
-.possibilities-s__box:hover > .possibilities-s__heading {
-  color: orange;
+.possibilities-s__box > svg {
+  margin-inline: auto;
+  width: min(30%, 15vw);
 }
 
-.possibilities-s__box:hover > .possibilities-s__icon {
-  color: orange;
+.possibilities-s__box > svg path,
+.possibilities-s__box > svg polygon {
+  fill: var(--accent-clr);
+}
+
+.possibilities-s__box:hover > svg {
   animation: fadeToRightFadeInLeft 0.4s ease forwards;
 }
 
-.possibilities-s__icon {
-  color: var(--accent-clr);
+.possibilities-s__box:hover > svg path,
+.possibilities-s__box:hover > svg polygon {
+  fill: orange;
 }
 
 .possibilities-s__heading {
   color: var(--secondary-clr);
   text-transform: uppercase;
+}
+
+.possibilities-s__box:hover > .possibilities-s__heading {
+  color: orange;
 }
 
 .possibilities-s__text {

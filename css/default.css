@@ -136,6 +136,7 @@ a {
   border-top: min(1rem, 3vw) dotted var(--primary-clr);
 }
 
+/* Background paralax */
 .background-image {
   z-index: -9999;
 
@@ -146,4 +147,43 @@ a {
   inset: 0;
 
   opacity: 0.1;
+}
+
+/* Back to top button */
+.backToTopBtn {
+  position: fixed;
+  right: min(3rem, 5vw);
+  bottom: min(3rem, 5vw);
+
+  width: min(5rem, calc(10vw + 0.5rem));
+  aspect-ratio: 1;
+
+  backdrop-filter: blur(1px);
+  border: min(3px, 0.5vw) solid var(--secondary-clr);
+  border-radius: 47% 53% 41% 59% / 83% 81% 19% 17%;
+  cursor: pointer;
+
+  z-index: 9999;
+
+  transition: transform 0.3s ease-in-out;
+}
+
+@media only screen and (min-width: 1024px) {
+  .backToTopBtn:hover,
+  .backToTopBtn:focus {
+    transform: scale(1.2);
+  }
+}
+
+.backToTopBtn > svg {
+  width: 60%;
+
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.backToTopBtn > svg path {
+  fill: var(--secondary-clr);
 }

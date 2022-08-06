@@ -44,12 +44,13 @@
   transform: scale(1.05);
 }
 
-.numbers-s__box * {
-  opacity: 1;
+.numbers-s__box > svg {
+  margin-inline: auto;
+  width: min(30%, 15vw);
 }
 
-.numbers-s__icon {
-  color: orange;
+.numbers-s__box > svg path {
+  fill: orange;
 }
 
 .numbers-s__counter {
