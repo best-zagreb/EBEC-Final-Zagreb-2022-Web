@@ -3,7 +3,7 @@
 This is a repo which contains all the files necessary for the webpage to look as it does. This webpage is built for the EBEC Final Zagreb 2022 event.
 
 Useful links:
-[Web](https://ebec-final-zagreb-2022.netlify.app/) |
+[Web](https://ebecfinal.best.hr/) |
 [Drive](https://drive.google.com/drive/folders/1UBn48a6tbh-MhGPCnxJKsi-RhWbRhWJK?usp=sharing)
 
 [EBEC Final Zg VI](https://lbgzagreb.slack.com/files/UML2NDSS2/F02M1JPE48K/vi_ebec_final.pdf) |
