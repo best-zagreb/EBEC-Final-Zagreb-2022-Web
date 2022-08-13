@@ -1,11 +1,29 @@
 [
   {
+    "id": 10,
+    "title": "An event to remember. 🎊",
+    "tag": "News",
+    "body": [
+      {
+        "paragraph": "After 8 days of hard work, networking, making new friends and most importantly, having lots of fun, EBEC Final Zagreb 2022 must come to an end. 😔"
+      },
+      {
+        "paragraph": ""
+      },
+      {
+        "paragraph": "We thank our partners, our participants and everyone else who helped us make this dream become reality. 🎆 We wish you all luck in all your future endeavour and hope that we meet again sometime in the future. Perhaps on another BEST event! 😉"
+      }
+    ],
+    "date": "31/07/2022",
+    "imgUrl": "../img/posts/post-ocd.jpg"
+  },
+  {
     "id": 9,
     "title": "Who will be joining us this year in Zagreb. 🏅",
     "tag": "News",
     "body": [
       {
-        "paragraph": "The competition was hard this year and only the best can continue a race to the top!🔝"
+        "paragraph": "The competition was hard this year and only the best can continue a race to the top! 🔝"
       },
       {
         "paragraph": ""

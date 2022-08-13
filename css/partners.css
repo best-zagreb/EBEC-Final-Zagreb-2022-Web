@@ -36,14 +36,6 @@
   .hex-cell:nth-of-type(7n + 1) {
     grid-column-start: 2;
   }
-
-  .hex-cell:nth-of-type(16) {
-    grid-column-start: 6;
-  }
-
-  .hex-cell:nth-of-type(18) {
-    grid-column-start: 7;
-  }
 }
 
 @media only screen and (max-width: 450px) {
@@ -54,10 +46,6 @@
 
   .hex-cell:nth-of-type(5n + 1) {
     grid-column-start: 2;
-  }
-
-  .hex-cell:nth-of-type(18) {
-    grid-column-start: 3;
   }
 }
 
