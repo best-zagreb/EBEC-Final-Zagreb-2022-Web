@@ -24,7 +24,7 @@
   display: flex;
   gap: min(1rem, 2vw);
 
-  overflow-x: scroll;
+  overflow-x: auto;
 }
 
 .sch__date-dow {
