@@ -83,3 +83,51 @@ if (navigator.share) {
 } else {
   console.log("Web Share API not supported in this browser.");
 }
+
+// Vibracija kod klika na link
+if ("vibrate" in navigator) {
+  console.log("Vibration API supported");
+
+  document.querySelectorAll("a").forEach((link) => {
+    link.addEventListener("click", () => {
+      navigator.vibrate(100);
+    });
+  });
+} else {
+  console.warn("Vibration API is not supported in this browser.");
+}
+
+// Shake za home page
+let lastX = 0,
+  lastY = 0,
+  lastZ = 0;
+let lastTime = 0;
+const SHAKE_THRESHOLD = 15;
+const SHAKE_TIME_THRESHOLD = 1000;
+
+if (window.DeviceMotionEvent) {
+  window.addEventListener("devicemotion", (event) => {
+    const acceleration = event.accelerationIncludingGravity;
+    if (!acceleration) return;
+
+    const currentTime = new Date().getTime();
+    if (currentTime - lastTime < SHAKE_TIME_THRESHOLD) return;
+
+    const deltaX = Math.abs(acceleration.x - lastX);
+    const deltaY = Math.abs(acceleration.y - lastY);
+    const deltaZ = Math.abs(acceleration.z - lastZ);
+
+    if (deltaX + deltaY + deltaZ > SHAKE_THRESHOLD) {
+      console.log("Shake detected! Redirecting to home...");
+      navigator.vibrate(200);
+      window.location.href = "/";
+    }
+
+    lastX = acceleration.x;
+    lastY = acceleration.y;
+    lastZ = acceleration.z;
+    lastTime = currentTime;
+  });
+} else {
+  console.warn("Device Motion API is not supported.");
+}
